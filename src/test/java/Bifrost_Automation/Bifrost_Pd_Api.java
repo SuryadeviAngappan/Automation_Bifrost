@@ -88,32 +88,27 @@ public class Bifrost_Pd_Api extends ListnerClass {
 					pd_value = excelFileUtility.getExcelData("API_keys_mapping", i, 1);
 				}
 
-				if (bifrost_value.toString() != null && pd_value.toString() != null) {
+				if (bifrost_value != null && pd_value != null) {
 					if (bifrost_value.toString().equalsIgnoreCase(pd_value.toString())) {
 
-						ListnerClass.reportLog("BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
+						ListnerClass.reportLog("<span style='color:green;'> BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
 								+ " And Value = " + bifrost_value + " && PD Api Key = "
-								+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value);
-						ListnerClass.reportLog("Both keys are valid and the responses are identical.");
+								+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value+"</span>");
+						ListnerClass.reportLog("<span style='color:green;'> Both keys are valid and the responses are identical.</span>");
 					} else {
-						ListnerClass.reportLog("BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
+						ListnerClass.reportLog("<span style='color:red;'> BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
 								+ " And Value = " + bifrost_value + " && PD Api Key = "
-								+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value);
-						ListnerClass.reportLog("Both keys are valid and the responses are different.");
+								+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value +"</span>");
+						ListnerClass.reportLog("<span style='color:red;'> Both keys are valid and the responses are different.</span>");
 					}
-				} else if ((bifrost_value.toString() == null && pd_value.toString() == null)
-						|| (bifrost_value.toString() != null && pd_value.toString() == null)
-						|| (bifrost_value.toString() == null && pd_value.toString() != null)) {
+				} else if ((bifrost_value == null && pd_value == null)
+						|| (bifrost_value != null && pd_value == null)
+						|| (bifrost_value == null && pd_value != null)) {
 
-					ListnerClass.reportLog("<span style='color:red;'>BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
+					ListnerClass.reportLog("<span style='color:orange;'>BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
 							+ " And Value = " + bifrost_value + " && PD Api Key = "
 							+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value +"</span>");
-					ListnerClass.reportLog("Both keys are valid and the responses are Different.");
-
-					// ls.TestFailure(ITestResult reports);
-
-					// ThreadLocalClass.gettestlevel().log(Status.FAIL,
-					// MarkupHelper.createLabel("BF_PD"), ExtentColor.RED);
+					ListnerClass.reportLog("<span style='color:orange;'> Both keys are valid and the responses are Different.</span>");
 				}
 			} catch (Exception e) {
 			}

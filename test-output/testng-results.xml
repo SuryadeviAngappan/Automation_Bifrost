@@ -11,513 +11,597 @@
       <![CDATA[ Test Loancode =625ec62b43kb5]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = tenure And Value = 24 && PD Api Key = proposedTenure and Value = 24]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = tenure And Value = 24 && PD Api Key = proposedTenure and Value = 24</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = proposed_roi And Value = 1 && PD Api Key = proposedROI and Value = 1]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = proposed_roi And Value = 1 && PD Api Key = proposedROI and Value = 1</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = proposed_emi And Value = 10334 && PD Api Key = expectedMontlyEMI and Value = 10334]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = proposed_emi And Value = 10334 && PD Api Key = expectedMontlyEMI and Value = 10334</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = originator_loan_code And Value = 625ec62b43kb5 && PD Api Key = loanCode and Value = 625ec62b43kb5]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = originator_loan_code And Value = 625ec62b43kb5 && PD Api Key = loanCode and Value = 625ec62b43kb5</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = colender_loan_code And Value = 1147022 && PD Api Key = loanCode and Value = 625ec62b43kb5]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = colender_loan_code And Value = 1147022 && PD Api Key = loanCode and Value = 625ec62b43kb5</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = proposed_amount And Value = 200000 && PD Api Key = proposedAmount and Value = 200000]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = proposed_amount And Value = 200000 && PD Api Key = proposedAmount and Value = 200000</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = escrow_available And Value = yes && PD Api Key = isEscrow and Value = true]]>
+      <![CDATA[<span style='color:orange;'>BF Api Key = colender_code And Value = null && PD Api Key = loanCode and Value = 625ec62b43kb5</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = sanction_conditions And Value = [{"remarks":"CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,\nBengaluru (Bangalore) Rural, Karnataka, 562114\nPre-closing charges to be NIL from the starting month.","condition":[{"label":"CPV Required","data":[{"label":"Residential","checked":true,"data":[{"label":"null null null Mori Road Maharashtra 400016","checked":true}]},{"label":"Office","checked":true,"data":[{"label":"45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016","checked":true}]}],"checked":true},{"label":"GST returns for","gstReturnFor":"","checked":false},{"label":"One reference of relative and one reference of buyer/supplier","checked":true},{"label":"Choose Guarantor","checked":true},{"label":"Others","checked":true},{"label":"Choose Co-applicant","checked":false},{"label":"Ownership Proof Required","data":[{"label":"Residential","checked":true},{"label":"Business","checked":false}],"checked":true}]}] && PD Api Key = sanctionConditions and Value = [[remarks:CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,
+      <![CDATA[<span style='color:red;'> BF Api Key = escrow_available And Value = yes && PD Api Key = isEscrow and Value = true</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:red;'> BF Api Key = sanction_conditions And Value = [{"remarks":"CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,\nBengaluru (Bangalore) Rural, Karnataka, 562114\nPre-closing charges to be NIL from the starting month.","condition":[{"label":"CPV Required","data":[{"label":"Residential","checked":true,"data":[{"label":"null null null Mori Road Maharashtra 400016","checked":true}]},{"label":"Office","checked":true,"data":[{"label":"45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016","checked":true}]}],"checked":true},{"label":"GST returns for","gstReturnFor":"","checked":false},{"label":"One reference of relative and one reference of buyer/supplier","checked":true},{"label":"Choose Guarantor","checked":true},{"label":"Others","checked":true},{"label":"Choose Co-applicant","checked":false},{"label":"Ownership Proof Required","data":[{"label":"Residential","checked":true},{"label":"Business","checked":false}],"checked":true}]}] && PD Api Key = sanctionConditions and Value = [[remarks:CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,
 Bengaluru (Bangalore) Rural, Karnataka, 562114
-Pre-closing charges to be NIL from the starting month., condition:[[label:CPV Required, data:[[label:Residential, checked:true, data:[[label:null null null Mori Road Maharashtra 400016, checked:true]]], [label:Office, checked:true, data:[[label:45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016, checked:true]]]], checked:true], [label:GST returns for, gstReturnFor:, checked:false], [label:One reference of relative and one reference of buyer/supplier, checked:true], [label:Choose Guarantor, checked:true], [label:Others, checked:true], [label:Choose Co-applicant, checked:false], [label:Ownership Proof Required, data:[[label:Residential, checked:true], [label:Business, checked:false]], checked:true]]]]]]>
+Pre-closing charges to be NIL from the starting month., condition:[[label:CPV Required, data:[[label:Residential, checked:true, data:[[label:null null null Mori Road Maharashtra 400016, checked:true]]], [label:Office, checked:true, data:[[label:45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016, checked:true]]]], checked:true], [label:GST returns for, gstReturnFor:, checked:false], [label:One reference of relative and one reference of buyer/supplier, checked:true], [label:Choose Guarantor, checked:true], [label:Others, checked:true], [label:Choose Co-applicant, checked:false], [label:Ownership Proof Required, data:[[label:Residential, checked:true], [label:Business, checked:false]], checked:true]]]]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = deviation And Value =  && PD Api Key = otherRemarks and Value = ]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = deviation And Value =  && PD Api Key = otherRemarks and Value = </span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = proposed_approval_date And Value = 2022-04-26 && PD Api Key = approvalDate and Value = 25-04-2024]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = proposed_approval_date And Value = 2022-04-26 && PD Api Key = approvalDate and Value = 25-04-2024</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = tentative_disbursal_date And Value = 2022-04-29 && PD Api Key = disbursalDate and Value = 28-04-2024]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = tentative_disbursal_date And Value = 2022-04-29 && PD Api Key = disbursalDate and Value = 28-04-2024</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = proposed_emi_start_date And Value = 2022-06-01 && PD Api Key = EMIStartDate and Value = 01-06-2024]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = proposed_emi_start_date And Value = 2022-06-01 && PD Api Key = EMIStartDate and Value = 01-06-2024</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = proposed_interest_start_date And Value = 2022-05-01 && PD Api Key = interestedStartDate and Value = 01-05-2024]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = proposed_interest_start_date And Value = 2022-05-01 && PD Api Key = interestedStartDate and Value = 01-05-2024</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = annual_reducing_rate And Value = 21.57 && PD Api Key = reducingRate and Value = 21.57]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = annual_reducing_rate And Value = 21.57 && PD Api Key = reducingRate and Value = 21.57</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = interest_type And Value = flat && PD Api Key = interestType and Value = Flat]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = interest_type And Value = flat && PD Api Key = interestType and Value = Flat</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = total_processing_fee And Value = 37500 && PD Api Key = processingFee and Value = 2000]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = total_processing_fee And Value = 37500 && PD Api Key = processingFee and Value = 2000</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = processing_fee_percentage And Value = 2.5 && PD Api Key = processingPercentage and Value = 1]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = processing_fee_percentage And Value = 2.5 && PD Api Key = processingPercentage and Value = 1</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = stamp_duty_fee And Value = 600 && PD Api Key = stampDutyFee and Value = 600.0]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = stamp_duty_fee And Value = 600 && PD Api Key = stampDutyFee and Value = 600.0</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = stamp_duty_percentage And Value = 0.3 && PD Api Key = stampDutyPercentage and Value = 0.3]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = stamp_duty_percentage And Value = 0.3 && PD Api Key = stampDutyPercentage and Value = 0.3</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = insurance_premium_percentage And Value = 0 && PD Api Key = insuranceApplied and Value = 0]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = insurance_premium_percentage And Value = 0 && PD Api Key = insuranceApplied and Value = 0</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = documentation_fee And Value = 0 && PD Api Key = docCharge and Value = 0]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = documentation_fee And Value = 0 && PD Api Key = docCharge and Value = 0</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = differential_interest And Value = 333.33 && PD Api Key = differentialInterest and Value = 0]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = differential_interest And Value = 333.33 && PD Api Key = differentialInterest and Value = 0</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = total_charges And Value = 38433.33 && PD Api Key = totalCharges and Value = 8724]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = total_charges And Value = 38433.33 && PD Api Key = totalCharges and Value = 8724</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = net_disbursement_amount And Value = 161566.67 && PD Api Key = netDisbursalAmount and Value = 191276]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = net_disbursement_amount And Value = 161566.67 && PD Api Key = netDisbursalAmount and Value = 191276</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = pos_split_amount And Value = 0 && PD Api Key = posSplitAmount and Value = ]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = pos_split_amount And Value = 0 && PD Api Key = posSplitAmount and Value = </span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = pos_split_percentage And Value = 0 && PD Api Key = posSplitPercentage and Value = ]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = pos_split_percentage And Value = 0 && PD Api Key = posSplitPercentage and Value = </span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = business_name And Value = Opusol Technologies Private Limited && PD Api Key = businessName and Value = Opusol Technologies Private Limited]]>
+      <![CDATA[<span style='color:orange;'>BF Api Key = life_insurance_fee And Value = null && PD Api Key = lifeInsuranceAmount and Value = 1994</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = employee_count And Value = 5 && PD Api Key = noEmployee and Value = 5]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = business_name And Value = Opusol Technologies Private Limited && PD Api Key = businessName and Value = Opusol Technologies Private Limited</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = business_pan And Value = ACXPS6000O && PD Api Key = businessPan and Value = ACXPS6000O]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = employee_count And Value = 5 && PD Api Key = noEmployee and Value = 5</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = full_address And Value = 45 WEST PRATHASANAM ROAD KARUR null && PD Api Key = businessAddress and Value = 45 WEST PRATHASANAM ROAD KARUR null]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = business_pan And Value = ACXPS6000O && PD Api Key = businessPan and Value = ACXPS6000O</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = full_address And Value = 45 WEST PRATHASANAM ROAD KARUR null && PD Api Key = businessAddress and Value = 45 WEST PRATHASANAM ROAD KARUR null</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = gst_no And Value = 33AACCO9699J1ZJ && PD Api Key = gstin and Value = 33AACCO9699J1ZJ]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = business_type And Value = retailer && PD Api Key = nature_of_business and Value = [Retailer]]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = gst_no And Value = 33AACCO9699J1ZJ && PD Api Key = gstin and Value = 33AACCO9699J1ZJ</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = legal_status And Value = private_limited && PD Api Key = legalStatus and Value = Private Limited]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = business_type And Value = retailer && PD Api Key = nature_of_business and Value = [Retailer]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = legal_status And Value = private_limited && PD Api Key = legalStatus and Value = Private Limited</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = premise_vintage And Value = 1 && PD Api Key = business.vintage and Value = 1]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = relationship_with_owner And Value = brother && PD Api Key = premisesRelationshipType and Value = Father]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = premise_vintage And Value = 1 && PD Api Key = business.vintage and Value = 1</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = cin_no And Value =  && PD Api Key = cin and Value = ]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = relationship_with_owner And Value = brother && PD Api Key = premisesRelationshipType and Value = Father</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = first_name And Value = vitthal && PD Api Key = name and Value = Vitthal Ram]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = cin_no And Value =  && PD Api Key = cin and Value = </span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = email And Value = sk1221@gmail.com && PD Api Key = email and Value = sk1221@gmail.com]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = first_name And Value = vitthal && PD Api Key = name and Value = Vitthal Ram</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = mobile_no And Value = 6839839483 && PD Api Key = mobileNo and Value = 6666839777]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = email And Value = sk1221@gmail.com && PD Api Key = email and Value = sk1221@gmail.com</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = dob And Value = 12-08-1983 && PD Api Key = dob and Value = 12-08-1983]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = mobile_no And Value = 6839839483 && PD Api Key = mobileNo and Value = 6666839777</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = gender And Value = male && PD Api Key = gender and Value = Male]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = dob And Value = 12-08-1983 && PD Api Key = dob and Value = 12-08-1983</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = pan And Value = PPQQR2134S && PD Api Key = pan and Value = HGBNV1278N]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = gender And Value = male && PD Api Key = gender and Value = Male</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = education_level And Value = graduate && PD Api Key = education and Value = Graduate]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = pan And Value = PPQQR2134S && PD Api Key = pan and Value = HGBNV1278N</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = marital_status And Value = married && PD Api Key = maritalStatus and Value = Married]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = education_level And Value = graduate && PD Api Key = education and Value = Graduate</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = marital_status And Value = married && PD Api Key = maritalStatus and Value = Married</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road]]>
+      <![CDATA[<span style='color:orange;'>BF Api Key = no_of_dependents And Value = null && PD Api Key = dependent and Value = </span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_ownership_status And Value = owned && PD Api Key = ownership and Value = Owned]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = cibil_score And Value = 780 && PD Api Key = cibilScore and Value = 780]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = details.code And Value = [629f5955d4ljznq, 629f5955l51n8qz] && PD Api Key = code and Value = [62626bc2gi3cy, 62626c580b883]]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_ownership_status And Value = owned && PD Api Key = ownership and Value = Owned</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = first_name And Value = [Guarantor, Partner] && PD Api Key = name and Value = [Partner One, Guarantor Test]]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = cibil_score And Value = 780 && PD Api Key = cibilScore and Value = 780</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = email And Value = [, ] && PD Api Key = email and Value = [, ]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = details.code And Value = [629f5955d4ljznq, 629f5955l51n8qz] && PD Api Key = code and Value = [62626bc2gi3cy, 62626c580b883]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = mobile_no And Value = [6665333444, 6777666353] && PD Api Key = mobileNo and Value = [6777666353, 6665333444]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = first_name And Value = [Guarantor, Partner] && PD Api Key = name and Value = [Partner One, Guarantor Test]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = dob And Value = [11-04-1992, 16-02-1992] && PD Api Key = dob and Value = [16-02-1992, 11-04-1992]]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = email And Value = [, ] && PD Api Key = email and Value = [, ]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = gender And Value = [female, male] && PD Api Key = gender and Value = [Male, Female]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = mobile_no And Value = [6665333444, 6777666353] && PD Api Key = mobileNo and Value = [6777666353, 6665333444]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = pan And Value = [AVXPS6000S, AWEPV9171O] && PD Api Key = pan and Value = [AWEPV9171O, AVXPS6000S]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = dob And Value = [11-04-1992, 16-02-1992] && PD Api Key = dob and Value = [16-02-1992, 11-04-1992]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = education_level And Value = [null, null] && PD Api Key = education and Value = [, ]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = gender And Value = [female, male] && PD Api Key = gender and Value = [Male, Female]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = marital_status And Value = [null, null] && PD Api Key = maritalStatus and Value = [, ]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = pan And Value = [AVXPS6000S, AWEPV9171O] && PD Api Key = pan and Value = [AWEPV9171O, AVXPS6000S]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = cibil_score And Value = [0, 0] && PD Api Key = cibilScore and Value = [, ]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = education_level And Value = [null, null] && PD Api Key = education and Value = [, ]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_city And Value = [Karur West, Karur West] && PD Api Key = city and Value = [Karur West, Karur West]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = marital_status And Value = [null, null] && PD Api Key = maritalStatus and Value = [, ]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = address_state And Value = [null, null] && PD Api Key = state and Value = [Tamil Nadu, Tamil Nadu]]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = cibil_score And Value = [0, 0] && PD Api Key = cibilScore and Value = [, ]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = originator_id And Value = 1 && PD Api Key = hardcode_Value and Value = 1]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = address_city And Value = [Karur West, Karur West] && PD Api Key = city and Value = [Karur West, Karur West]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = originator_name And Value = Epimoney && PD Api Key = hardcode_Value and Value = Epimoney]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = address_state And Value = [null, null] && PD Api Key = state and Value = [Tamil Nadu, Tamil Nadu]</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = product And Value = TERM && PD Api Key = hardcode_Value and Value = TERM]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = originator_id And Value = 1 && PD Api Key = hardcode_Value and Value = 1</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = partner_name And Value = Flipkart && PD Api Key = hardcode_Value and Value = EpiMoney]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = originator_name And Value = Epimoney && PD Api Key = hardcode_Value and Value = Epimoney</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = repayment_frequency And Value = monthly && PD Api Key = hardcode_Value and Value = monthly]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = product And Value = TERM && PD Api Key = hardcode_Value and Value = TERM</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = employment_type And Value = self_employed && PD Api Key = hardcode_Value and Value = self_employed]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = partner_name And Value = Flipkart && PD Api Key = hardcode_Value and Value = EpiMoney</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_median_bto And Value = 279520.93 && PD Api Key = median_bto and Value = 279520.93]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = repayment_frequency And Value = monthly && PD Api Key = hardcode_Value and Value = monthly</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_net_income And Value = 23759.28 && PD Api Key = bto_net_income and Value = 23759.28]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = employment_type And Value = self_employed && PD Api Key = hardcode_Value and Value = self_employed</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_foir And Value = 4751.86 && PD Api Key = foir and Value = 4751.86]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = eligibility_median_bto And Value = 279520.93 && PD Api Key = median_bto and Value = 279520.93</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_roi And Value = 18 && PD Api Key = bto_roi and Value = 18.00]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = eligibility_net_income And Value = 23759.28 && PD Api Key = bto_net_income and Value = 23759.28</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_tenure And Value = 12 && PD Api Key = customer_selected_tenure and Value = 24]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = eligibility_foir And Value = 4751.86 && PD Api Key = foir and Value = 4751.86</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_abb_foir And Value = 70 && PD Api Key = abb_foir and Value = 70.00]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = eligibility_roi And Value = 18 && PD Api Key = bto_roi and Value = 18.00</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_proposed_serviceable_emi And Value = 11883.68 && PD Api Key = bto_serviceable_emi and Value = -5451.58]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = eligibility_tenure And Value = 12 && PD Api Key = customer_selected_tenure and Value = 24</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_abb_roi And Value = 18 && PD Api Key = abb_roi and Value = 18.00]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = eligibility_abb_foir And Value = 70 && PD Api Key = abb_foir and Value = 70.00</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = abb_based_eligibility And Value = 238034.99 && PD Api Key = abb_customer_based_eligibility and Value = 238034.99]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = eligibility_proposed_serviceable_emi And Value = 11883.68 && PD Api Key = bto_serviceable_emi and Value = -5451.58</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = eligibility_pos_multiplier And Value = 1.2 && PD Api Key = pos_multiplier and Value = 1.20]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = eligibility_abb_roi And Value = 18 && PD Api Key = abb_roi and Value = 18.00</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = foir_calculation And Value = 4751.86 && PD Api Key = foir and Value = 4751.86]]>
+      <![CDATA[<span style='color:green;'> BF Api Key = abb_based_eligibility And Value = 238034.99 && PD Api Key = abb_customer_based_eligibility and Value = 238034.99</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are identical.]]>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
     </line>
     <line>
-      <![CDATA[BF Api Key = existing_emi_calculation And Value = 24459 && PD Api Key = existing_emi and Value = 24459.00]]>
+      <![CDATA[<span style='color:red;'> BF Api Key = eligibility_pos_multiplier And Value = 1.2 && PD Api Key = pos_multiplier and Value = 1.20</span>]]>
     </line>
     <line>
-      <![CDATA[Both keys are valid and the responses are different.]]>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = pos_loan_eligibility And Value = null && PD Api Key = industry_margin and Value = 8.00</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = eligibility_ecom_payout_sales And Value = null && PD Api Key =  industry_margin and Value = 8.00</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = eligibility_ecom_payout_multiplier And Value = null && PD Api Key = pos_payout_multiplier and Value = null</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = ecom_payout_loan_eligibility And Value = null && PD Api Key = ecom_payout_eligibility and Value = null</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:green;'> BF Api Key = foir_calculation And Value = 4751.86 && PD Api Key = foir and Value = 4751.86</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:red;'> BF Api Key = existing_emi_calculation And Value = 24459 && PD Api Key = existing_emi and Value = 24459.00</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = ecom_multiplier And Value = null && PD Api Key = ecom_multiplier and Value = null</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = capped_abb_eligibility And Value = null && PD Api Key = capped_abb_eligibility and Value = 238034.99</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = capped_banking_eligibility And Value = null && PD Api Key = capped_banking_eligibility and Value = -109197.30</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = capped_ecom_multiplier_eligibility And Value = null && PD Api Key = capped_ecom_multiplier_eligibility and Value = null</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = capped_ecom_payout_eligibility And Value = null && PD Api Key = capped_ecom_payout_eligibility and Value = null</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = principal_outstanding And Value = null && PD Api Key = principal_outstanding and Value = null</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'>BF Api Key = bank_code_colender And Value = null && PD Api Key = bankId and Value = 26</span>]]>
+    </line>
+    <line>
+      <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-06-13T23:11:58 IST" name="Default suite" finished-at="2024-06-13T23:13:17 IST" duration-ms="78559">
+  <suite started-at="2024-06-14T00:08:51 IST" name="Default suite" finished-at="2024-06-14T00:09:01 IST" duration-ms="9804">
     <groups>
     </groups>
-    <test started-at="2024-06-13T23:11:58 IST" name="Default test" finished-at="2024-06-13T23:13:17 IST" duration-ms="78559">
+    <test started-at="2024-06-14T00:08:51 IST" name="Default test" finished-at="2024-06-14T00:09:01 IST" duration-ms="9804">
       <class name="Bifrost_Automation.Bifrost_Pd_Api">
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:Bifrost_Automation.Bifrost_Pd_Api@470a696f]" started-at="2024-06-13T23:12:03 IST" name="preCondition" finished-at="2024-06-13T23:12:34 IST" duration-ms="31513" status="PASS">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:Bifrost_Automation.Bifrost_Pd_Api@470a696f]" started-at="2024-06-14T00:08:51 IST" name="preCondition" finished-at="2024-06-14T00:08:55 IST" duration-ms="3882" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ DB Connection Successfull]]>
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="getRequestMethod()[pri:0, instance:Bifrost_Automation.Bifrost_Pd_Api@470a696f]" started-at="2024-06-13T23:12:35 IST" name="getRequestMethod" finished-at="2024-06-13T23:13:14 IST" duration-ms="39091" status="PASS">
+        <test-method signature="getRequestMethod()[pri:0, instance:Bifrost_Automation.Bifrost_Pd_Api@470a696f]" started-at="2024-06-14T00:08:55 IST" name="getRequestMethod" finished-at="2024-06-14T00:09:01 IST" duration-ms="5187" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[TC_01 : To verify the Bifrost and PD api key values, Getting the Response, validate the both response]]>
@@ -526,502 +610,586 @@ Pre-closing charges to be NIL from the starting month., condition:[[label:CPV Re
               <![CDATA[ Test Loancode =625ec62b43kb5]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = tenure And Value = 24 && PD Api Key = proposedTenure and Value = 24]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = tenure And Value = 24 && PD Api Key = proposedTenure and Value = 24</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = proposed_roi And Value = 1 && PD Api Key = proposedROI and Value = 1]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = proposed_roi And Value = 1 && PD Api Key = proposedROI and Value = 1</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = proposed_emi And Value = 10334 && PD Api Key = expectedMontlyEMI and Value = 10334]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = proposed_emi And Value = 10334 && PD Api Key = expectedMontlyEMI and Value = 10334</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = originator_loan_code And Value = 625ec62b43kb5 && PD Api Key = loanCode and Value = 625ec62b43kb5]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = originator_loan_code And Value = 625ec62b43kb5 && PD Api Key = loanCode and Value = 625ec62b43kb5</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = colender_loan_code And Value = 1147022 && PD Api Key = loanCode and Value = 625ec62b43kb5]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = colender_loan_code And Value = 1147022 && PD Api Key = loanCode and Value = 625ec62b43kb5</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = proposed_amount And Value = 200000 && PD Api Key = proposedAmount and Value = 200000]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = proposed_amount And Value = 200000 && PD Api Key = proposedAmount and Value = 200000</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = escrow_available And Value = yes && PD Api Key = isEscrow and Value = true]]>
+              <![CDATA[<span style='color:orange;'>BF Api Key = colender_code And Value = null && PD Api Key = loanCode and Value = 625ec62b43kb5</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = sanction_conditions And Value = [{"remarks":"CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,\nBengaluru (Bangalore) Rural, Karnataka, 562114\nPre-closing charges to be NIL from the starting month.","condition":[{"label":"CPV Required","data":[{"label":"Residential","checked":true,"data":[{"label":"null null null Mori Road Maharashtra 400016","checked":true}]},{"label":"Office","checked":true,"data":[{"label":"45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016","checked":true}]}],"checked":true},{"label":"GST returns for","gstReturnFor":"","checked":false},{"label":"One reference of relative and one reference of buyer/supplier","checked":true},{"label":"Choose Guarantor","checked":true},{"label":"Others","checked":true},{"label":"Choose Co-applicant","checked":false},{"label":"Ownership Proof Required","data":[{"label":"Residential","checked":true},{"label":"Business","checked":false}],"checked":true}]}] && PD Api Key = sanctionConditions and Value = [[remarks:CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,
+              <![CDATA[<span style='color:red;'> BF Api Key = escrow_available And Value = yes && PD Api Key = isEscrow and Value = true</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:red;'> BF Api Key = sanction_conditions And Value = [{"remarks":"CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,\nBengaluru (Bangalore) Rural, Karnataka, 562114\nPre-closing charges to be NIL from the starting month.","condition":[{"label":"CPV Required","data":[{"label":"Residential","checked":true,"data":[{"label":"null null null Mori Road Maharashtra 400016","checked":true}]},{"label":"Office","checked":true,"data":[{"label":"45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016","checked":true}]}],"checked":true},{"label":"GST returns for","gstReturnFor":"","checked":false},{"label":"One reference of relative and one reference of buyer/supplier","checked":true},{"label":"Choose Guarantor","checked":true},{"label":"Others","checked":true},{"label":"Choose Co-applicant","checked":false},{"label":"Ownership Proof Required","data":[{"label":"Residential","checked":true},{"label":"Business","checked":false}],"checked":true}]}] && PD Api Key = sanctionConditions and Value = [[remarks:CPV of warehouse in Bangalore-189, 190, Aravindham, 2nd Cross, 2nd Main, Ruby Residential Layout, Dandupalya, Hoskote,
 Bengaluru (Bangalore) Rural, Karnataka, 562114
-Pre-closing charges to be NIL from the starting month., condition:[[label:CPV Required, data:[[label:Residential, checked:true, data:[[label:null null null Mori Road Maharashtra 400016, checked:true]]], [label:Office, checked:true, data:[[label:45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016, checked:true]]]], checked:true], [label:GST returns for, gstReturnFor:, checked:false], [label:One reference of relative and one reference of buyer/supplier, checked:true], [label:Choose Guarantor, checked:true], [label:Others, checked:true], [label:Choose Co-applicant, checked:false], [label:Ownership Proof Required, data:[[label:Residential, checked:true], [label:Business, checked:false]], checked:true]]]]]]>
+Pre-closing charges to be NIL from the starting month., condition:[[label:CPV Required, data:[[label:Residential, checked:true, data:[[label:null null null Mori Road Maharashtra 400016, checked:true]]], [label:Office, checked:true, data:[[label:45 WEST PRATHASANAM ROAD KARUR null Mori Road Maharashtra 400016, checked:true]]]], checked:true], [label:GST returns for, gstReturnFor:, checked:false], [label:One reference of relative and one reference of buyer/supplier, checked:true], [label:Choose Guarantor, checked:true], [label:Others, checked:true], [label:Choose Co-applicant, checked:false], [label:Ownership Proof Required, data:[[label:Residential, checked:true], [label:Business, checked:false]], checked:true]]]]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = deviation And Value =  && PD Api Key = otherRemarks and Value = ]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = deviation And Value =  && PD Api Key = otherRemarks and Value = </span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = proposed_approval_date And Value = 2022-04-26 && PD Api Key = approvalDate and Value = 25-04-2024]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = proposed_approval_date And Value = 2022-04-26 && PD Api Key = approvalDate and Value = 25-04-2024</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = tentative_disbursal_date And Value = 2022-04-29 && PD Api Key = disbursalDate and Value = 28-04-2024]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = tentative_disbursal_date And Value = 2022-04-29 && PD Api Key = disbursalDate and Value = 28-04-2024</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = proposed_emi_start_date And Value = 2022-06-01 && PD Api Key = EMIStartDate and Value = 01-06-2024]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = proposed_emi_start_date And Value = 2022-06-01 && PD Api Key = EMIStartDate and Value = 01-06-2024</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = proposed_interest_start_date And Value = 2022-05-01 && PD Api Key = interestedStartDate and Value = 01-05-2024]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = proposed_interest_start_date And Value = 2022-05-01 && PD Api Key = interestedStartDate and Value = 01-05-2024</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = annual_reducing_rate And Value = 21.57 && PD Api Key = reducingRate and Value = 21.57]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = annual_reducing_rate And Value = 21.57 && PD Api Key = reducingRate and Value = 21.57</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = interest_type And Value = flat && PD Api Key = interestType and Value = Flat]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = interest_type And Value = flat && PD Api Key = interestType and Value = Flat</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = total_processing_fee And Value = 37500 && PD Api Key = processingFee and Value = 2000]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = total_processing_fee And Value = 37500 && PD Api Key = processingFee and Value = 2000</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = processing_fee_percentage And Value = 2.5 && PD Api Key = processingPercentage and Value = 1]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = processing_fee_percentage And Value = 2.5 && PD Api Key = processingPercentage and Value = 1</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = stamp_duty_fee And Value = 600 && PD Api Key = stampDutyFee and Value = 600.0]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = stamp_duty_fee And Value = 600 && PD Api Key = stampDutyFee and Value = 600.0</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = stamp_duty_percentage And Value = 0.3 && PD Api Key = stampDutyPercentage and Value = 0.3]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = stamp_duty_percentage And Value = 0.3 && PD Api Key = stampDutyPercentage and Value = 0.3</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = insurance_premium_percentage And Value = 0 && PD Api Key = insuranceApplied and Value = 0]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = insurance_premium_percentage And Value = 0 && PD Api Key = insuranceApplied and Value = 0</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = documentation_fee And Value = 0 && PD Api Key = docCharge and Value = 0]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = documentation_fee And Value = 0 && PD Api Key = docCharge and Value = 0</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = differential_interest And Value = 333.33 && PD Api Key = differentialInterest and Value = 0]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = differential_interest And Value = 333.33 && PD Api Key = differentialInterest and Value = 0</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = total_charges And Value = 38433.33 && PD Api Key = totalCharges and Value = 8724]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = total_charges And Value = 38433.33 && PD Api Key = totalCharges and Value = 8724</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = net_disbursement_amount And Value = 161566.67 && PD Api Key = netDisbursalAmount and Value = 191276]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = net_disbursement_amount And Value = 161566.67 && PD Api Key = netDisbursalAmount and Value = 191276</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = pos_split_amount And Value = 0 && PD Api Key = posSplitAmount and Value = ]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = pos_split_amount And Value = 0 && PD Api Key = posSplitAmount and Value = </span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = pos_split_percentage And Value = 0 && PD Api Key = posSplitPercentage and Value = ]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = pos_split_percentage And Value = 0 && PD Api Key = posSplitPercentage and Value = </span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = business_name And Value = Opusol Technologies Private Limited && PD Api Key = businessName and Value = Opusol Technologies Private Limited]]>
+              <![CDATA[<span style='color:orange;'>BF Api Key = life_insurance_fee And Value = null && PD Api Key = lifeInsuranceAmount and Value = 1994</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = employee_count And Value = 5 && PD Api Key = noEmployee and Value = 5]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = business_name And Value = Opusol Technologies Private Limited && PD Api Key = businessName and Value = Opusol Technologies Private Limited</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = business_pan And Value = ACXPS6000O && PD Api Key = businessPan and Value = ACXPS6000O]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = employee_count And Value = 5 && PD Api Key = noEmployee and Value = 5</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = full_address And Value = 45 WEST PRATHASANAM ROAD KARUR null && PD Api Key = businessAddress and Value = 45 WEST PRATHASANAM ROAD KARUR null]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = business_pan And Value = ACXPS6000O && PD Api Key = businessPan and Value = ACXPS6000O</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = full_address And Value = 45 WEST PRATHASANAM ROAD KARUR null && PD Api Key = businessAddress and Value = 45 WEST PRATHASANAM ROAD KARUR null</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = gst_no And Value = 33AACCO9699J1ZJ && PD Api Key = gstin and Value = 33AACCO9699J1ZJ]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = business_type And Value = retailer && PD Api Key = nature_of_business and Value = [Retailer]]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = gst_no And Value = 33AACCO9699J1ZJ && PD Api Key = gstin and Value = 33AACCO9699J1ZJ</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = legal_status And Value = private_limited && PD Api Key = legalStatus and Value = Private Limited]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = business_type And Value = retailer && PD Api Key = nature_of_business and Value = [Retailer]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = legal_status And Value = private_limited && PD Api Key = legalStatus and Value = Private Limited</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = premise_vintage And Value = 1 && PD Api Key = business.vintage and Value = 1]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = relationship_with_owner And Value = brother && PD Api Key = premisesRelationshipType and Value = Father]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = premise_vintage And Value = 1 && PD Api Key = business.vintage and Value = 1</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = cin_no And Value =  && PD Api Key = cin and Value = ]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = relationship_with_owner And Value = brother && PD Api Key = premisesRelationshipType and Value = Father</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = first_name And Value = vitthal && PD Api Key = name and Value = Vitthal Ram]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = cin_no And Value =  && PD Api Key = cin and Value = </span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = email And Value = sk1221@gmail.com && PD Api Key = email and Value = sk1221@gmail.com]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = first_name And Value = vitthal && PD Api Key = name and Value = Vitthal Ram</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = mobile_no And Value = 6839839483 && PD Api Key = mobileNo and Value = 6666839777]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = email And Value = sk1221@gmail.com && PD Api Key = email and Value = sk1221@gmail.com</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = dob And Value = 12-08-1983 && PD Api Key = dob and Value = 12-08-1983]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = mobile_no And Value = 6839839483 && PD Api Key = mobileNo and Value = 6666839777</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = gender And Value = male && PD Api Key = gender and Value = Male]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = dob And Value = 12-08-1983 && PD Api Key = dob and Value = 12-08-1983</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = pan And Value = PPQQR2134S && PD Api Key = pan and Value = HGBNV1278N]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = gender And Value = male && PD Api Key = gender and Value = Male</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = education_level And Value = graduate && PD Api Key = education and Value = Graduate]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = pan And Value = PPQQR2134S && PD Api Key = pan and Value = HGBNV1278N</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = marital_status And Value = married && PD Api Key = maritalStatus and Value = Married]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = education_level And Value = graduate && PD Api Key = education and Value = Graduate</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = marital_status And Value = married && PD Api Key = maritalStatus and Value = Married</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road]]>
+              <![CDATA[<span style='color:orange;'>BF Api Key = no_of_dependents And Value = null && PD Api Key = dependent and Value = </span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_pin_code And Value = 400016 && PD Api Key = pincode and Value = 400016</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_ownership_status And Value = owned && PD Api Key = ownership and Value = Owned]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_city And Value = Mori Road && PD Api Key = city and Value = Mori Road</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = cibil_score And Value = 780 && PD Api Key = cibilScore and Value = 780]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_state And Value = MAHARASHTRA && PD Api Key = state and Value = Maharashtra</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = details.code And Value = [629f5955d4ljznq, 629f5955l51n8qz] && PD Api Key = code and Value = [62626bc2gi3cy, 62626c580b883]]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_ownership_status And Value = owned && PD Api Key = ownership and Value = Owned</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = first_name And Value = [Guarantor, Partner] && PD Api Key = name and Value = [Partner One, Guarantor Test]]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = cibil_score And Value = 780 && PD Api Key = cibilScore and Value = 780</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = email And Value = [, ] && PD Api Key = email and Value = [, ]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = details.code And Value = [629f5955d4ljznq, 629f5955l51n8qz] && PD Api Key = code and Value = [62626bc2gi3cy, 62626c580b883]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = mobile_no And Value = [6665333444, 6777666353] && PD Api Key = mobileNo and Value = [6777666353, 6665333444]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = first_name And Value = [Guarantor, Partner] && PD Api Key = name and Value = [Partner One, Guarantor Test]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = dob And Value = [11-04-1992, 16-02-1992] && PD Api Key = dob and Value = [16-02-1992, 11-04-1992]]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = email And Value = [, ] && PD Api Key = email and Value = [, ]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = gender And Value = [female, male] && PD Api Key = gender and Value = [Male, Female]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = mobile_no And Value = [6665333444, 6777666353] && PD Api Key = mobileNo and Value = [6777666353, 6665333444]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = pan And Value = [AVXPS6000S, AWEPV9171O] && PD Api Key = pan and Value = [AWEPV9171O, AVXPS6000S]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = dob And Value = [11-04-1992, 16-02-1992] && PD Api Key = dob and Value = [16-02-1992, 11-04-1992]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = education_level And Value = [null, null] && PD Api Key = education and Value = [, ]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = gender And Value = [female, male] && PD Api Key = gender and Value = [Male, Female]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = marital_status And Value = [null, null] && PD Api Key = maritalStatus and Value = [, ]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = pan And Value = [AVXPS6000S, AWEPV9171O] && PD Api Key = pan and Value = [AWEPV9171O, AVXPS6000S]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = cibil_score And Value = [0, 0] && PD Api Key = cibilScore and Value = [, ]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = education_level And Value = [null, null] && PD Api Key = education and Value = [, ]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_city And Value = [Karur West, Karur West] && PD Api Key = city and Value = [Karur West, Karur West]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = marital_status And Value = [null, null] && PD Api Key = maritalStatus and Value = [, ]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = address_state And Value = [null, null] && PD Api Key = state and Value = [Tamil Nadu, Tamil Nadu]]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = cibil_score And Value = [0, 0] && PD Api Key = cibilScore and Value = [, ]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = originator_id And Value = 1 && PD Api Key = hardcode_Value and Value = 1]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = address_city And Value = [Karur West, Karur West] && PD Api Key = city and Value = [Karur West, Karur West]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = originator_name And Value = Epimoney && PD Api Key = hardcode_Value and Value = Epimoney]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = address_state And Value = [null, null] && PD Api Key = state and Value = [Tamil Nadu, Tamil Nadu]</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = product And Value = TERM && PD Api Key = hardcode_Value and Value = TERM]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = originator_id And Value = 1 && PD Api Key = hardcode_Value and Value = 1</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = partner_name And Value = Flipkart && PD Api Key = hardcode_Value and Value = EpiMoney]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = originator_name And Value = Epimoney && PD Api Key = hardcode_Value and Value = Epimoney</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = repayment_frequency And Value = monthly && PD Api Key = hardcode_Value and Value = monthly]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = product And Value = TERM && PD Api Key = hardcode_Value and Value = TERM</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = employment_type And Value = self_employed && PD Api Key = hardcode_Value and Value = self_employed]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = partner_name And Value = Flipkart && PD Api Key = hardcode_Value and Value = EpiMoney</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_median_bto And Value = 279520.93 && PD Api Key = median_bto and Value = 279520.93]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = repayment_frequency And Value = monthly && PD Api Key = hardcode_Value and Value = monthly</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_net_income And Value = 23759.28 && PD Api Key = bto_net_income and Value = 23759.28]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = employment_type And Value = self_employed && PD Api Key = hardcode_Value and Value = self_employed</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_foir And Value = 4751.86 && PD Api Key = foir and Value = 4751.86]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = eligibility_median_bto And Value = 279520.93 && PD Api Key = median_bto and Value = 279520.93</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_roi And Value = 18 && PD Api Key = bto_roi and Value = 18.00]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = eligibility_net_income And Value = 23759.28 && PD Api Key = bto_net_income and Value = 23759.28</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_tenure And Value = 12 && PD Api Key = customer_selected_tenure and Value = 24]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = eligibility_foir And Value = 4751.86 && PD Api Key = foir and Value = 4751.86</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_abb_foir And Value = 70 && PD Api Key = abb_foir and Value = 70.00]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = eligibility_roi And Value = 18 && PD Api Key = bto_roi and Value = 18.00</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_proposed_serviceable_emi And Value = 11883.68 && PD Api Key = bto_serviceable_emi and Value = -5451.58]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = eligibility_tenure And Value = 12 && PD Api Key = customer_selected_tenure and Value = 24</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_abb_roi And Value = 18 && PD Api Key = abb_roi and Value = 18.00]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = eligibility_abb_foir And Value = 70 && PD Api Key = abb_foir and Value = 70.00</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = abb_based_eligibility And Value = 238034.99 && PD Api Key = abb_customer_based_eligibility and Value = 238034.99]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = eligibility_proposed_serviceable_emi And Value = 11883.68 && PD Api Key = bto_serviceable_emi and Value = -5451.58</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = eligibility_pos_multiplier And Value = 1.2 && PD Api Key = pos_multiplier and Value = 1.20]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = eligibility_abb_roi And Value = 18 && PD Api Key = abb_roi and Value = 18.00</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = foir_calculation And Value = 4751.86 && PD Api Key = foir and Value = 4751.86]]>
+              <![CDATA[<span style='color:green;'> BF Api Key = abb_based_eligibility And Value = 238034.99 && PD Api Key = abb_customer_based_eligibility and Value = 238034.99</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are identical.]]>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
             </line>
             <line>
-              <![CDATA[BF Api Key = existing_emi_calculation And Value = 24459 && PD Api Key = existing_emi and Value = 24459.00]]>
+              <![CDATA[<span style='color:red;'> BF Api Key = eligibility_pos_multiplier And Value = 1.2 && PD Api Key = pos_multiplier and Value = 1.20</span>]]>
             </line>
             <line>
-              <![CDATA[Both keys are valid and the responses are different.]]>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = pos_loan_eligibility And Value = null && PD Api Key = industry_margin and Value = 8.00</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = eligibility_ecom_payout_sales And Value = null && PD Api Key =  industry_margin and Value = 8.00</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = eligibility_ecom_payout_multiplier And Value = null && PD Api Key = pos_payout_multiplier and Value = null</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = ecom_payout_loan_eligibility And Value = null && PD Api Key = ecom_payout_eligibility and Value = null</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:green;'> BF Api Key = foir_calculation And Value = 4751.86 && PD Api Key = foir and Value = 4751.86</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:green;'> Both keys are valid and the responses are identical.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:red;'> BF Api Key = existing_emi_calculation And Value = 24459 && PD Api Key = existing_emi and Value = 24459.00</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:red;'> Both keys are valid and the responses are different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = ecom_multiplier And Value = null && PD Api Key = ecom_multiplier and Value = null</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = capped_abb_eligibility And Value = null && PD Api Key = capped_abb_eligibility and Value = 238034.99</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = capped_banking_eligibility And Value = null && PD Api Key = capped_banking_eligibility and Value = -109197.30</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = capped_ecom_multiplier_eligibility And Value = null && PD Api Key = capped_ecom_multiplier_eligibility and Value = null</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = capped_ecom_payout_eligibility And Value = null && PD Api Key = capped_ecom_payout_eligibility and Value = null</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = principal_outstanding And Value = null && PD Api Key = principal_outstanding and Value = null</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'>BF Api Key = bank_code_colender And Value = null && PD Api Key = bankId and Value = 26</span>]]>
+            </line>
+            <line>
+              <![CDATA[<span style='color:orange;'> Both keys are valid and the responses are Different.</span>]]>
             </line>
           </reporter-output>
         </test-method> <!-- getRequestMethod -->
-        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:Bifrost_Automation.Bifrost_Pd_Api@470a696f]" started-at="2024-06-13T23:13:17 IST" name="onTestFailure" finished-at="2024-06-13T23:13:17 IST" duration-ms="11" status="PASS">
+        <test-method is-config="true" signature="onTestFailure(org.testng.ITestResult)[pri:0, instance:Bifrost_Automation.Bifrost_Pd_Api@470a696f]" started-at="2024-06-14T00:09:01 IST" name="onTestFailure" finished-at="2024-06-14T00:09:01 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
