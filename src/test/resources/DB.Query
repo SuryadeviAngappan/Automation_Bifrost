@@ -1,0 +1,84 @@
+name= select name from loan_applicant_detail where mobile_no=\"%s\";
+email=select email from loan_applicant_detail where mobile_no=\"%s\";
+mobile_no=select mobile_no from loan_applicant_detail where loan_code=\"%s\";
+loancode=select loan_code from loan_applicant_detail where mobile_no=\"%s\";
+ammount=
+dob=select dob from loan_applicant_detail where mobile_no=\"%s\";
+gender=select gender from loan_applicant_detail where mobile_no=\"%s\";
+address_flat_no=select address_flat_no from loan_applicant_detail where mobile_no=\"%s\";  
+address_building=select address_building from loan_applicant_detail where mobile_no=\"%s\";   
+address_area=select address_area from loan_applicant_detail where mobile_no=\"%s\";   
+address_city=select address_city from loan_applicant_detail where mobile_no=\"%s\";   
+address_state=select address_state from loan_applicant_detail where mobile_no=\"%s\";  
+address_pincode=select address_pincode from loan_applicant_detail where mobile_no=\"%s\";  
+address_ownership_status=select address_ownership_status  from loan_applicant_detail where mobile_no=\"%s\";  
+pan_no=select pan_no from loan_applicant_detail where mobile_no=\"%s\"; 
+otp=select otp from otp_user where mobile_no=\"%s\" order by id DESC ; 
+date_of_incorporation=select date_of_incorporation from loan_business_detail where loan_code=\"%s\"; 
+business_name=select business_name from loan_business_detail where loan_code=\"%s\"; 
+business_address_pincode=select address_pincode from loan_applicant_detail where mobile_no=\"%s\"; 
+business_address_building=select address_building from loan_business_detail where loan_code=\"%s\"; 
+business_address_area=select address_area from loan_business_detail where loan_code=\"%s\"; 
+business_address_city=select address_city from loan_business_detail where loan_code=\"%s\";
+business_address_state=select address_state from loan_business_detail where loan_code=\"%s\";
+drug_license_no=select drug_license_no from loan_business_detail where loan_code=\"%s\";
+fssai_no=select fssai_no from loan_business_detail where loan_code=\"%s\";
+monthly_total_sales=select monthly_total_sales from loan_finance_detail where loan_code=\"%s\";
+has_gst_registered=
+business_address_ownership_status=select address_ownership_status from loan_business_detail where loan_code=\"%s\";
+business_vintage=select business_vintage from loan_business_detail where loan_code=\"%s\";
+is_salaried=select is_salaried from loan_applicant_detail where loan_code=\"%s\";
+nature_of_business=select nature_of_business from loan_business_detail where loan_code=\"%s\";
+selling_products=select selling_products from loan_business_detail where loan_code=\"%s\";
+is_current_account_available=select is_current_account_available from loan_applicant_detail where loan_code=\"%s\";
+steps_config
+is_active
+code
+cibil_score=select cibil_score from loan_applicant_detail where loan_code=\"%s\";
+consent_id=select consent_id from loan_aa_consent_details where loan_code=\"%s\";
+status_user_consent_details=SELECT status FROM flexiloans_aa_stage_db.user_consent_details where consent_id=\"%s\";
+status_fiu_transaction_session=select status from flexiloans_aa_stage_db.fiu_transaction_session where consent_id=\"%s\";
+Count_fip_transaction_details=select count(fiu_session_id)from flexiloans_aa_stage_db.fip_transaction_details where fiu_session_id=\"%s\";
+session_id=select session_id from flexiloans_aa_stage_db.fiu_transaction_session where consent_id=\"%s\";
+aa_db_trn_cnt=select aa_db_trn_cnt from trn_details_count where session_id=\"%s\";
+fl_bank_db_cnt=select fl_bank_db_cnt from trn_details_count where session_id=\"%s\";
+bank_DB_transaction_count=select count(id) from bank_db_staging.bank_account_transactions bat where bank_account_summary_id in ( select bas.id from bank_db_staging.bank_account_summary bas where loan_code = \"%s\" ) group by bank_account_summary_id;
+BNPL_01=UPDATE loan_applicant_detail set cibil_score='800'where loan_code=\"%s\";
+BNPL_02=update loan_application_metadata set approval_policy = 'BNPL' where loan_code=\"%s\";
+BNPL_03=INSERT INTO risk_grading (loan_code, final_grade, final_score,risk_type, metadata, version, is_active, is_thick_cibil, is_banking,C_B_grade, B_grade, C_grade) VALUES(\"%s\", 'A', NULL, 'C', NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL);
+BNPL_04=INSERT INTO risk_grading_final (loan_code, final_grade,final_score, risk_type,  is_thick_cibil, is_banking, C_B_grade,B_grade, C_grade) VALUES(\"%s\", 'A', NULL, 'C', NULL, NULL, NULL, NULL, 'A');
+
+BNPL_05=INSERT INTO cre_rule_status (loan_code, partner_code,guarantor_code, cre_reject_status, rule7_gold_loan_count,rule6_numRecentAccount, rule7_other_loan_count,uid) values(\"%s\",NULL,NULL,0,6,8,5,'8e4277d7-aea8-4d7a-815c-d8da3f3e55a1');
+
+BNPL_06=UPDATE  cre_rule_status SET rule1_cibil_score ='715',rule1_cibil_score_v3 =NULL, rule1_cibil_score_result = 0  WHERE loan_code=\"%s\";
+
+BNPL_6_1=UPDATE  cre_rule_status SET rule2_overdue_amount=0,rule2_overdue_result=0,rule2_business_overdue_amount= NULL,rule2_credit_card_overdue_amount= NULL WHERE loan_code=\"%s\";
+
+BNPL_6_1_1=UPDATE  cre_rule_status SET  rule2_secured_overdue_amount=NULL , rule2_business_overdue_amount_v3= NULL,rule2_credit_card_overdue_amount_v3= NULL,rule2_overdue_amount_v3= NULL,rule2_secured_overdue_amount_v3=NULl, rule3_negative_trade_result= 0 WHERE loan_code=\"%s\";
+
+BNPL_07=UPDATE  cre_rule_status SET rule3_negative_trades= 0,rule4_negative_dpd_count=0, rule4_negative_dpd_result=0,rule4_negative_tradeline_count=Null,rule5_recent_dpd=0, rule5_recent_dpd_result =0, rule5_total_dpd=4, rule5_dpd_count=Null, rule5_overall_overdue_amount=NULL WHERE loan_code=\"%s\";
+
+BNPL_7_1=UPDATE  cre_rule_status SET rule6_past_negative_dpd_count=3,rule6_past_negative_trade_count=0,rule6_past_recent_result=0, rule6_recent_negative_dpd_count=0,rule6_recent_positive_trade_count=8, rule7_Gold_loan_result=0, rule8_unsecBL_acc_6M_count=NULL, rule8_unsecBL_enq_6M_count=NULL, rule8_unsecBL_gt8Enq_noAcc_result=NULL WHERE loan_code=\"%s\";
+
+BNPL_08=UPDATE  cre_rule_status SET  rule9_unsecBL_overdueAmount=NULL,rule9_unsecBL_overdueAmount_result=NULL, rule10_Negative_Dpd=NULL, rule10_active_accounts=NULL,rule10_final_result=NULL,rule11_tradeline_greater_2=NULL, rule11_unsecBL_acc_6M_count=NULL
+,rule12_BL_PL_HL_Auto_loan_count=NULL,rule12_BL_PL_HL_Auto_loan_result= NULL,success=1 WHERE loan_code=\"%s\";        
+BNPL_09=INSERT INTO risk_grading (loan_code, final_grade, final_score,risk_type, metadata, version,is_active, is_thick_cibil, is_banking, C_B_grade, B_grade, C_grade)VALUES(\"%s\", 'A', NULL, 'C', NULL, NULL, 1, NULL, NULL, NULL,NULL, NULL);        
+BNPL_10=update flexiloans_staging_db.loan_applicant_detail set uid='feb84250-d923-4e25-a876-04e96634bb31' where loan_code=\"%s\";
+BNPL_11=update loan_application_metadata set `is_autolending_eligible`= '1' where loan_code=\"%s\";
+BNPL_12=update cre_rule_status set rule5_overall_overdue_amount = '1234' where loan_code=\"%s\";  
+BNPL_13=update flexiloans_staging_db.loan_applicant_detail set uid='8e4277d7-aea8-4d7a-815c-d8da3f3e55a1' where loan_code=\"%s\";
+BNPL_14=update loan_application_metadata set is_initial_offer_eligible='1'where loan_code=\"%s\";
+risk_grade=update risk_grading_final set final_grade='A' where loan_code=\"%s\";
+
+
+
+
+
+
+
+
+
+
+
+
+
