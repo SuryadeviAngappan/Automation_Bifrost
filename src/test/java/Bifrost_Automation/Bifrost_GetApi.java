@@ -317,10 +317,10 @@ public class Bifrost_GetApi {
 			soft.assertEquals(Bifrost_cin_no, PD_cin,"Bifrost_cin_no and PD_cin Not same");
 			
 			
-		String Bifrost_banking_monthly_bto=bifrostResponse.extract().body().jsonPath().getString("data.company_details.banking_monthly_bto");
+		   String Bifrost_banking_monthly_bto=bifrostResponse.extract().body().jsonPath().getString("data.company_details.banking_monthly_bto");
 			
 			
-		String Bifrost_eligibility_median_bto=bifrostResponse.extract().body().jsonPath().getString("data.company_details.eligibility_median_bto");
+		    String Bifrost_eligibility_median_bto=bifrostResponse.extract().body().jsonPath().getString("data.company_details.eligibility_median_bto");
 			String median_bto_Query ="select median_bto from flexiloans_staging_db.em_loan_eligibility_log where loan_code ='"+loancode+"'";
 			soft.assertEquals(Bifrost_eligibility_median_bto,dataBaseUtil.ExecuteQuery(median_bto_Query),"median_bto not same");
 			

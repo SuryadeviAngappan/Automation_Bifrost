@@ -3,22 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Eligibility_Automation.Smfg_Direct">
+      <class name="Eligibility_Automation.Vivriti_Direct_Topup">
         <methods>
-          <include name="TC_09"/>
-          <include name="TC_10"/>
-          <include name="preCondition"/>
-          <include name="TC_04"/>
-          <include name="TC_03"/>
-          <include name="TC_02"/>
-          <include name="TC_12"/>
           <include name="TC_01"/>
-          <include name="TC_08"/>
-          <include name="TC_07"/>
-          <include name="TC_06"/>
-          <include name="TC_05"/>
+          <include name="preCondition"/>
         </methods>
-      </class> <!-- Eligibility_Automation.Smfg_Direct -->
+      </class> <!-- Eligibility_Automation.Vivriti_Direct_Topup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
