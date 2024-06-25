@@ -1,0 +1,886 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>FexliLoan UI Automation Execution Report</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa -report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Functional Test Execution Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Jun 20, 2024 09:23:05 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_01</p>
+            <p class="text-sm">
+              <span>9:24:00 pm</span> / <span>00:00:02:644</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC_01</h5>
+<span class='badge badge-success'>06.20.2024 9:24:00 pm</span>
+<span class='badge badge-danger'>06.20.2024 9:24:03 pm</span>
+<span class='badge badge-default'>00:00:02:644</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:00 pm</td>
+        <td>
+          test script execution started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:00 pm</td>
+        <td>
+          TC_01 : To verify the final capping if policy is DIRECT_TOPUP , ALL risk grade , no experiment, ABB & BTO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:00 pm</td>
+        <td>
+           Test Loancode =655f47d2ddmwc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:24:03 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NumberFormatException: For input string: "[summary:[EpiMoney:null, Vivriti Capital:null], grouped:[EpiMoney:[DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:DIRECT, colender_id:1, experiment_id:42, risk_grade:A, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:36, risk_grade_tenure:36, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:02.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:EpiMoney, experiment_name:Pay_Later_Program]]], Vivriti Capital:[VIVRITI_DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:VIVRITI_DIRECT, colender_id:8, experiment_id:42, risk_grade:A, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:36, risk_grade_tenure:36, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:02.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:Vivriti Capital, experiment_name:Pay_Later_Program]]]]]"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_01</p>
+            <p class="text-sm">
+              <span>9:24:03 pm</span> / <span>00:00:01:681</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC_01</h5>
+<span class='badge badge-success'>06.20.2024 9:24:03 pm</span>
+<span class='badge badge-danger'>06.20.2024 9:24:05 pm</span>
+<span class='badge badge-default'>00:00:01:681</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:03 pm</td>
+        <td>
+          test script execution started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:03 pm</td>
+        <td>
+          TC_01 : To verify the final capping if policy is DIRECT_TOPUP , ALL risk grade , no experiment, ABB & BTO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:03 pm</td>
+        <td>
+           Test Loancode =655f47d2ddmwc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:24:05 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NumberFormatException: For input string: "[summary:[EpiMoney:null, Vivriti Capital:null], grouped:[EpiMoney:[DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:DIRECT, colender_id:1, experiment_id:42, risk_grade:B, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:36, risk_grade_tenure:36, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:05.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:EpiMoney, experiment_name:Pay_Later_Program]]], Vivriti Capital:[VIVRITI_DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:VIVRITI_DIRECT, colender_id:8, experiment_id:42, risk_grade:B, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:36, risk_grade_tenure:36, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:05.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:Vivriti Capital, experiment_name:Pay_Later_Program]]]]]"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_01</p>
+            <p class="text-sm">
+              <span>9:24:05 pm</span> / <span>00:00:01:596</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC_01</h5>
+<span class='badge badge-success'>06.20.2024 9:24:05 pm</span>
+<span class='badge badge-danger'>06.20.2024 9:24:07 pm</span>
+<span class='badge badge-default'>00:00:01:596</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:05 pm</td>
+        <td>
+          test script execution started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:05 pm</td>
+        <td>
+          TC_01 : To verify the final capping if policy is DIRECT_TOPUP , ALL risk grade , no experiment, ABB & BTO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:05 pm</td>
+        <td>
+           Test Loancode =655f47d2ddmwc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:24:07 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NumberFormatException: For input string: "[summary:[EpiMoney:null, Vivriti Capital:null], grouped:[EpiMoney:[DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:DIRECT, colender_id:1, experiment_id:42, risk_grade:C, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:24, risk_grade_tenure:24, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:06.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:EpiMoney, experiment_name:Pay_Later_Program]]], Vivriti Capital:[VIVRITI_DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:VIVRITI_DIRECT, colender_id:8, experiment_id:42, risk_grade:C, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:24, risk_grade_tenure:24, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:06.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:Vivriti Capital, experiment_name:Pay_Later_Program]]]]]"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_01</p>
+            <p class="text-sm">
+              <span>9:24:07 pm</span> / <span>00:00:01:718</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC_01</h5>
+<span class='badge badge-success'>06.20.2024 9:24:07 pm</span>
+<span class='badge badge-danger'>06.20.2024 9:24:08 pm</span>
+<span class='badge badge-default'>00:00:01:718</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:07 pm</td>
+        <td>
+          test script execution started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:07 pm</td>
+        <td>
+          TC_01 : To verify the final capping if policy is DIRECT_TOPUP , ALL risk grade , no experiment, ABB & BTO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:07 pm</td>
+        <td>
+           Test Loancode =655f47d2ddmwc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:24:08 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NumberFormatException: For input string: "[summary:[EpiMoney:null, Vivriti Capital:null], grouped:[EpiMoney:[DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:DIRECT, colender_id:1, experiment_id:42, risk_grade:D, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:24, risk_grade_tenure:24, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:08.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:EpiMoney, experiment_name:Pay_Later_Program]]], Vivriti Capital:[VIVRITI_DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:VIVRITI_DIRECT, colender_id:8, experiment_id:42, risk_grade:D, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:24, risk_grade_tenure:24, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:08.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:Vivriti Capital, experiment_name:Pay_Later_Program]]]]]"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_01</p>
+            <p class="text-sm">
+              <span>9:24:08 pm</span> / <span>00:00:01:603</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC_01</h5>
+<span class='badge badge-success'>06.20.2024 9:24:08 pm</span>
+<span class='badge badge-danger'>06.20.2024 9:24:10 pm</span>
+<span class='badge badge-default'>00:00:01:603</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:08 pm</td>
+        <td>
+          test script execution started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:08 pm</td>
+        <td>
+          TC_01 : To verify the final capping if policy is DIRECT_TOPUP , ALL risk grade , no experiment, ABB & BTO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:08 pm</td>
+        <td>
+           Test Loancode =655f47d2ddmwc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:24:10 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NumberFormatException: For input string: "[summary:[EpiMoney:null, Vivriti Capital:null], grouped:[EpiMoney:[DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:DIRECT, colender_id:1, experiment_id:42, risk_grade:E, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:12, risk_grade_tenure:12, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:10.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:EpiMoney, experiment_name:Pay_Later_Program]]], Vivriti Capital:[VIVRITI_DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:VIVRITI_DIRECT, colender_id:8, experiment_id:42, risk_grade:E, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:12, risk_grade_tenure:12, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:10.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:Vivriti Capital, experiment_name:Pay_Later_Program]]]]]"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">TC_01</p>
+            <p class="text-sm">
+              <span>9:24:10 pm</span> / <span>00:00:01:610</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">TC_01</h5>
+<span class='badge badge-success'>06.20.2024 9:24:10 pm</span>
+<span class='badge badge-danger'>06.20.2024 9:24:12 pm</span>
+<span class='badge badge-default'>00:00:01:610</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:10 pm</td>
+        <td>
+          test script execution started
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:10 pm</td>
+        <td>
+          TC_01 : To verify the final capping if policy is DIRECT_TOPUP , ALL risk grade , no experiment, ABB & BTO
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>9:24:10 pm</td>
+        <td>
+           Test Loancode =655f47d2ddmwc
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>9:24:12 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.NumberFormatException: For input string: "[summary:[EpiMoney:null, Vivriti Capital:null], grouped:[EpiMoney:[DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:DIRECT, colender_id:1, experiment_id:42, risk_grade:NA, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:18, risk_grade_tenure:18, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:11.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:EpiMoney, experiment_name:Pay_Later_Program]]], Vivriti Capital:[VIVRITI_DIRECT:[[loan_code:655f47d2ddmwc, stage:FRESH, policy:VIVRITI_DIRECT, colender_id:8, experiment_id:42, risk_grade:NA, risk_type:C, is_thick_cibil:null, nature_of_business:null, product_id:null, industry_margin:null, customer_margin:null, margin_used:8.5, customer_selected_tenure:18, risk_grade_tenure:18, median_bto:null, bto_net_income:null, cibil_emis:0, recent_disbursal_emi:0, existing_emi:null, total_outstanding:null, primary_abb_od_cc_flag:null, max_bto_summary_id:null, bto_serviceable_emi:null, foir:null, bto_roi:null, abb:null, abb_net_income:null, abb_foir:null, abb_serviceable_emi:null, abb_non_sigma_median:null, abb_non_sigma_foir:null, abb_non_sigma_serviceable_emi:null, abb_od_cc_balance_limit:null, abb_roi:null, abb_non_sigma_roi:null, ecom_payout_trend:null, ecom_payout_median_sales:null, ecom_payout_q1_sales:null, ecom_payout_q2_sales:null, ecom_payout_multiplier:null, ecom_payout_dscr:null, ecom_banking_trend:null, ecom_banking_median_sales:null, ecom_banking_q1_sales:null, ecom_banking_q2_sales:null, ecom_banking_multiplier:null, ecom_banking_dscr:null, payout_multiplier:null, payout_median_sales:null, payout_q1_sales:null, payout_q2_sales:null, payout_sales_trend:null, rented_rented_flag:1, ntc_flag:0, mobile_computer_seller_flag:null, pos_payout_merchant_tier:null, pos_payout_multiplier:null, pos_payout_median_sales:null, pos_banking_median_sales:null, pos_multiplier:1.2, banking_customer_tenure_eligibility:null, banking_risk_grading_eligibility:null, banking_eligibility:null, haircut_banking_eligibility:null, capped_banking_eligibility:null, capped_lower_banking_eligibility:null, capped_banking_eligibility_message:null, abb_customer_based_eligibility:null, abb_risk_grading_eligibility:null, abb_eligibility:null, haircut_abb_eligibility:null, capped_abb_eligibility:null, capped_lower_abb_eligibility:null, capped_abb_eligibility_message:null, abb_non_sigma_customer_based_eligibility:null, abb_non_sigma_risk_grading_eligibility:null, abb_non_sigma_eligibility:null, haircut_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility:null, capped_lower_abb_non_sigma_eligibility:null, capped_abb_non_sigma_eligibility_message:null, ecom_payout_eligibility:null, capped_ecom_payout_eligibility:null, capped_lower_ecom_payout_eligibility:null, capped_ecom_payout_eligibility_message:null, ecom_banking_eligibility:null, capped_ecom_banking_eligibility:null, capped_lower_ecom_banking_eligibility:null, capped_ecom_banking_eligibility_message:null, pos_payout_eligibility:null, capped_pos_payout_eligibility:null, capped_lower_pos_payout_eligibility:null, capped_pos_payout_eligibility_message:null, pos_banking_eligibility:null, capped_pos_banking_eligibility:null, capped_lower_pos_banking_eligibility:null, capped_pos_banking_eligibility_message:null, pos_eligibility:null, capped_pos_eligibility:null, capped_lower_pos_eligibility:null, loan_amount_eligibility:0, capped_loan_amount_eligibility:null, capped_lower_loan_amount_eligibility:null, partner_offer_eligibility:null, capped_partner_offer_eligibility:null, capped_lower_partner_offer_eligibility:null, escrow_deposit_multiplier_eligibility:null, capped_escrow_deposit_multiplier_eligibility:null, capped_lower_escrow_deposit_multiplier_eligibility:null, escrow_deposit_multiplier_median_sales:null, escrow_deposit_multiplier:null, payout_multiplier_eligibility:null, capped_payout_multiplier_eligibility:null, capped_lower_payout_multiplier_eligibility:null, capped_pos_eligibility_message:null, final_eligibility:null, final_eligibility_rounded:null, final_lower_eligibility:null, final_lower_eligibility_rounded:null, created_at:2024-06-20T15:53:20.000Z, updated_at:2024-06-20T15:54:11.000Z, partner_tier_payout_median:null, partner_tier_eligibility:null, capped_partner_tier_eligibility:null, capped_lower_partner_tier_eligibility:null, capped_partner_tier_eligibility_message:null, partner_tier:null, ecom_multiplier_trend:null, ecom_multiplier_median_sales:null, ecom_multiplier_q1_sales:null, ecom_multiplier_q2_sales:null, ecom_multiplier:null, ecom_multiplier_dscr:null, ecom_multiplier_eligibility:null, capped_ecom_multiplier_eligibility:null, capped_lower_ecom_multiplier_eligibility:null, basic_principal_repaid:null, principal_repaid_multiplier:null, principal_repaid_multiplier_eligibility:null, capped_principal_repaid_multiplier_eligibility:null, capped_lower_principal_repaid_multiplier_eligibility:null, capping_reasons:[:], fixed_amount_eligibility:10000000, capped_fixed_amount_eligibility:null, capped_lower_fixed_amount_eligibility:null, principal_outstanding:null, grade_multiplier:null, segment_a_eligibility:0, segment_b_eligibility:0, segment_c_eligibility:0, segment_d_eligibility:0, segment_e_eligibility:0, bureau_final_eligibility:null, final_MOB:0, credit_card_utilization:0, classification:Secured, calculated_loan_amount:0, bureau_eligibility_multiplier:0, pd_selected_tenure:null, number_of_emi_paid:null, topup_multiplier:null, pos_topup_multiplier:null, previous_disbursement_amount:0, capped_topup_eligibility:null, capped_lower_topup_eligibility:null, renewal_multiplier:null, capped_renewal_eligibility:null, capped_lower_renewal_eligibility:null, pos_renewal_eligibility:null, capped_bureau_eligibility:null, risk_pricing:{}, final_reducing_rate:null, final_flat_rate:null, product_name:null, colender_name:Vivriti Capital, experiment_name:Pay_Later_Program]]]]]"
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:87)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</textarea>
+          
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">java.lang.NumberFormatException</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NumberFormatException</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:24:00 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='1'>TC_01</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:24:03 pm</td>
+<td>
+<a href="#" class="linked" test-id='2' id='2'>TC_01</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:24:05 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>TC_01</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:24:07 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>TC_01</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:24:08 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>TC_01</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>21:24:10 pm</td>
+<td>
+<a href="#" class="linked" test-id='6' id='6'>TC_01</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Jun 20, 2024 09:23:05 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Jun 20, 2024 09:24:12 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Tests Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Tests Failed</p>
+<h3>6</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Tests</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> tests passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>6</b> tests failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-6">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Log events</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='events-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> events passed</small></div>
+<div>
+<small data-tooltip='25%'><b>6</b> events failed,
+<b data-tooltip='%'>18</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"TC_01":2.644,"TC_01":1.681,"TC_01":1.596,"TC_01":1.718,"TC_01":1.603,"TC_01":1.61
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>Host name</td>
+<td>localhost</td>
+</tr>
+<tr>
+<td>Environemnt</td>
+<td>Staging-QA</td>
+</tr>
+<tr>
+<td>user</td>
+<td>SuryaDevi_Angappan</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 6,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 0,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 0,
+warningGrandChild: 0,
+skipGrandChild: 0,
+infoGrandChild: 0,
+eventsCount: 5,
+passEvents: 0,
+failEvents: 6,
+warningEvents: 0,
+skipEvents: 0,
+infoEvents: 18
+};
+</script>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@d6562a79075e061305ccfdb82f01e5e195e2d307/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>

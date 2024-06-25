@@ -40,11 +40,12 @@ public class DataBaseUtility
 	public static void connectToDB() throws Throwable {
 
 		try {
-		Class.forName("com.mysql.jdbc.Driver");
-			//Class.forName("com.mysql.cj.jdbc.Driver");
+//		Class.forName("com.mysql.jdbc.Driver");
+			Class.forName("com.mysql.cj.jdbc.Driver");
 			DriverManager.setLoginTimeout(10);
 
-			con = DriverManager.getConnection(ObjectReaders.readers.getQA_DBURL(), ObjectReaders.readers.getDBUSERNAME(), ObjectReaders.readers.getDBPASSWORD());
+//			con = DriverManager.getConnection(ObjectReaders.readers.getQA_DBURL(), ObjectReaders.readers.getDBUSERNAME(), ObjectReaders.readers.getDBPASSWORD());
+			con = DriverManager.getConnection(ObjectReaders.readers.getQA_Dev_DBURL(), ObjectReaders.readers.getQA_Dev_DBUSERNAME(), ObjectReaders.readers.getQA_Dev_DBPASSWORD());
 
 			//con = DriverManager.getConnection("jdbc:mysql://flexiloans-staging-db.ckeu8iwmmeka.ap-south-1.rds.amazonaws.com:3306/flexiloans_staging_db?useSSL=false&allowPublicKeyRetrieval=true", "username", "pass");
 			

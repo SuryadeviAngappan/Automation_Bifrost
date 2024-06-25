@@ -77,6 +77,7 @@ public class Doc {
 		DataBaseUtility.executeUpdateQuery(query3); 
 		String b_name="update loan_business_detail set business_name='"+name+"' where loan_code='"+loancode+"'";
 		DataBaseUtility.executeUpdateQuery(b_name); 
+				
 
 		File file= new File("."+Filepath.BankStatementFilePath.toString());
 		Response response = given().contentType("multipart/form-data").multiPart("file",file)

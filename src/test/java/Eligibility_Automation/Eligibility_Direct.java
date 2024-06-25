@@ -28,8 +28,8 @@ public class Eligibility_Direct {
 	String check_policy="https://console-staging.flexiloans.com/policy/check-policies/";
 	String eligibility="https://console-staging.flexiloans.com/eligibility/v2";
 	Doc doc = new Doc();
-	Create_New_Loancode lc = new Create_New_Loancode();
-	String loancode;
+//	Create_New_Loancode lc = new Create_New_Loancode();
+	String loancode ="65423a678p7qj";
 
 	public void Direct_Policy() 
 	{
@@ -58,7 +58,7 @@ public class Eligibility_Direct {
 	{
 
 		DataBaseUtility.connectToDB();
-		loancode=lc.IP_Qalified();
+//		loancode=lc.IP_Qalified();
 		Direct_Policy();
 		doc.BS(loancode);
 		Thread.sleep(40000);
@@ -140,11 +140,6 @@ public class Eligibility_Direct {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 			System.out.println("Eligibility is not getting calculated properly..!!!");
 		}
-
-
-
-
-
 	}
 
 

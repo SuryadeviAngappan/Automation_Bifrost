@@ -69,7 +69,7 @@ BNPL_12=update cre_rule_status set rule5_overall_overdue_amount = '1234' where l
 BNPL_13=update flexiloans_staging_db.loan_applicant_detail set uid='8e4277d7-aea8-4d7a-815c-d8da3f3e55a1' where loan_code=\"%s\";
 BNPL_14=update loan_application_metadata set is_initial_offer_eligible='1'where loan_code=\"%s\";
 risk_grade=update risk_grading_final set final_grade='A' where loan_code=\"%s\";
-
+UPDATE flexiloans_staging_db.loan_finance_detail SET monthly_total_sales = '500000' WHERE (loan_code = '667533a41gp82');
 
 
 

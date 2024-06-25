@@ -62,7 +62,10 @@ public interface ConfigReaders
     String getDev_QA_Password()throws Throwable;
 	String getNykaa_Token()throws Throwable;
 	String getFlow_AHL_app()throws Throwable;
-	String getPatym()throws Throwable;;
+	String getPatym()throws Throwable;
+	String getQA_Dev_DBURL() throws Throwable;
+	String getQA_Dev_DBUSERNAME() throws Throwable;
+	String getQA_Dev_DBPASSWORD() throws Throwable;
 	
 	
 	

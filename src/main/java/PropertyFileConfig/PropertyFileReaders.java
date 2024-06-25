@@ -620,6 +620,33 @@ public  class PropertyFileReaders implements ConfigReaders
        		prop.load(file);
        		return prop.getProperty("Paytm");
 		}
+
+		@Override
+		public String getQA_Dev_DBURL() throws Throwable {
+			filepath=Filepath.QAPropertiesPath;
+       		FileInputStream file = new FileInputStream(filepath);
+       		Properties prop = new Properties();
+       		prop.load(file);
+       		return prop.getProperty("QA_Dev_DBURL");
+		}
+
+		@Override
+		public String getQA_Dev_DBUSERNAME() throws Throwable {
+			filepath=Filepath.QAPropertiesPath;
+       		FileInputStream file = new FileInputStream(filepath);
+       		Properties prop = new Properties();
+       		prop.load(file);
+       		return prop.getProperty("QA_Dev_DBUSERNAME");
+		}
+
+		@Override
+		public String getQA_Dev_DBPASSWORD() throws Throwable {
+			filepath=Filepath.QAPropertiesPath;
+       		FileInputStream file = new FileInputStream(filepath);
+       		Properties prop = new Properties();
+       		prop.load(file);
+       		return prop.getProperty("QA_Dev_DBPASSWORD");
+		}
 		
 		
 		}
