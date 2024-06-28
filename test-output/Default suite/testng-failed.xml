@@ -3,25 +3,25 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Eligibility_Automation.Eligibility_Direct_TopUp">
+      <class name="Eligibility_Automation.Vivriti_Direct_Topup">
         <methods>
           <include name="preCondition"/>
+          <include name="TC_09" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="TC_07" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="TC_08" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_12" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_01" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_10" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_05" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_13" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_02" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="TC_10" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="TC_11" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="TC_05" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="TC_06" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_14" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_03" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_11" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_09" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_06" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_07" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_04" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_08" invocation-numbers="0 1 2 3 4 5"/>
         </methods>
-      </class> <!-- Eligibility_Automation.Eligibility_Direct_TopUp -->
+      </class> <!-- Eligibility_Automation.Vivriti_Direct_Topup -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

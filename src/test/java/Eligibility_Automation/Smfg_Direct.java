@@ -29,7 +29,6 @@ public class Smfg_Direct {
 	Doc doc = new Doc();
 	Create_New_Loancode lc = new Create_New_Loancode();
 	String loancode = lc.Fresh_Lead();
-	//String loancode ="6547308e65mwb";
 	
 
 	public void Smfg_Directpolicy(String loancode) 
@@ -44,6 +43,7 @@ public class Smfg_Direct {
 				+ "SET lam.is_topup = '0',\n"
 				+ "    la.source_of_lead = 'direct',\n"
 				+ "    la.partner_code = '600c32152wnm3',\n"
+				+ "    la.application_status = 'IP_FRESH_REGISTRATION',\n"
 				+ "    lbd.year_of_incorporation = '2022',\n"
 				+ "    lbd.is_rco = '1',\n"
 				+ "    lbd.legal_status = 'proprietorship',\n"
@@ -74,7 +74,7 @@ public class Smfg_Direct {
 	{
 
 		DataBaseUtility.connectToDB();
-//		loancode=lc.IP_Qalified();
+		//loancode=lc.IP_Qalified();
 		doc.BS(loancode);
 		Thread.sleep(40000);
 		Smfg_Directpolicy(loancode);
@@ -129,10 +129,10 @@ public class Smfg_Direct {
 		// BTO Capping
 
 		if (BTO_Capping <= 1500000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("NA"))) {
-			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade  + "when fixed capping =" +FixedCapping+ " Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade  + " when fixed capping =" +FixedCapping+ " Eligibility is getting calculated properly..!!!");
 			System.out.println("BTO Capping = " + BTO_Capping + " And " + "Grade = " + grade +  "Eligibility is getting calculated properly..!!!");
 		} else if (BTO_Capping <= 1000000.00 && grade.equalsIgnoreCase("E")) {
-			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade  + "when fixed capping =" +FixedCapping1+  " Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade  + " when fixed capping =" +FixedCapping1+  " Eligibility is getting calculated properly..!!!");
 			System.out.println("BTO Capping = " + BTO_Capping + " And " + "Grade =" + grade + "Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -155,7 +155,7 @@ public class Smfg_Direct {
 
 		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B")) && abb_Capping <= gradeACapping ||
 				(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && abb_Capping <= gradeNACapping) {
-			ListnerClass.reportLog("ABB Capping = " + abb_Capping + " And Grade = " + grade  + "when fixed capping =" +FixedCapping+ " Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("ABB Capping = " + abb_Capping + " And Grade = " + grade  + " when fixed capping =" +FixedCapping+ " Eligibility is getting calculated properly..!!!");
 			System.out.println("ABB Capping = " + abb_Capping + " And Grade = " + grade  +  " Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -213,7 +213,7 @@ public class Smfg_Direct {
 		switch (grade.toUpperCase()) {
 		case "A":
 			if (capping <= 1000000.00) {
-				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				eligibilityMessage = "Eligibility is getting calculated properly..!!!";
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
@@ -226,7 +226,7 @@ public class Smfg_Direct {
 			newCapping = capping * (15.0 / 100);
 			reducedCapping = capping - newCapping;
 			if (reducedCapping <= 800000) {
-				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 				eligibilityMessage = "Eligibility is getting calculated properly..!!!";
 			} else {
 				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -240,7 +240,7 @@ public class Smfg_Direct {
 			newCapping = capping * (25.0 / 100);
 			reducedCapping = capping - newCapping;
 			if (reducedCapping <= 600000) {
-				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
 				eligibilityMessage = "Eligibility is getting calculated properly..!!!";
 			} else {
 				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -310,10 +310,10 @@ public class Smfg_Direct {
 			reducedCapping = capping - newCapping;
 
 			if (grade.equalsIgnoreCase("B") && reducedCapping <= 1500000.0) {
-				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				System.out.println("Capping = " + reducedCapping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 			} else if (reducedCapping <= 1000000.0) {
-				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 				System.out.println("Capping = " + reducedCapping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 			} else {
 				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -361,7 +361,7 @@ public void TC_04(String final_grade) throws SQLException
 	switch (grade.toUpperCase()) {
 	case "A":
 		if (capping <= 1000000.00) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("Capping = " + capping + " And Grade = " + grade + " Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -380,7 +380,7 @@ public void TC_04(String final_grade) throws SQLException
 		double newCapping = capping * (cappingPercentage / 100);
 		double reducedCapping = capping - newCapping;
 		if (reducedCapping <= 1000000) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("Capping = " + reducedCapping + " And Grade = " + grade + " Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -430,7 +430,7 @@ public void TC_05(String final_grade) throws SQLException
 	
 	if (grade.equalsIgnoreCase("A")) {
 		if (capping <= 1500000.00) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -446,7 +446,7 @@ public void TC_05(String final_grade) throws SQLException
 		New_capping *= capping;
 		double Reduced_Capping = capping - New_capping;
 		if (Reduced_Capping <= 1000000) {
-			ListnerClass.reportLog("Capping = " + Reduced_Capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping1+"  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + Reduced_Capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping1+"  Eligibility is getting calculated properly..!!!");
 			System.out.println("Capping = " + Reduced_Capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -497,7 +497,7 @@ public void TC_06(String final_grade) throws SQLException
 
 	if (grade.equalsIgnoreCase("A")) {
 		if (capping <= 1000000.00) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 			message = "Eligibility is getting calculated properly..!!!";
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -507,7 +507,7 @@ public void TC_06(String final_grade) throws SQLException
 		newCapping = capping * 0.15;
 		reducedCapping = capping - newCapping;
 		if (reducedCapping <= 800000) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 			message = "Eligibility is getting calculated properly..!!!";
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -517,7 +517,7 @@ public void TC_06(String final_grade) throws SQLException
 		newCapping = capping * 0.25;
 		reducedCapping = capping - newCapping;
 		if (reducedCapping <= 600000) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
 			message = "Eligibility is getting calculated properly..!!!";
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -527,7 +527,7 @@ public void TC_06(String final_grade) throws SQLException
 		newCapping = capping * 0.25;
 		reducedCapping = capping - newCapping;
 		if (reducedCapping <= 0.0) {
-			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping3+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping3+ "  Eligibility is getting calculated properly..!!!");
 			message = "Eligibility is getting calculated properly..!!!";
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -574,7 +574,7 @@ public void TC_07(String final_grade) throws SQLException
 
 	if (grade.equalsIgnoreCase("A")) {
 		if (capping <= cappingThreshold) {
-			ListnerClass.reportLog("BTO Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +cappingThreshold+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("BTO Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +cappingThreshold+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("BTO Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -584,7 +584,7 @@ public void TC_07(String final_grade) throws SQLException
 		if (grade.equalsIgnoreCase("B")) 
 		{
 			reductionPercentage = 0.15;
-			ListnerClass.reportLog("BTO Capping = " + capping + " And " + "Grade = " + grade + "when fixed capping =" +cappingThreshold+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("BTO Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +cappingThreshold+ "  Eligibility is getting calculated properly..!!!");
 
 		} else {
 			reductionPercentage = 0.25;
@@ -606,7 +606,7 @@ public void TC_07(String final_grade) throws SQLException
 		double reducedCapping = capping - newCapping;
 
 		if (reducedCapping <= 0.0) {
-			ListnerClass.reportLog("BTO Capping = " + reducedCapping + " And " + "Grade = " + grade + "when fixed capping =" +reducedCapping+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("BTO Capping = " + reducedCapping + " And " + "Grade = " + grade + " when fixed capping =" +reducedCapping+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("BTO Capping = " + reducedCapping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -656,7 +656,7 @@ public void TC_08(String final_grade) throws SQLException
 
 	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 		if (Reduced_Capping <= 500000) {
-			ListnerClass.reportLog("Capping = " + Reduced_Capping + " And " + "Grade = " + grade + "when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + Reduced_Capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("Capping = " + Reduced_Capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -664,7 +664,7 @@ public void TC_08(String final_grade) throws SQLException
 		}
 	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 		if (Reduced_Capping <= 0.0) {
-			ListnerClass.reportLog("Capping = " + Reduced_Capping + " And " + "Grade ="  + grade + "when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + Reduced_Capping + " And " + "Grade ="  + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("Capping = " + Reduced_Capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -728,7 +728,7 @@ public void TC_09(String Final_grade) throws SQLException
 	                     (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D")) && BTO_Capping <= gradeLimitB;
 
 	if (isEligible) {
-		ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade + "when fixed capping =" +gradeLimitA+ " Eligibility is getting calculated properly..!!!");
+		ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade + " when fixed capping =" +gradeLimitA+ " Eligibility is getting calculated properly..!!!");
 		System.out.println("BTO Capping = " + BTO_Capping + " And Grade = " + grade + " Eligibility is getting calculated properly..!!!");
 	} else {
 		ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -740,7 +740,7 @@ public void TC_09(String Final_grade) throws SQLException
 
 	if (abb_Capping <= 2000000.00) {
 	    if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D")) {
-	    	ListnerClass.reportLog("ABB Capping = " + abb_Capping + " And Grade = " + grade + "when fixed capping =" +gradeLimitB+ " Eligibility is getting calculated properly..!!!");
+	    	ListnerClass.reportLog("ABB Capping = " + abb_Capping + " And Grade = " + grade + " when fixed capping =" +gradeLimitB+ " Eligibility is getting calculated properly..!!!");
 	    	System.out.println("ABB Capping = " + abb_Capping + " And Grade = " + grade + " Eligibility is getting calculated properly..!!!");
 	    } else {
 	    	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -789,7 +789,7 @@ public void TC_10(String final_grade) throws SQLException
 
 
 	if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && BTO_Capping <= 500000.00) {
-		ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade + "when fixed capping =" +FixedCapping+ " Eligibility is getting calculated properly..!!!");
+		ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade + " when fixed capping =" +FixedCapping+ " Eligibility is getting calculated properly..!!!");
 		System.out.println("BTO Capping = " + BTO_Capping + " And Grade = " + grade + " Eligibility is getting calculated properly..!!!");
 	} else {
 		ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");

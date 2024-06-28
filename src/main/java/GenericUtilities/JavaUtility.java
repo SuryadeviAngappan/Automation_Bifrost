@@ -47,18 +47,28 @@ public class JavaUtility{
 		return ("6"+get);
 	}
 
-	public static String randomePan() 
-	{
-		String generatedString2 = RandomStringUtils.randomAlphabetic(5);
-		return (generatedString2+random4numeric()+"A");
-	}
+//	public static String randomePan() 
+//	{
+//		String generatedString2 = RandomStringUtils.randomAlphabetic(5);
+//		return (generatedString2+random4numeric()+"A");
+//	}
+//
+//	public static String randomPanNo() 
+//	{
+//		String pan=RandomStringUtils.randomAlphanumeric(7);
+//		return pan+"B";
+//	}
 
-	public static String randomPanNo() 
-	{
-		String pan=RandomStringUtils.randomAlphanumeric(7);
-		return pan+"B";
-	}
 
+public static String generateRandomPAN() {
+    return RandomStringUtils.randomAlphabetic(3).toUpperCase() + "P" +
+           RandomStringUtils.randomAlphabetic(1).toUpperCase() +
+           RandomStringUtils.randomNumeric(4) +
+           RandomStringUtils.randomAlphabetic(1).toUpperCase();
+}
+
+
+	
 	public static String randomMobileNo() 
 	{
 		String generatedString3 = RandomStringUtils.randomNumeric(9);

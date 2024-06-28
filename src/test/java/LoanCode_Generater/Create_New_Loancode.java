@@ -2,6 +2,7 @@ package LoanCode_Generater;
 
 import java.time.Duration;
 import java.util.List;
+import java.util.Random;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -71,9 +72,8 @@ public class Create_New_Loancode {
         String token=access_token.generateToken("Basic MzBoNjlhaW9xdGYycm9pcjhicGo5ODI5Mmc6c3ZxaWtuY3VnbDNtOGRnNTd0MmJ0OGxmNGhqbWowc2JoZGdndWlyaTluOHMwZ2h2MGxi");
         
         String email=jutil.randomEmailId();
-        String PanNo=jutil.randomePan();
+        String PanNo=jutil.generateRandomPAN();
         String MobileNo=jutil.offerMobileNo();
-        
         
         String body="{\n"
                 + "    \"first_name\": \"Rajat\",\n"
@@ -85,7 +85,7 @@ public class Create_New_Loancode {
                 + "        \"loanApplicant\": {\n"
                 + "            \"dob\": \"1990-07-01\",\n"
                 + "            \"gender\": \"Male\",\n"
-                + "            \"pan_no\": \"EOPPA8922G\",\n"
+                + "            \"pan_no\": \""+PanNo+"\",\n"
                 + "            \"pincode\": \"431515\",\n"
                 + "            \"city\": \"Suchitra Junction\",\n"
                 + "            \"state\": \"Telangana\"\n"
@@ -96,12 +96,16 @@ public class Create_New_Loancode {
                 + "    }\n"
                 + "}";
         
+  
+		
+        
         ValidatableResponse response = given().contentType("application/json").header("Authorization",token).body(body).when().post("https://console-staging.flexiloans.com/unified/lead").then().log().all();
     //return loancode;
         String loancode=response.extract().body().jsonPath().getString("data.loanCode");
         
         return loancode;
-    
     }
+
+	
 	
 }

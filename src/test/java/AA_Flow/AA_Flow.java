@@ -114,7 +114,7 @@ public class AA_Flow extends BaseClass {
 	{
 		
 		Details_4_Page dp = new Details_4_Page(driver);
-		dp.PanNo(jUtil.randomePan());
+		dp.PanNo(jUtil.generateRandomPAN());
 		dp.BusinessPinCode("400001");
 		jse.executeScript("window.scrollBy(0,1000)", "");
 		dp.RentedResident();
