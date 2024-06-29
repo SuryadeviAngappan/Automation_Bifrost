@@ -47,24 +47,12 @@ public class JavaUtility{
 		String get=RandomStringUtils.randomNumeric(10);
 		return ("6"+get);
 	}
-
-
-
-public static String generateRandomPAN() {
-    String part1 = RandomStringUtils.randomAlphabetic(3).toUpperCase();
-    String part2 = RandomStringUtils.randomAlphabetic(1).toUpperCase();
-    String part3 = RandomStringUtils.randomNumeric(4);
-    String part4 = RandomStringUtils.randomAlphabetic(1).toUpperCase();
-    
-    return part1 + "P" + part2 + part3 + part4;
-}
-
-// Example of how to handle a long string literal
-public static String getLongString() {
-    // Breaking a long string literal into multiple lines
-    return "This is a very long string that exceeds the maximum length allowed by the Java " +
-           "compiler, so it needs to be split into smaller chunks to avoid compilation errors.";
-}
+	public static String generateRandomPAN() {
+	    return RandomStringUtils.randomAlphabetic(3).toUpperCase() + "P" +
+	           RandomStringUtils.randomAlphabetic(1).toUpperCase() +
+	           RandomStringUtils.randomNumeric(4) +
+	           RandomStringUtils.randomAlphabetic(1).toUpperCase();
+	}
 
 	
 	public static String randomMobileNo() 
