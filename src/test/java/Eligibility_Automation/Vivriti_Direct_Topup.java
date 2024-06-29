@@ -66,9 +66,10 @@ public class Vivriti_Direct_Topup {
 
 		DataBaseUtility.connectToDB();
 		//loancode=lc.IP_Qalified();
+		Vivriti_Direct_Topup(loancode);
+
 		doc.BS(loancode);
 		Thread.sleep(40000);
-		Vivriti_Direct_Topup(loancode);
 }
 
 

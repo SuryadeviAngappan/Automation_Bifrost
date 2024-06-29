@@ -53,9 +53,12 @@ public class Eligibility_Direct_TopUp {
 
 		DataBaseUtility.connectToDB();
     	//loancode=lc.IP_Qalified();
-    	doc.BS(loancode);
-		Thread.sleep(40000);
 		Direct_TopUp_Policy(loancode);
+
+		doc.BS(loancode);
+		Thread.sleep(40000);
+
+
 }
 	
 	@DataProvider

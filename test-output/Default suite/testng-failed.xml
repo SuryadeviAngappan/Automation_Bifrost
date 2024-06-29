@@ -5,21 +5,8 @@
     <classes>
       <class name="Eligibility_Automation.Vivriti_Direct_Topup">
         <methods>
-          <include name="preCondition"/>
-          <include name="TC_09" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_07" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_08" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_12" invocation-numbers="0 1 2 3 4 5"/>
           <include name="TC_01" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_13" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_02" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_10" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_11" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_05" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_06" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_14" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_03" invocation-numbers="0 1 2 3 4 5"/>
-          <include name="TC_04" invocation-numbers="0 1 2 3 4 5"/>
+          <include name="preCondition"/>
         </methods>
       </class> <!-- Eligibility_Automation.Vivriti_Direct_Topup -->
     </classes>
