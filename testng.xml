@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test thread-count="5" name="Test">
     <classes>
-      <class name="NLP.NLP1_GreaterThan2Lakh_Flow"/>
-    </classes>
+      <class name="Eligibility_Automation.Eligibility_Direct_TopUp.java"/>
+            <class name="Eligibility_Automation.Smfg_Direct.java"/>
+            <class name="Eligibility_Automation.Vivriti_Direct_Topup.java"/>
+       </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
