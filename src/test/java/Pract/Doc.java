@@ -89,8 +89,6 @@ public class Doc {
 				.when().post("https://console-staging.flexiloans.com/documentservice");
 		String print= response.getBody().asPrettyString();
 		System.out.println(print);
-
-
 	}
 
 }

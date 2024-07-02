@@ -105,11 +105,6 @@
 			<artifactId>mongo-java-driver</artifactId>
 			<version>3.12.10</version>
 		</dependency>
-		<dependency>
-			<groupId>API</groupId>
-			<artifactId>RESTASSURED</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-		</dependency>
 		<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
