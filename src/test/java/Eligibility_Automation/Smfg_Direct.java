@@ -75,9 +75,11 @@ public class Smfg_Direct {
 
 		DataBaseUtility.connectToDB();
 		//loancode=lc.IP_Qalified();
+
 		doc.BS(loancode);
 		Thread.sleep(40000);
 		Smfg_Directpolicy(loancode);
+
 
 
 	}
