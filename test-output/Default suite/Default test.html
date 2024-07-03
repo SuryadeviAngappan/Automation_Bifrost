@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>88/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>87/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Wed Jul 03 13:16:56 IST 2024</td>
+<td>Started on:</td><td>Wed Jul 03 15:07:24 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>504 seconds (504470 ms)</td>
+<tr><td>Total time:</td><td>671 seconds (671727 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,94 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-2076083498" onClick='toggleBox("Output-2076083498", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2076083498" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2076083498">
+TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
+</div>
+</td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Smfg_Direct.TC_05(Smfg_Direct.java:420)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2076083498", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2076083498'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Smfg_Direct.TC_05(Smfg_Direct.java:420)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,844 +164,63 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-115302495" onClick='toggleBox("Output-115302495", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-115302495" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-115302495">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-BTO Capping = 500000.0 And Grade = C when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1355475787" onClick='toggleBox("Output-1355475787", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1355475787" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1355475787">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1706459316" onClick='toggleBox("Output-1706459316", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1706459316" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1706459316">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-810103755" onClick='toggleBox("Output-810103755", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-810103755" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-810103755">
-TC_09 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned<br/>
-BTO Capping = 500000.0 And Grade = C when fixed capping =2000000.0 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 122376.93 And Grade = C when fixed capping =1500000.0 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-970777311" onClick='toggleBox("Output-970777311", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-970777311" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-970777311">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-826609600" onClick='toggleBox("Output-826609600", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-826609600" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-826609600">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-2041316009" onClick='toggleBox("Output-2041316009", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2041316009" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2041316009">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1455007548" onClick='toggleBox("Output-1455007548", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1455007548" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1455007548">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-IF Risk_Garde IS 'A Than Final_BTO_Capping IS '1000000.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-172954825" onClick='toggleBox("Output-172954825", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1414919255" onClick='toggleBox("Output-1414919255", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-172954825" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-172954825">
+<a href="#Output-1414919255" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1414919255">
 TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
 IF Risk_Garde IS 'E Than Final_BTO_Capping IS '0.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
 </div>
 </td>
 <td></td>
-<td>2</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-533866202" onClick='toggleBox("Output-533866202", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-533866202" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-533866202">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-ABB Capping = 45626.6175 And Grade = Dwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-192442996" onClick='toggleBox("Output-192442996", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-571662993" onClick='toggleBox("Output-571662993", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-192442996" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-192442996">
+<a href="#Output-571662993" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-571662993">
 TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+Capping = 0.0 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>7</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1309300230" onClick='toggleBox("Output-1309300230", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-671736714" onClick='toggleBox("Output-671736714", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1309300230" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1309300230">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '0' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '200' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B' And Cibil_Score IS '300' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+<a href="#Output-671736714" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-671736714">
+TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
+Capping = 773597.4099999999 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>14</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-802062915" onClick='toggleBox("Output-802062915", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-802062915" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-802062915">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-2080301043" onClick='toggleBox("Output-2080301043", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2080301043" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2080301043">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-BTO Capping = 0.0 And Grade = NA when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1863834886" onClick='toggleBox("Output-1863834886", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1863834886" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1863834886">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =668501edndf59<br/>
-BTO Capping = 500000.0 And Grade = NA when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 174824.19 And Grade = NA when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-294900736" onClick='toggleBox("Output-294900736", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-294900736" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-294900736">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1970665441" onClick='toggleBox("Output-1970665441", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1970665441" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1970665441">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-Capping = 1000000.0 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-727050829" onClick='toggleBox("Output-727050829", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-727050829" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-727050829">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-Capping = 600000.0 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1266332258" onClick='toggleBox("Output-1266332258", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1266332258" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1266332258">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'E' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'E' And Cibil_Score IS '0' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'E' And Cibil_Score IS '200' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'E' And Cibil_Score IS '300' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-658991967" onClick='toggleBox("Output-658991967", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-658991967" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-658991967">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-ABB Capping = 0.0 And Grade = Ewhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1895617509" onClick='toggleBox("Output-1895617509", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1895617509" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1895617509">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Capping = 350000.0 And Grade = A when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-368191976" onClick='toggleBox("Output-368191976", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1271109184" onClick='toggleBox("Output-1271109184", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-368191976" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-368191976">
+<a href="#Output-1271109184" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1271109184">
 TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
 Capping = 800000.0 And Grade = B when fixed capping =800000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1802191223" onClick='toggleBox("Output-1802191223", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1802191223" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1802191223">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'C' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'C' And Cibil_Score IS '0' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'C' And Cibil_Score IS '200' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'C' And Cibil_Score IS '300' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-355063092" onClick='toggleBox("Output-355063092", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-355063092" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-355063092">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-BTO Capping = 500000.0 And Grade = A when fixed capping =500000.0  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-501458558" onClick='toggleBox("Output-501458558", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-501458558" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-501458558">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- Risk Grade Is 'NA'  And Experiment Is Both Rented Then ODCC Capping Is '0.0' when fixed capping = '0'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-830477086" onClick='toggleBox("Output-830477086", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-830477086" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-830477086">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1622054159" onClick='toggleBox("Output-1622054159", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1622054159" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1622054159">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-24228051" onClick='toggleBox("Output-24228051", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-24228051" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-24228051">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-816008967" onClick='toggleBox("Output-816008967", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-816008967" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-816008967">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-ABB Capping = 65559.0675 And Grade = Cwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-902894836" onClick='toggleBox("Output-902894836", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-902894836" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-902894836">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =668501edndf59<br/>
-BTO Capping = 500000.0 And Grade = C when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 174824.19 And Grade = C when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-668345982" onClick='toggleBox("Output-668345982", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-668345982" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-668345982">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-2144329829" onClick='toggleBox("Output-2144329829", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2144329829" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2144329829">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-769354865" onClick='toggleBox("Output-769354865", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-769354865" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-769354865">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-BTO Capping = 500000.0 And Grade = B when fixed capping =500000.0  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-570607919" onClick='toggleBox("Output-570607919", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-570607919" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-570607919">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-Capping = 1283763.9 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1808774497" onClick='toggleBox("Output-1808774497", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1808774497" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1808774497">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-Capping = 327970.94999999995 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1788841007" onClick='toggleBox("Output-1788841007", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1788841007" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1788841007">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-BTO Capping = 0.0 And Grade = D when fixed capping =0.0  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1429297664" onClick='toggleBox("Output-1429297664", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1429297664" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1429297664">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-Capping = 1000000.0 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-920386152" onClick='toggleBox("Output-920386152", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-920386152" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-920386152">
-TC_09 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned<br/>
-BTO Capping = 500000.0 And Grade = B when fixed capping =2000000.0 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 156404.53 And Grade = B when fixed capping =1500000.0 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-447778435" onClick='toggleBox("Output-447778435", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-447778435" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-447778435">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- Risk Grade Is 'C'  And Experiment Is Both Rented Then ODCC Capping Is '93655.82' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1497693168" onClick='toggleBox("Output-1497693168", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1497693168" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1497693168">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- Risk Grade Is 'D'  And Experiment Is Both Rented Then ODCC Capping Is '0.0' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-923687865" onClick='toggleBox("Output-923687865", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-923687865" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-923687865">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-ABB Capping = 0.0 And Grade = NAwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1581539326" onClick='toggleBox("Output-1581539326", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1581539326" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1581539326">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = NA when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-5584361" onClick='toggleBox("Output-5584361", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-5584361" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-5584361">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-Capping = 910114.6 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-245418396" onClick='toggleBox("Output-245418396", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-245418396" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-245418396">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-Capping = 910114.6 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-384097113" onClick='toggleBox("Output-384097113", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-384097113" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-384097113">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =668501edndf59<br/>
-BTO Capping = 500000.0 And Grade = E when fixed capping =1000000 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 121670.97 And Grade = E when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-899655458" onClick='toggleBox("Output-899655458", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-899655458" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-899655458">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-Capping = 1283763.9 And Grade = Awhen fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-22864481" onClick='toggleBox("Output-22864481", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-22864481" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-22864481">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-Capping = 628331.25 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-761069599" onClick='toggleBox("Output-761069599", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-761069599" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-761069599">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-Capping = 628331.25 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1326777047" onClick='toggleBox("Output-1326777047", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1326777047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1326777047">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-IF Risk_Garde IS 'B Than Final_BTO_Capping IS '800000.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-2026488714" onClick='toggleBox("Output-2026488714", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2026488714" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2026488714">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-BTO Capping = 500000.0 And Grade = A when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1747223278" onClick='toggleBox("Output-1747223278", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1747223278" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1747223278">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-BTO Capping = 0.0 And Grade = E when fixed capping =0.0  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1827133099" onClick='toggleBox("Output-1827133099", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1827133099" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1827133099">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '0' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '200' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '300' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-2147158964" onClick='toggleBox("Output-2147158964", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2147158964" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2147158964">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Capping = 350000.0 And Grade = B when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1341158560" onClick='toggleBox("Output-1341158560", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1341158560" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1341158560">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =668501edndf59<br/>
-BTO Capping = 500000.0 And Grade = A when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 267891.72 And Grade = A when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1318241986" onClick='toggleBox("Output-1318241986", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1318241986" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1318241986">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-ABB Capping = 133945.86 And Grade = Awhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1531958047" onClick='toggleBox("Output-1531958047", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1531958047" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1531958047">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1210372215" onClick='toggleBox("Output-1210372215", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1210372215" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1210372215">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '0' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '200' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A' And Cibil_Score IS '300' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>13</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1139712957" onClick='toggleBox("Output-1139712957", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1139712957" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1139712957">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>14</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-715043917" onClick='toggleBox("Output-715043917", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-715043917" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-715043917">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-935625872" onClick='toggleBox("Output-935625872", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-935625872" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-935625872">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-IF Risk_Garde IS 'NA Than Final_BTO_Capping IS '0.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-18696010" onClick='toggleBox("Output-18696010", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-18696010" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-18696010">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-BTO Capping = 408141.62 And Grade = D when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1319428339" onClick='toggleBox("Output-1319428339", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1380520397" onClick='toggleBox("Output-1380520397", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1319428339" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1319428339">
+<a href="#Output-1380520397" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1380520397">
 TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
 IF Risk_Garde IS 'E' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
 IF Risk_Garde IS 'E' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
@@ -923,278 +230,667 @@ Eligibility is not getting calculated properly..!!!<br/>
 </td>
 <td></td>
 <td>18</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-608738578" onClick='toggleBox("Output-608738578", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1185082534" onClick='toggleBox("Output-1185082534", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-608738578" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-608738578">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-BTO Capping = 408141.62 And Grade = E when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+<a href="#Output-1185082534" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1185082534">
+TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
+IF Risk_Garde IS 'A Than Final_BTO_Capping IS '1000000.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-904131512" onClick='toggleBox("Output-904131512", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-701666903" onClick='toggleBox("Output-701666903", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-904131512" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-904131512">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+<a href="#Output-701666903" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-701666903">
+TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
+Capping = 628331.25 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1222267142" onClick='toggleBox("Output-1222267142", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1222267142" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1222267142">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-Capping = 773597.4099999999 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1843348227" onClick='toggleBox("Output-1843348227", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1843348227" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1843348227">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- Risk Grade Is 'E'  And Experiment Is Both Rented Then ODCC Capping Is '0.0' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-504561103" onClick='toggleBox("Output-504561103", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-504561103" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-504561103">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = E when fixed capping =0  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-555591232" onClick='toggleBox("Output-555591232", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-555591232" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-555591232">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =668501edndf59<br/>
-BTO Capping = 500000.0 And Grade = B when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-ABB Capping = 223435.05 And Grade = B when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1755838330" onClick='toggleBox("Output-1755838330", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1755838330" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1755838330">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1205094026" onClick='toggleBox("Output-1205094026", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1205094026" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1205094026">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-Capping = 0.0 And Grade = D when fixed capping =0  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-419370272" onClick='toggleBox("Output-419370272", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-419370272" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-419370272">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Capping = 600000.0 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-998292323" onClick='toggleBox("Output-998292323", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-998292323" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-998292323">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-Capping = 471248.4375 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-464773456" onClick='toggleBox("Output-464773456", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-464773456" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-464773456">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Capping = 350000.0 And Grade = C when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-669678735" onClick='toggleBox("Output-669678735", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1276381970" onClick='toggleBox("Output-1276381970", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-669678735" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-669678735">
+<a href="#Output-1276381970" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1276381970">
 TC_09 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned<br/>
 BTO Capping = 408141.62 And Grade = D when fixed capping =2000000.0 Eligibility is getting calculated properly..!!!<br/>
 ABB Capping = 85169.68 And Grade = D when fixed capping =1500000.0 Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1354373599" onClick='toggleBox("Output-1354373599", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-304605729" onClick='toggleBox("Output-304605729", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1354373599" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1354373599">
+<a href="#Output-304605729" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-304605729">
 TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-BTO Capping = 500000.0 And Grade = B when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = 0.0 And Grade = NA when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-539825188" onClick='toggleBox("Output-539825188", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-539825188" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-539825188">
+TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
+Capping = 1000000.0 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-787675768" onClick='toggleBox("Output-787675768", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-787675768" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-787675768">
+TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
+IF Risk_Garde IS 'B Than Final_BTO_Capping IS '800000.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1991466040" onClick='toggleBox("Output-1991466040", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1991466040" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1991466040">
+TC_11 : To verify that NTC with limit<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '0' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '200' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '300' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-419060470" onClick='toggleBox("Output-419060470", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-419060470" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-419060470">
+TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-139374530" onClick='toggleBox("Output-139374530", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-139374530" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-139374530">
+TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1619759213" onClick='toggleBox("Output-1619759213", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1333929103" onClick='toggleBox("Output-1333929103", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1619759213" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1619759213">
+<a href="#Output-1333929103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1333929103">
 TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =668501edndf59<br/>
+ Test Loancode =66851bd2rxmh6<br/>
 BTO Capping = 500000.0 And Grade = D when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
 ABB Capping = 121670.97 And Grade = D when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1225640192" onClick='toggleBox("Output-1225640192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1225640192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1225640192">
+TC_11 : To verify that NTC with limit<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '0' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '200' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '300' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-757503912" onClick='toggleBox("Output-757503912", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-757503912" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-757503912">
+TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
+BTO Capping = 500000.0 And Grade = B when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-686350055" onClick='toggleBox("Output-686350055", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-686350055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-686350055">
+TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1998372115" onClick='toggleBox("Output-1998372115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1998372115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1998372115">
+TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
+ Test Loancode =66851bd2rxmh6<br/>
+BTO Capping = 500000.0 And Grade = NA when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 174824.19 And Grade = NA when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-200728166" onClick='toggleBox("Output-200728166", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-200728166" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-200728166">
+TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
+ABB Capping = 0.0 And Grade = Ewhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1220813395" onClick='toggleBox("Output-1220813395", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1220813395" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1220813395">
+TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
+ABB Capping = 45626.6175 And Grade = Dwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1046597629" onClick='toggleBox("Output-1046597629", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1046597629" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1046597629">
+TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
+Capping = 800000.0 And Grade = B when fixed capping =800000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1121544005" onClick='toggleBox("Output-1121544005", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1121544005" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1121544005">
+TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = E when fixed capping =0  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-2086483651" onClick='toggleBox("Output-2086483651", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2086483651" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2086483651">
+TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-54520865" onClick='toggleBox("Output-54520865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-54520865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-54520865">
+TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
+ Test Loancode =66851bd2rxmh6<br/>
+BTO Capping = 500000.0 And Grade = E when fixed capping =1000000 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 121670.97 And Grade = E when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1590803535" onClick='toggleBox("Output-1590803535", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1590803535" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1590803535">
+TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
+BTO Capping = 500000.0 And Grade = A when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-870104514" onClick='toggleBox("Output-870104514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-870104514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-870104514">
+TC_11 : To verify that NTC with limit<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Than Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-2128263493" onClick='toggleBox("Output-2128263493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2128263493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2128263493">
+TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
+ABB Capping = 65559.0675 And Grade = Cwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-25623662" onClick='toggleBox("Output-25623662", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1522002327" onClick='toggleBox("Output-1522002327", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-25623662" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-25623662">
+<a href="#Output-1522002327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1522002327">
 TC_09 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned<br/>
 BTO Capping = 500000.0 And Grade = A when fixed capping =2000000.0 Eligibility is getting calculated properly..!!!<br/>
 ABB Capping = 187524.2 And Grade = A when fixed capping =1500000.0 Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1066504752" onClick='toggleBox("Output-1066504752", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1066504752" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1066504752">
+TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
+Capping = 600000.0 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-873447850" onClick='toggleBox("Output-873447850", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-873447850" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-873447850">
+TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
+ Test Loancode =66851bd2rxmh6<br/>
+BTO Capping = 500000.0 And Grade = A when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 267891.72 And Grade = A when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-129831064" onClick='toggleBox("Output-129831064", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-129831064" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-129831064">
+TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
+Capping = 437294.6 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1007414446" onClick='toggleBox("Output-1007414446", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1007414446" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1007414446">
+TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
+BTO Capping = 500000.0 And Grade = C when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1642004219" onClick='toggleBox("Output-1642004219", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1642004219" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1642004219">
+TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
+ABB Capping = 94959.892 And Grade = Bwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1617422273" onClick='toggleBox("Output-1617422273", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1617422273" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1617422273">
+TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1559191497" onClick='toggleBox("Output-1559191497", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1559191497" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1559191497">
+TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-505920393" onClick='toggleBox("Output-505920393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-505920393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-505920393">
+TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
+Capping = 910114.6 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1610659945" onClick='toggleBox("Output-1610659945", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-541909602" onClick='toggleBox("Output-541909602", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1610659945" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1610659945">
+<a href="#Output-541909602" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-541909602">
 TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
 IF Risk_Garde IS 'D Than Final_BTO_Capping IS '0.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1289601078" onClick='toggleBox("Output-1289601078", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-15612252" onClick='toggleBox("Output-15612252", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1289601078" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1289601078">
+<a href="#Output-15612252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-15612252">
+TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1816933119" onClick='toggleBox("Output-1816933119", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1816933119" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1816933119">
+TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
+Capping = 350000.0 And Grade = B when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-2145383787" onClick='toggleBox("Output-2145383787", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2145383787" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2145383787">
 TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-Capping = 437294.6 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-445531390" onClick='toggleBox("Output-445531390", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-445531390" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-445531390">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Capping = 800000.0 And Grade = B when fixed capping =800000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1345642694" onClick='toggleBox("Output-1345642694", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1345642694" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1345642694">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-ABB Capping = 94959.892 And Grade = Bwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-879372185" onClick='toggleBox("Output-879372185", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-879372185" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-879372185">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
 Capping = 0.0 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-2042939763" onClick='toggleBox("Output-2042939763", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2042939763" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2042939763">
+TC_11 : To verify that NTC with limit<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '0' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '200' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '300' Than Final_BTO_Capping IS '408141.62' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>19</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1013254866" onClick='toggleBox("Output-1013254866", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1013254866" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1013254866">
+TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
+ Risk Grade Is 'E'  And Experiment Is Both Rented Then ODCC Capping Is '0.0' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1149652670" onClick='toggleBox("Output-1149652670", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1149652670" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1149652670">
+TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
+Capping = 1000000.0 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1800857838" onClick='toggleBox("Output-1800857838", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1800857838" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1800857838">
+TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
+ABB Capping = 0.0 And Grade = NAwhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1814543901" onClick='toggleBox("Output-1814543901", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1814543901" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1814543901">
+TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-537024440" onClick='toggleBox("Output-537024440", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-537024440" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-537024440">
+TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '0.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1725025770" onClick='toggleBox("Output-1725025770", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725025770" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725025770">
+TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
+ Risk Grade Is 'NA'  And Experiment Is Both Rented Then ODCC Capping Is '0.0' when fixed capping = '0'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-869697643" onClick='toggleBox("Output-869697643", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-869697643" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-869697643">
+TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
+IF Risk_Garde IS 'C Than Final_BTO_Capping IS '600000.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1056110668" onClick='toggleBox("Output-1056110668", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1056110668" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1056110668">
+TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
+BTO Capping = 408141.62 And Grade = D when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1212327555" onClick='toggleBox("Output-1212327555", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1212327555" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1212327555">
+TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
+BTO Capping = 408141.62 And Grade = E when fixed capping =500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-914674368" onClick='toggleBox("Output-914674368", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-914674368" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-914674368">
+TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
+ Test Loancode =66851bd2rxmh6<br/>
+BTO Capping = 500000.0 And Grade = C when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 174824.19 And Grade = C when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1266968258" onClick='toggleBox("Output-1266968258", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1266968258" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1266968258">
+TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-365059254" onClick='toggleBox("Output-365059254", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-442305940" onClick='toggleBox("Output-442305940", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-365059254" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-365059254">
+<a href="#Output-442305940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-442305940">
 TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
 IF Risk_Garde IS 'C' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
 IF Risk_Garde IS 'C' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
@@ -1203,72 +899,451 @@ Eligibility is not getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>20</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1837758589" onClick='toggleBox("Output-1837758589", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1389476764" onClick='toggleBox("Output-1389476764", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1837758589" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1837758589">
+<a href="#Output-1389476764" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1389476764">
+TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1533744294" onClick='toggleBox("Output-1533744294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1533744294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1533744294">
 TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-IF Risk_Garde IS 'C Than Final_BTO_Capping IS '600000.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA Than Final_BTO_Capping IS '0.0' when fixed capping = '500000'  ... Eligibility Capping is calculated Properly..!!!!<br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1496323398" onClick='toggleBox("Output-1496323398", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1496323398" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1496323398">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-848250617" onClick='toggleBox("Output-848250617", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-1817515928" onClick='toggleBox("Output-1817515928", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-848250617" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-848250617">
+<a href="#Output-1817515928" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1817515928">
 TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
  Risk Grade Is 'A'  And Experiment Is Both Rented Then ODCC Capping Is '191351.23' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1804179825" onClick='toggleBox("Output-1804179825", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-2110335494" onClick='toggleBox("Output-2110335494", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1804179825" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1804179825">
+<a href="#Output-2110335494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2110335494">
 TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Capping = 1000000.0 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+Capping = 0.0 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1527668063" onClick='toggleBox("Output-1527668063", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1527668063" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1527668063">
+TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
+Capping = 1283763.9 And Grade = Awhen fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1699393944" onClick='toggleBox("Output-1699393944", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1699393944" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1699393944">
+TC_11 : To verify that NTC with limit<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '0' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '200' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '300' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>18</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1495264203" onClick='toggleBox("Output-1495264203", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1495264203" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1495264203">
+TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
+Capping = 1283763.9 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1101252341" onClick='toggleBox("Output-1101252341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1101252341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101252341">
+TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-994588190" onClick='toggleBox("Output-994588190", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-994588190" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-994588190">
+TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
+BTO Capping = 0.0 And Grade = D when fixed capping =0.0  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1049553497" onClick='toggleBox("Output-1049553497", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1049553497" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1049553497">
+TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-81183790" onClick='toggleBox("Output-81183790", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-266546996" onClick='toggleBox("Output-266546996", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-81183790" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-81183790">
+<a href="#Output-266546996" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-266546996">
 TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
  Risk Grade Is 'B'  And Experiment Is Both Rented Then ODCC Capping Is '135656.98' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
 </div>
 </td>
 <td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-620534437" onClick='toggleBox("Output-620534437", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-620534437" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-620534437">
+TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
+Capping = 327970.94999999995 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-2106619466" onClick='toggleBox("Output-2106619466", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2106619466" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2106619466">
+TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
+Capping = 600000.0 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1128933904" onClick='toggleBox("Output-1128933904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1128933904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1128933904">
+TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
+BTO Capping = 500000.0 And Grade = A when fixed capping =500000.0  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1525969940" onClick='toggleBox("Output-1525969940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1525969940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1525969940">
+TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
+BTO Capping = 500000.0 And Grade = B when fixed capping =500000.0  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-194807416" onClick='toggleBox("Output-194807416", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-194807416" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-194807416">
+TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = NA when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1330346542" onClick='toggleBox("Output-1330346542", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1330346542" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1330346542">
+TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
+BTO Capping = 0.0 And Grade = E when fixed capping =0.0  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-541468704" onClick='toggleBox("Output-541468704", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-541468704" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-541468704">
+TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-493102722" onClick='toggleBox("Output-493102722", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-493102722" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-493102722">
+TC_09 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned<br/>
+BTO Capping = 500000.0 And Grade = C when fixed capping =2000000.0 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 122376.93 And Grade = C when fixed capping =1500000.0 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-210569700" onClick='toggleBox("Output-210569700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-210569700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-210569700">
+TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
+ Risk Grade Is 'D'  And Experiment Is Both Rented Then ODCC Capping Is '0.0' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-540005572" onClick='toggleBox("Output-540005572", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-540005572" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-540005572">
+TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
+Capping = 0.0 And Grade = D when fixed capping =0  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-530286325" onClick='toggleBox("Output-530286325", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-530286325" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-530286325">
+TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
+ABB Capping = 133945.86 And Grade = Awhen fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1418678112" onClick='toggleBox("Output-1418678112", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1418678112" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1418678112">
+TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
+Capping = 1000000.0 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-257103036" onClick='toggleBox("Output-257103036", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-257103036" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-257103036">
+TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
+Capping = 350000.0 And Grade = A when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1389792953" onClick='toggleBox("Output-1389792953", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1389792953" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1389792953">
+TC_09 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned<br/>
+BTO Capping = 500000.0 And Grade = B when fixed capping =2000000.0 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 156404.53 And Grade = B when fixed capping =1500000.0 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-980133403" onClick='toggleBox("Output-980133403", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-980133403" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-980133403">
+TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
+ Risk Grade Is 'C'  And Experiment Is Both Rented Then ODCC Capping Is '93655.82' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-469383566" onClick='toggleBox("Output-469383566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-469383566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-469383566">
+TC_11 : To verify that NTC with limit<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '0' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '200' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '300' Than Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>22</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-680533991" onClick='toggleBox("Output-680533991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-680533991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-680533991">
+TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
+Capping = 350000.0 And Grade = C when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-784934449" onClick='toggleBox("Output-784934449", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-784934449" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-784934449">
+TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
+ Test Loancode =66851bd2rxmh6<br/>
+BTO Capping = 500000.0 And Grade = B when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+ABB Capping = 223435.05 And Grade = B when fixed capping =1500000 Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-994372924" onClick='toggleBox("Output-994372924", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-994372924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-994372924">
+TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-62931002" onClick='toggleBox("Output-62931002", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-62931002" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-62931002">
+TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '500000.0' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1311880781" onClick='toggleBox("Output-1311880781", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1311880781" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1311880781">
+TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
+Capping = 628331.25 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-631424220" onClick='toggleBox("Output-631424220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-631424220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-631424220">
+TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
+Capping = 910114.6 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@385dfb63</td></tr>
 </table><p>
 </body>
 </html>

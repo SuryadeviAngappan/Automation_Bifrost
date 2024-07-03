@@ -29,6 +29,7 @@ public class Smfg_Direct {
 	Doc doc = new Doc();
 	Create_New_Loancode lc = new Create_New_Loancode();
 	String loancode = lc.Fresh_Lead();
+
 	
 
 	public void Smfg_Directpolicy(String loancode) 
@@ -74,8 +75,6 @@ public class Smfg_Direct {
 	{
 
 		DataBaseUtility.connectToDB();
-		//loancode=lc.IP_Qalified();
-
 		doc.BS(loancode);
 		Thread.sleep(40000);
 		Smfg_Directpolicy(loancode);
