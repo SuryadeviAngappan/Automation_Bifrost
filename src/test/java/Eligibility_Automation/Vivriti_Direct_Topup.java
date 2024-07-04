@@ -276,11 +276,10 @@ public class Vivriti_Direct_Topup {
 		case "A":
 		case "B":
 			if (capping <= 150000.00) {
-				
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "sxelect experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
+
 			} else {
 				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
 				ListnerClass.reportLog(eligibilityMessage);
@@ -394,7 +393,7 @@ public class Vivriti_Direct_Topup {
 		String exp = DataBaseUtility.ExecuteQuery(select_query);
 	} else {
 		System.out.println("Eligibility is not getting calculated properly..!!!");
-		ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+		ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ " Eligibility is not getting calculated properly..!!!");
 
 	}	
 	}
@@ -433,7 +432,6 @@ public class Vivriti_Direct_Topup {
 		case "A":
 		case "B":
 			if (capping <= 150000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
@@ -632,7 +630,7 @@ public class Vivriti_Direct_Topup {
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -676,8 +674,7 @@ public class Vivriti_Direct_Topup {
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
-			System.out.println("Eligibility is not getting calculated properly..!!!");
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -731,7 +728,6 @@ public class Vivriti_Direct_Topup {
 			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping1+"  Eligibility is getting calculated properly..!!!");
 
 		} else {
-			System.out.println("Eligibility is not getting calculated properly..!!!");
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}
@@ -805,7 +801,6 @@ public void TC_12(String final_grade) throws SQLException
 				ListnerClass.reportLog("IF Risk_Garde IS '" + grade + "' And Cibil_Score IS '" + cibil_score + "' Experiment Is Both_Rented Then Final_BTO_Capping IS '" + BTO_Capping + "' when fixed capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
 
 			} else {
-				System.out.println("Eligibility Capping is not getting calculated properly..!!!");
 				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 			}

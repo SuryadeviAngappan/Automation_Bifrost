@@ -181,7 +181,6 @@ public class Eligibility_Direct_TopUp {
 		switch (grade.toUpperCase()) {
 		case "A":
 			if (capping <= 1000000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
@@ -193,7 +192,6 @@ public class Eligibility_Direct_TopUp {
 			break;
 		case "B":
 			if (capping <= 800000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
@@ -208,7 +206,6 @@ public class Eligibility_Direct_TopUp {
 		case "E":
 		case "NA":
 			if (capping <= 600000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
@@ -263,13 +260,12 @@ public class Eligibility_Direct_TopUp {
 		case "A":
 		case "B":
 			if (capping <= 150000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
 				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
-				ListnerClass.reportLog(eligibilityMessage);
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is not getting calculated properly..!!!");
 
 			}
 			break;
@@ -283,8 +279,8 @@ public class Eligibility_Direct_TopUp {
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
-				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
-				ListnerClass.reportLog(eligibilityMessage);
+				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is not getting calculated properly..!!!");
+
 
 			}
 			break;
@@ -414,13 +410,11 @@ public class Eligibility_Direct_TopUp {
 		case "A":
 		case "B":
 			if (capping <= 150000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
-				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
-				ListnerClass.reportLog(eligibilityMessage);
+				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 			}
 			break;
@@ -429,13 +423,11 @@ public class Eligibility_Direct_TopUp {
 		case "E":
 		case "NA":
 			if (capping <= 1000000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
-				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
-				ListnerClass.reportLog(eligibilityMessage);
+				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 			}
 			break;
@@ -534,24 +526,20 @@ public class Eligibility_Direct_TopUp {
 		switch (grade.toUpperCase()) {
 		case "A":
 			if (capping <= 1000000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
-				ListnerClass.reportLog(eligibilityMessage);
-				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
+				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 			}
 			break;
 		case "B":
 			if (capping <= 800000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
-				ListnerClass.reportLog(eligibilityMessage);
-				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
+				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 			}
 			break;
 		case "C":
@@ -559,13 +547,11 @@ public class Eligibility_Direct_TopUp {
 		case "E":
 		case "NA":
 			if (capping <= 600000.00) {
-				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 				ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
-				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
-				ListnerClass.reportLog(eligibilityMessage);
+				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 			}
 			break;
@@ -613,13 +599,11 @@ public class Eligibility_Direct_TopUp {
 
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping <=1000000.00 ) {
-			System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-			System.out.println("Eligibility is not getting calculated properly..!!!");
 		}	
 
 	}
@@ -665,8 +649,7 @@ public class Eligibility_Direct_TopUp {
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
-			System.out.println("Eligibility is not getting calculated properly..!!!");
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -716,14 +699,11 @@ public class Eligibility_Direct_TopUp {
 		//ABB Capping
 		
 		if (abb_capping <= 2000000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") )) {
-			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 		}else if (abb_capping <= 1500000.00 && (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D"))) {
-			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 
 		} else {
-			System.out.println("Eligibility is not getting calculated properly..!!!");
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}
@@ -735,7 +715,6 @@ public class Eligibility_Direct_TopUp {
 			System.out.println("BTO Capping = " + BTO_capping + " And Grade = " + grade + "Eligibility is getting calculated properly..!!!");
 			ListnerClass.reportLog("BTO Capping = " + BTO_capping + " And Grade = " + grade + " when fixed capping =" +FixedCapping1+ "Eligibility is getting calculated properly..!!!");
 		} else {
-			System.out.println("Eligibility is not getting calculated properly..!!!");
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}		
@@ -800,7 +779,6 @@ public void TC_12(String final_grade) throws SQLException
 				System.out.println("IF Risk_Garde IS '" + grade + "' And Cibil_Score IS '" + cibil_score + "' Experiment Is Both_Rented Then Final_BTO_Capping IS '" + BTO_Capping + "' ... Eligibility Capping is calculated Properly..!!!!");
 				ListnerClass.reportLog("IF Risk_Garde IS '" + grade + "' And Cibil_Score IS '" + cibil_score + "' Experiment Is Both_Rented Then Final_BTO_Capping IS '" + BTO_Capping + "' when fixed capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
 			} else {
-				System.out.println("Eligibility Capping is not getting calculated properly..!!!");
 				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 			}
@@ -849,10 +827,8 @@ public void TC_13(String final_grade) throws SQLException
 
 	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (capping<=500000.00)) 
 	{
-		System.out.println("IF Risk_Garde IS '" + grade + " Than Final_BTO_Capping IS '" + capping + "' ... Eligibility Capping is calculated Properly..!!!!");
 		ListnerClass.reportLog("IF Risk_Garde IS '" + grade + " Than Final_BTO_Capping IS '" + capping + "' when fixed capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
 		} else {
-			System.out.println("Eligibility Capping is not getting calculated properly..!!!");
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}
@@ -899,17 +875,14 @@ public void TC_14(String final_grade) throws SQLException
 	
 	if(grade.equalsIgnoreCase("A") ||grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") && (capping <=1000000.00)) 
 	{
-		System.out.println( " Risk Grade Is '"+grade+"'  And Experiment Is Both Rented Then ODCC Capping Is '"+capping+"'  ... Eligibility is getting calculated Properly.!!! ");
 		ListnerClass.reportLog( " Risk Grade Is '"+grade+"'  And Experiment Is Both Rented Then ODCC Capping Is '"+capping+"' when fixed capping = '"+FixedCapping+"' ... Eligibility is getting calculated Properly.!!! ");
 	}
 	else if(grade.equalsIgnoreCase("NA") && (capping<=00.00)) 
 	{
-		System.out.println( " Risk Grade Is '"+grade+"'  And Experiment Is Both Rented Then ODCC Capping Is '"+capping+"'  ... Eligibility is getting calculated Properly.!!! ");
 		ListnerClass.reportLog( " Risk Grade Is '"+grade+"'  And Experiment Is Both Rented Then ODCC Capping Is '"+capping+"'  ... Eligibility is getting calculated Properly.!!! ");
 	}
 	else 
 	{
-		System.out.println(" Eligibility is not getting calculated properly");
 		ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 	}
