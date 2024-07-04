@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>88/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 04 00:44:35 IST 2024</td>
+<td>Started on:</td><td>Thu Jul 04 16:47:41 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>567 seconds (567218 ms)</td>
+<tr><td>Total time:</td><td>74 seconds (74607 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,1215 +76,479 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-2108912562" onClick='toggleBox("Output-2108912562", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1188469924" onClick='toggleBox("Output-1188469924", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2108912562" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2108912562">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '191351.23'  ... Eligibility is getting calculated Properly.!!! <br/>
+<a href="#Output-1188469924" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1188469924">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is D<br/>
 </div>
 </td>
-<td></td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1188469924", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1188469924'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@245253d8</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-419887490" onClick='toggleBox("Output-419887490", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-546392117" onClick='toggleBox("Output-546392117", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-419887490" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-419887490">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0<br/>
-Capping = 0.0 And Grade =NA Eligibility is getting calculated properly..!!!<br/>
+<a href="#Output-546392117" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-546392117">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is C<br/>
 </div>
 </td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-571518740" onClick='toggleBox("Output-571518740", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-571518740" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-571518740">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 680000.0 When Fixed capping is 800000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-854671988" onClick='toggleBox("Output-854671988", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-854671988" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-854671988">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 157082.8125 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!<br/>
-capped_banking_eligibility = 471248.4375 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace546392117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace546392117'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>5</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@245253d8</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-139527382" onClick='toggleBox("Output-139527382", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1811235424" onClick='toggleBox("Output-1811235424", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-139527382" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-139527382">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Eligibility is not getting calculated properly..!!!<br/>
+<a href="#Output-1811235424" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1811235424">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is NA<br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-790020639" onClick='toggleBox("Output-790020639", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-790020639" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-790020639">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1811235424", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1811235424'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@245253d8</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1701223919" onClick='toggleBox("Output-1701223919", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-472702055" onClick='toggleBox("Output-472702055", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1701223919" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1701223919">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
+<a href="#Output-472702055" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-472702055">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is B<br/>
 </div>
 </td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-44550190" onClick='toggleBox("Output-44550190", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-44550190" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-44550190">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 300 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>17</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1162833093" onClick='toggleBox("Output-1162833093", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1162833093" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1162833093">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace472702055", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace472702055'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@245253d8</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-723166096" onClick='toggleBox("Output-723166096", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1454834922" onClick='toggleBox("Output-1454834922", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-723166096" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-723166096">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
+<a href="#Output-1454834922" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1454834922">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is E<br/>
 </div>
 </td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-2047400579" onClick='toggleBox("Output-2047400579", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2047400579" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2047400579">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '800000.0' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1729623300" onClick='toggleBox("Output-1729623300", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1729623300" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1729623300">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-capped_abb_eligibility  = 133945.86 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-933837244" onClick='toggleBox("Output-933837244", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-933837244" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-933837244">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 773597.4099999999When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1531556319" onClick='toggleBox("Output-1531556319", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1531556319" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1531556319">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1200612373" onClick='toggleBox("Output-1200612373", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1200612373" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1200612373">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1393084820" onClick='toggleBox("Output-1393084820", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1393084820" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1393084820">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '93655.82'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1454834922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454834922'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@245253d8</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-2058066102" onClick='toggleBox("Output-2058066102", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-896786845" onClick='toggleBox("Output-896786845", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-2058066102" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2058066102">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0<br/>
-Capping = 0.0 And Grade =D Eligibility is getting calculated properly..!!!<br/>
+<a href="#Output-896786845" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-896786845">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is A<br/>
 </div>
 </td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-920581443" onClick='toggleBox("Output-920581443", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-920581443" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-920581443">
-TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isA<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1085982244" onClick='toggleBox("Output-1085982244", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1085982244" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1085982244">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-181914697" onClick='toggleBox("Output-181914697", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-181914697" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-181914697">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-capped_abb_eligibility  = 94959.892 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1633867900" onClick='toggleBox("Output-1633867900", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1633867900" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1633867900">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-70140977" onClick='toggleBox("Output-70140977", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-70140977" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-70140977">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1891383964" onClick='toggleBox("Output-1891383964", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1891383964" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1891383964">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility = 174824.19 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-902894836" onClick='toggleBox("Output-902894836", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-902894836" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-902894836">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility = 174824.19 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-320043061" onClick='toggleBox("Output-320043061", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-320043061" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-320043061">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility = 121670.97 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-241108472" onClick='toggleBox("Output-241108472", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-241108472" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-241108472">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-928103158" onClick='toggleBox("Output-928103158", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-928103158" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-928103158">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-668345982" onClick='toggleBox("Output-668345982", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-668345982" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-668345982">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0<br/>
-Capping = 0.0 And Grade =E Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1541743053" onClick='toggleBox("Output-1541743053", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1541743053" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1541743053">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-capped_abb_eligibility  = 65559.0675 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1025281845" onClick='toggleBox("Output-1025281845", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1025281845" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1025281845">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 471248.4375When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1880726960" onClick='toggleBox("Output-1880726960", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1880726960" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1880726960">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1212351214" onClick='toggleBox("Output-1212351214", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1212351214" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1212351214">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility = 223435.05 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
+<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace896786845", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace896786845'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
+	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+	at java.base/java.lang.Double.parseDouble(Double.java:651)
+	at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
 <td>5</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1885172464" onClick='toggleBox("Output-1885172464", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1885172464" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1885172464">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 471248.4375 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-456421914" onClick='toggleBox("Output-456421914", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-456421914" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-456421914">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-717995748" onClick='toggleBox("Output-717995748", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-717995748" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-717995748">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1226851087" onClick='toggleBox("Output-1226851087", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1226851087" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1226851087">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '135656.98'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1781893382" onClick='toggleBox("Output-1781893382", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1781893382" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1781893382">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 1000000.0 And Grade = A Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-157777748" onClick='toggleBox("Output-157777748", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-157777748" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-157777748">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-capped_banking_eligibility   = 0.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1423602542" onClick='toggleBox("Output-1423602542", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1423602542" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1423602542">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1266282188" onClick='toggleBox("Output-1266282188", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1266282188" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1266282188">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1556173561" onClick='toggleBox("Output-1556173561", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1556173561" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1556173561">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1417153600" onClick='toggleBox("Output-1417153600", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1417153600" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1417153600">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-2136614370" onClick='toggleBox("Output-2136614370", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2136614370" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2136614370">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 450000.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-608590206" onClick='toggleBox("Output-608590206", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-608590206" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-608590206">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-303127592" onClick='toggleBox("Output-303127592", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-303127592" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-303127592">
-TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isB<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-899655458" onClick='toggleBox("Output-899655458", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-899655458" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-899655458">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 1283763.9When Fixed capping is 1500000 Lakh ,  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-384097113" onClick='toggleBox("Output-384097113", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-384097113" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-384097113">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 1000000 Lakh , Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility = 121670.97 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-658510078" onClick='toggleBox("Output-658510078", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-658510078" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-658510078">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>15</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1012364136" onClick='toggleBox("Output-1012364136", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1012364136" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1012364136">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 375000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1431782037" onClick='toggleBox("Output-1431782037", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1431782037" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1431782037">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 109323.65 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!<br/>
-capped_banking_eligibility = 327970.94999999995 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1438120433" onClick='toggleBox("Output-1438120433", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1438120433" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1438120433">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-857811686" onClick='toggleBox("Output-857811686", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-857811686" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-857811686">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-capped_abb_eligibility  = 0.0 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-621942110" onClick='toggleBox("Output-621942110", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-621942110" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-621942110">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1626571070" onClick='toggleBox("Output-1626571070", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1626571070" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1626571070">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '600000.0' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1855105757" onClick='toggleBox("Output-1855105757", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1855105757" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1855105757">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1341158560" onClick='toggleBox("Output-1341158560", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1341158560" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1341158560">
-TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility = 267891.72 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>6</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1915624447" onClick='toggleBox("Output-1915624447", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1915624447" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1915624447">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-2084234089" onClick='toggleBox("Output-2084234089", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2084234089" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2084234089">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-284505510" onClick='toggleBox("Output-284505510", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-284505510" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-284505510">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- When Fixed capping is 00.00 Lakh And Experiment Is Both Rented Then ODCC Capping Is '0.0'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-403032668" onClick='toggleBox("Output-403032668", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-403032668" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-403032668">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Eligibility is getting calculated properly..!!!  When Fixed capping is 800000 Lakh , capped_banking_eligibility after Haircut is = 680000.0<br/>
-Capping = 680000.0 And Grade =B Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-179258229" onClick='toggleBox("Output-179258229", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-179258229" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-179258229">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-2006114639" onClick='toggleBox("Output-2006114639", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2006114639" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2006114639">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 1000000.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1843171329" onClick='toggleBox("Output-1843171329", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1843171329" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1843171329">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>5</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-144721022" onClick='toggleBox("Output-144721022", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-144721022" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-144721022">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-capped_abb_eligibility  = 45626.6175 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-419370272" onClick='toggleBox("Output-419370272", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-419370272" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-419370272">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 450000.0<br/>
-Capping = 450000.0 And Grade =C Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1615944369" onClick='toggleBox("Output-1615944369", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1615944369" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1615944369">
-TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isD<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_abb_eligibility  = 1404449.6 When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1034030146" onClick='toggleBox("Output-1034030146", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1034030146" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1034030146">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '1000000.0' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-888293905" onClick='toggleBox("Output-888293905", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-888293905" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-888293905">
-TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 136517.19 When Fixed capping is 00.00 , Eligibility is getting calculated properly..!!!<br/>
-capped_banking_eligibility = 773597.4099999999 When Fixed capping is 1500000 Lakh,  Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1252913476" onClick='toggleBox("Output-1252913476", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1252913476" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1252913476">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 327970.94999999995When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-205091536" onClick='toggleBox("Output-205091536", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-205091536" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-205091536">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>17</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1565597755" onClick='toggleBox("Output-1565597755", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1565597755" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1565597755">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-capped_banking_eligibility   = 408141.62 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-826306219" onClick='toggleBox("Output-826306219", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-826306219" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-826306219">
-TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isC<br/>
- Test Loancode =6685a319lx2hp<br/>
-capped_abb_eligibility  = 1404449.6 When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1955876223" onClick='toggleBox("Output-1955876223", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1955876223" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1955876223">
-TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-Eligibility is not getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-198640571" onClick='toggleBox("Output-198640571", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-198640571" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-198640571">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 773597.4099999999 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1715486252" onClick='toggleBox("Output-1715486252", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1715486252" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1715486252">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '0.0'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1908839976" onClick='toggleBox("Output-1908839976", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1908839976" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1908839976">
-TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-1482169014" onClick='toggleBox("Output-1482169014", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1482169014" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1482169014">
-TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)<br/>
-capped_abb_eligibility  = 0.0 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-593315506" onClick='toggleBox("Output-593315506", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-593315506" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-593315506">
-TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-214869182" onClick='toggleBox("Output-214869182", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-214869182" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-214869182">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-205606579" onClick='toggleBox("Output-205606579", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-205606579" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-205606579">
-TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 1283763.9When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-784951738" onClick='toggleBox("Output-784951738", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-784951738" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-784951738">
-TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC<br/>
- When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '0.0'  ... Eligibility is getting calculated Properly.!!! <br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-869304868" onClick='toggleBox("Output-869304868", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-869304868" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-869304868">
-TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct<br/>
-BTO Capping = 500000.0 And Grade = B when fixed capping =500000.0  Eligibility is getting calculated properly..!!!<br/>
-capped_banking_eligibility = 425000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-799515859" onClick='toggleBox("Output-799515859", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-799515859" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-799515859">
-TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil<br/>
-When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1246329279" onClick='toggleBox("Output-1246329279", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1246329279" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1246329279">
-TC_10 : To verify that Max Capping of NTC and Thin Cibil<br/>
-capped_banking_eligibility   = 408141.62 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-1804179825" onClick='toggleBox("Output-1804179825", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1804179825" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1804179825">
-TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct<br/>
-Eligibility is getting calculated properly..!!!  When Fixed capping is 1000000 Lakh ,capped_banking_eligibility after Haircut is = 0.0<br/>
-Capping = 0.0 And Grade =A Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>4</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-1690307000" onClick='toggleBox("Output-1690307000", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1690307000" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1690307000">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>20</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-795146655" onClick='toggleBox("Output-795146655", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-795146655" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-795146655">
-TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct<br/>
-capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!<br/>
-</div>
-</td>
-<td></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
-<tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-1432737560" onClick='toggleBox("Output-1432737560", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1432737560" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1432737560">
-TC_11 : To verify that NTC with limit<br/>
-IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!<br/>
-</div>
-</td>
-<td></td>
-<td>16</td>
-<td>Eligibility_Automation.Smfg_Direct@623e0631</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@245253d8</td></tr>
 </table><p>
 </body>
 </html>

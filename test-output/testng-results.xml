@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="88" passed="88" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="0" failed="6" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[ DB Connection Successfull]]>
@@ -8,738 +8,30 @@
       <![CDATA[ DB Connection Successfull]]>
     </line>
     <line>
-      <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is A]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is B]]>
     </line>
     <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is C]]>
     </line>
     <line>
-      <![CDATA[capped_abb_eligibility = 267891.72 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is D]]>
     </line>
     <line>
-      <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is E]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility = 223435.05 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility = 174824.19 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility = 121670.97 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1000000 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility = 121670.97 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility = 174824.19 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is getting calculated properly..!!!  When Fixed capping is 1000000 Lakh ,capped_banking_eligibility after Haircut is = 0.0]]>
-    </line>
-    <line>
-      <![CDATA[Capping = 0.0 And Grade =A Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is getting calculated properly..!!!  When Fixed capping is 800000 Lakh , capped_banking_eligibility after Haircut is = 680000.0]]>
-    </line>
-    <line>
-      <![CDATA[Capping = 680000.0 And Grade =B Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 450000.0]]>
-    </line>
-    <line>
-      <![CDATA[Capping = 450000.0 And Grade =C Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0]]>
-    </line>
-    <line>
-      <![CDATA[Capping = 0.0 And Grade =D Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0]]>
-    </line>
-    <line>
-      <![CDATA[Capping = 0.0 And Grade =E Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0]]>
-    </line>
-    <line>
-      <![CDATA[Capping = 0.0 And Grade =NA Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 1283763.9When Fixed capping is 1500000 Lakh ,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 136517.19 When Fixed capping is 00.00 , Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 773597.4099999999 When Fixed capping is 1500000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 157082.8125 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 471248.4375 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 109323.65 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 327970.94999999995 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 1000000.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 773597.4099999999 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 471248.4375 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 1283763.9When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 773597.4099999999When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 471248.4375When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 327970.94999999995When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 1000000.0 And Grade = A Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 680000.0 When Fixed capping is 800000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 450000.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[BTO Capping = 500000.0 And Grade = B when fixed capping =500000.0  Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 425000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 375000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isA]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isB]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isC]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 1404449.6 When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isD]]>
-    </line>
-    <line>
-      <![CDATA[ Test Loancode =6685a319lx2hp]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 1404449.6 When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility   = 408141.62 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility   = 408141.62 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-    </line>
-    <line>
-      <![CDATA[capped_banking_eligibility   = 0.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_11 : To verify that NTC with limit]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_11 : To verify that NTC with limit]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_11 : To verify that NTC with limit]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_11 : To verify that NTC with limit]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_11 : To verify that NTC with limit]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_11 : To verify that NTC with limit]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 133945.86 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 94959.892 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 65559.0675 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 45626.6175 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 0.0 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-    </line>
-    <line>
-      <![CDATA[capped_abb_eligibility  = 0.0 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 300 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '1000000.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '800000.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '600000.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-    </line>
-    <line>
-      <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-    </line>
-    <line>
-      <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '191351.23'  ... Eligibility is getting calculated Properly.!!! ]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-    </line>
-    <line>
-      <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '135656.98'  ... Eligibility is getting calculated Properly.!!! ]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-    </line>
-    <line>
-      <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '93655.82'  ... Eligibility is getting calculated Properly.!!! ]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-    </line>
-    <line>
-      <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '0.0'  ... Eligibility is getting calculated Properly.!!! ]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-    </line>
-    <line>
-      <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '0.0'  ... Eligibility is getting calculated Properly.!!! ]]>
-    </line>
-    <line>
-      <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-    </line>
-    <line>
-      <![CDATA[ When Fixed capping is 00.00 Lakh And Experiment Is Both Rented Then ODCC Capping Is '0.0'  ... Eligibility is getting calculated Properly.!!! ]]>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is NA]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-04T00:44:35 IST" name="Default suite" finished-at="2024-07-04T00:54:02 IST" duration-ms="567218">
+  <suite started-at="2024-07-04T16:47:41 IST" name="Default suite" finished-at="2024-07-04T16:48:55 IST" duration-ms="74607">
     <groups>
     </groups>
-    <test started-at="2024-07-04T00:44:35 IST" name="Default test" finished-at="2024-07-04T00:54:02 IST" duration-ms="567218">
-      <class name="Eligibility_Automation.Smfg_Direct">
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:44:35 IST" name="preCondition" finished-at="2024-07-04T00:45:19 IST" duration-ms="43952" status="PASS">
+    <test started-at="2024-07-04T16:47:41 IST" name="Default test" finished-at="2024-07-04T16:48:55 IST" duration-ms="74607">
+      <class name="Eligibility_Automation.Vivriti_Direct_Topup">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:47:41 IST" name="preCondition" finished-at="2024-07-04T16:48:28 IST" duration-ms="47275" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ DB Connection Successfull]]>
@@ -749,7 +41,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:19 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-04T00:45:26 IST" duration-ms="6786" status="PASS">
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:48:28 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T16:48:33 IST" duration-ms="5286" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -757,157 +49,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "null"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "null"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
-              <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility = 267891.72 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:27 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-04T00:45:32 IST" duration-ms="5104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility = 223435.05 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:32 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-04T00:45:37 IST" duration-ms="4896" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility = 174824.19 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:37 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-04T00:45:41 IST" duration-ms="4451" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility = 121670.97 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:41 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-04T00:45:46 IST" duration-ms="4297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1000000 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility = 121670.97 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:46 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-04T00:45:50 IST" duration-ms="4565" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify the final capping if policy is SMFG , ALL risk grade , no experiment, ABB & BTO]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 1500000 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility = 174824.19 When Fixed capping is 1500000.0 Lakh , Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_01 -->
-        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:50 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T00:45:54 IST" duration-ms="4021" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is getting calculated properly..!!!  When Fixed capping is 1000000 Lakh ,capped_banking_eligibility after Haircut is = 0.0]]>
-            </line>
-            <line>
-              <![CDATA[Capping = 0.0 And Grade =A Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is A]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:54 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T00:45:59 IST" duration-ms="4133" status="PASS">
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:48:34 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T16:48:38 IST" duration-ms="4573" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -915,19 +104,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "null"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "null"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
-              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is getting calculated properly..!!!  When Fixed capping is 800000 Lakh , capped_banking_eligibility after Haircut is = 680000.0]]>
-            </line>
-            <line>
-              <![CDATA[Capping = 680000.0 And Grade =B Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is B]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:45:59 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T00:46:02 IST" duration-ms="3732" status="PASS">
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:48:38 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T16:48:44 IST" duration-ms="5299" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -935,19 +159,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "null"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "null"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
-              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 450000.0]]>
-            </line>
-            <line>
-              <![CDATA[Capping = 450000.0 And Grade =C Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is C]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:02 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T00:46:07 IST" duration-ms="4093" status="PASS">
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:48:44 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T16:48:47 IST" duration-ms="3754" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -955,19 +214,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "null"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "null"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
-              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0]]>
-            </line>
-            <line>
-              <![CDATA[Capping = 0.0 And Grade =D Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is D]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:07 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T00:46:11 IST" duration-ms="3916" status="PASS">
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:48:47 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T16:48:52 IST" duration-ms="4190" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -975,19 +269,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "null"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "null"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
-              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0]]>
-            </line>
-            <line>
-              <![CDATA[Capping = 0.0 And Grade =E Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is E]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:11 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T00:46:14 IST" duration-ms="3720" status="PASS">
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@245253d8]" started-at="2024-07-04T16:48:52 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-04T16:48:55 IST" duration-ms="3601" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -995,1455 +324,54 @@
               </value>
             </param>
           </params>
+          <exception class="java.lang.NumberFormatException">
+            <message>
+              <![CDATA[For input string: "null"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NumberFormatException: For input string: "null"
+at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
+at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
+at java.base/java.lang.Double.parseDouble(Double.java:651)
+at Eligibility_Automation.Vivriti_Direct_Topup.TC_02(Vivriti_Direct_Topup.java:185)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
-              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is getting calculated properly..!!!   When Fixed capping is 600000 Lakh , capped_banking_eligibility after Haircut is = 0.0]]>
-            </line>
-            <line>
-              <![CDATA[Capping = 0.0 And Grade =NA Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup Risk_Grade is NA]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_02 -->
-        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:14 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-04T00:46:18 IST" duration-ms="4091" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 1283763.9When Fixed capping is 1500000 Lakh ,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:18 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-04T00:46:23 IST" duration-ms="4704" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 136517.19 When Fixed capping is 00.00 , Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 773597.4099999999 When Fixed capping is 1500000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:23 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-04T00:46:29 IST" duration-ms="5656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 157082.8125 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 471248.4375 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:29 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-04T00:46:34 IST" duration-ms="5053" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 109323.65 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 327970.94999999995 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:34 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-04T00:46:38 IST" duration-ms="4426" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:38 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-04T00:46:42 IST" duration-ms="3683" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Cautious Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 00.00 ,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh,  Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_03 -->
-        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:42 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-04T00:46:46 IST" duration-ms="4009" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 1000000.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:46 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-04T00:46:50 IST" duration-ms="4199" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 773597.4099999999 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:50 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-04T00:46:55 IST" duration-ms="4144" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 471248.4375 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:55 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-04T00:46:58 IST" duration-ms="3759" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:46:58 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-04T00:47:03 IST" duration-ms="4623" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:03 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-04T00:47:07 IST" duration-ms="3656" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_04 : To verify that When experiment is Both Toxic Profile, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_04 -->
-        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:07 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-04T00:47:11 IST" duration-ms="4323" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 1283763.9When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:11 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-04T00:47:15 IST" duration-ms="3801" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 773597.4099999999When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:15 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-04T00:47:19 IST" duration-ms="4339" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 471248.4375When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:19 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-04T00:47:23 IST" duration-ms="3606" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 327970.94999999995When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:23 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-04T00:47:27 IST" duration-ms="4168" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:27 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-04T00:47:31 IST" duration-ms="4008" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_05 : To verify that When experiment is  Cautious Location, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0When Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_05 -->
-        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:31 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-04T00:47:35 IST" duration-ms="3848" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 1000000.0 And Grade = A Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:35 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-04T00:47:39 IST" duration-ms="4104" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 680000.0 When Fixed capping is 800000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:39 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-04T00:47:43 IST" duration-ms="4138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 450000.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:43 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-04T00:47:47 IST" duration-ms="3696" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:47 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-04T00:47:51 IST" duration-ms="4056" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:51 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-04T00:47:55 IST" duration-ms="3671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_06 : To verify that When experiment is Salaried, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 600000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_06 -->
-        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:55 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-04T00:47:59 IST" duration-ms="3741" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_07 -->
-        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:47:59 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-04T00:48:03 IST" duration-ms="4513" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[BTO Capping = 500000.0 And Grade = B when fixed capping =500000.0  Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 425000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_07 -->
-        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:03 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-04T00:48:07 IST" duration-ms="4120" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 375000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_07 -->
-        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:07 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-04T00:48:11 IST" duration-ms="3745" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_07 -->
-        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:11 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-04T00:48:15 IST" duration-ms="4255" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_07 -->
-        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:15 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-04T00:48:20 IST" duration-ms="4728" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_07 : To verify that When Experiment is Personal Loan, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_07 -->
-        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:20 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-04T00:48:26 IST" duration-ms="5643" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:26 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-04T00:48:31 IST" duration-ms="4970" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:31 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-04T00:48:36 IST" duration-ms="5132" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 350000.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:36 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-04T00:48:40 IST" duration-ms="3684" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:40 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-04T00:48:44 IST" duration-ms="4269" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:44 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-04T00:48:48 IST" duration-ms="3748" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_08 : To verify that When Experiment is Saving Account, Policy SMFG_Direct]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility = 0.0 When Fixed capping is 500000 Lakh,Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_08 -->
-        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:48 IST" name="TC_09" data-provider="Final_grade" finished-at="2024-07-04T00:48:52 IST" duration-ms="4451" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isA]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_09 -->
-        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:52 IST" name="TC_09" data-provider="Final_grade" finished-at="2024-07-04T00:48:57 IST" duration-ms="4320" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isB]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_09 -->
-        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:48:57 IST" name="TC_09" data-provider="Final_grade" finished-at="2024-07-04T00:49:01 IST" duration-ms="4281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isC]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 1404449.6 When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_09 -->
-        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:01 IST" name="TC_09" data-provider="Final_grade" finished-at="2024-07-04T00:49:05 IST" duration-ms="3896" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isD]]>
-            </line>
-            <line>
-              <![CDATA[ Test Loancode =6685a319lx2hp]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 1404449.6 When Fixed capping is 1500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 223435.05 When Fixed capping is 2000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_09 -->
-        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:05 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-04T00:49:09 IST" duration-ms="4195" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:09 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-04T00:49:13 IST" duration-ms="3633" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:13 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-04T00:49:17 IST" duration-ms="3915" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility   = 500000.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:17 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-04T00:49:21 IST" duration-ms="4505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility   = 408141.62 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:21 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-04T00:49:26 IST" duration-ms="4401" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility   = 408141.62 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:26 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-04T00:49:29 IST" duration-ms="3614" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_10 : To verify that Max Capping of NTC and Thin Cibil]]>
-            </line>
-            <line>
-              <![CDATA[capped_banking_eligibility   = 0.0 When Fixed capping is 500000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_10 -->
-        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:29 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-04T00:49:45 IST" duration-ms="16138" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_11 : To verify that NTC with limit]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:49:45 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-04T00:50:02 IST" duration-ms="16867" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_11 : To verify that NTC with limit]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:50:02 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-04T00:50:19 IST" duration-ms="16263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_11 : To verify that NTC with limit]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:50:19 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-04T00:50:36 IST" duration-ms="17592" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_11 : To verify that NTC with limit]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:50:36 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-04T00:50:57 IST" duration-ms="20783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_11 : To verify that NTC with limit]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 408141.62 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:50:57 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-04T00:51:13 IST" duration-ms="15804" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_11 : To verify that NTC with limit]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_11 -->
-        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:13 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-04T00:51:17 IST" duration-ms="3647" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 133945.86 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:17 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-04T00:51:20 IST" duration-ms="3898" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 94959.892 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:21 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-04T00:51:25 IST" duration-ms="4120" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 65559.0675 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:25 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-04T00:51:28 IST" duration-ms="3526" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 45626.6175 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:28 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-04T00:51:32 IST" duration-ms="4115" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 0.0 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:32 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-04T00:51:36 IST" duration-ms="3476" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_12 : To verify that When ODCC, Policy SMFG_Direct (only ABB)]]>
-            </line>
-            <line>
-              <![CDATA[capped_abb_eligibility  = 0.0 And Fixed capping is 1000000 Lakh, Eligibility is getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_12 -->
-        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:36 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-04T00:51:52 IST" duration-ms="16164" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_13 -->
-        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:51:52 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-04T00:52:08 IST" duration-ms="15446" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_13 -->
-        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:52:08 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-04T00:52:24 IST" duration-ms="16140" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_13 -->
-        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:52:24 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-04T00:52:40 IST" duration-ms="16136" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_13 -->
-        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:52:40 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-04T00:52:56 IST" duration-ms="16281" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 500000.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_13 -->
-        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:52:56 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-04T00:53:14 IST" duration-ms="17382" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is NTC]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS -1 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 0 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 200 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh And Cibil_Score IS 300 Experiment Is Both_Rented Then capped_banking_eligibility IS 0.0 ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_13 -->
-        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:14 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-04T00:53:17 IST" duration-ms="3342" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '1000000.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:17 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-04T00:53:21 IST" duration-ms="3853" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '800000.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:21 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-04T00:53:25 IST" duration-ms="3977" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '600000.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:25 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-04T00:53:29 IST" duration-ms="3828" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:29 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-04T00:53:33 IST" duration-ms="4345" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:33 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-04T00:53:37 IST" duration-ms="3851" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil]]>
-            </line>
-            <line>
-              <![CDATA[When Fixed capping is 500000 Lakh Then capped_banking_eligibility IS '0.0' ... Eligibility Capping is calculated Properly..!!!!]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_14 -->
-        <test-method signature="TC_15(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:37 IST" name="TC_15" data-provider="final_grade" finished-at="2024-07-04T00:53:41 IST" duration-ms="3637" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[A]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-            </line>
-            <line>
-              <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '191351.23'  ... Eligibility is getting calculated Properly.!!! ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_15 -->
-        <test-method signature="TC_15(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:41 IST" name="TC_15" data-provider="final_grade" finished-at="2024-07-04T00:53:45 IST" duration-ms="4439" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[B]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-            </line>
-            <line>
-              <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '135656.98'  ... Eligibility is getting calculated Properly.!!! ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_15 -->
-        <test-method signature="TC_15(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:45 IST" name="TC_15" data-provider="final_grade" finished-at="2024-07-04T00:53:50 IST" duration-ms="4313" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[C]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-            </line>
-            <line>
-              <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '93655.82'  ... Eligibility is getting calculated Properly.!!! ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_15 -->
-        <test-method signature="TC_15(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:50 IST" name="TC_15" data-provider="final_grade" finished-at="2024-07-04T00:53:54 IST" duration-ms="4109" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[D]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-            </line>
-            <line>
-              <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '0.0'  ... Eligibility is getting calculated Properly.!!! ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_15 -->
-        <test-method signature="TC_15(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:54 IST" name="TC_15" data-provider="final_grade" finished-at="2024-07-04T00:53:57 IST" duration-ms="3761" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[E]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-            </line>
-            <line>
-              <![CDATA[ When Fixed capping is 1000000 Lakh And Experiment Is Both Rented Then ODCC capped_abb_eligibility  Is '0.0'  ... Eligibility is getting calculated Properly.!!! ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_15 -->
-        <test-method signature="TC_15(java.lang.String)[pri:0, instance:Eligibility_Automation.Smfg_Direct@623e0631]" started-at="2024-07-04T00:53:57 IST" name="TC_15" data-provider="final_grade" finished-at="2024-07-04T00:54:02 IST" duration-ms="4893" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[NA]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-            <line>
-              <![CDATA[TC_01 : To verify that When experiment is Both Rented, Policy SMFG_Direct and account is ODCC]]>
-            </line>
-            <line>
-              <![CDATA[ When Fixed capping is 00.00 Lakh And Experiment Is Both Rented Then ODCC Capping Is '0.0'  ... Eligibility is getting calculated Properly.!!! ]]>
-            </line>
-          </reporter-output>
-        </test-method> <!-- TC_15 -->
-      </class> <!-- Eligibility_Automation.Smfg_Direct -->
+      </class> <!-- Eligibility_Automation.Vivriti_Direct_Topup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
