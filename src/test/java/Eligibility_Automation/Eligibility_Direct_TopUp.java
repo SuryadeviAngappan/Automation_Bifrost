@@ -220,8 +220,6 @@ public class Eligibility_Direct_TopUp {
 			ListnerClass.reportLog("Invalid grade");
 
 		}
-		System.out.println("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
-		ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
 
 	}
 	
@@ -289,8 +287,6 @@ public class Eligibility_Direct_TopUp {
 			ListnerClass.reportLog("Invalid grade");
 
 		}
-		System.out.println("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
-		ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
 
 	}
 	
@@ -436,10 +432,8 @@ public class Eligibility_Direct_TopUp {
 			ListnerClass.reportLog("Invalid grade");
 
 		}
-		System.out.println("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
-		ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
-
 	}
+	
 	/*
 	 * When experiment is  Cautious Location, BTO,Policy Direct_TOPup
 	 */
@@ -481,9 +475,9 @@ public class Eligibility_Direct_TopUp {
 	} else {
 		System.out.println("Eligibility is not getting calculated properly..!!!");
 		ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-	}	
+		}	
 	}
+	
 
 	/*
 	 * When experiment is Salaried, Policy Direct_TOPup
@@ -560,8 +554,6 @@ public class Eligibility_Direct_TopUp {
 			ListnerClass.reportLog("Invalid grade");
 
 		}
-		System.out.println("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
-		ListnerClass.reportLog("Capping = " + capping + " And " + "Grade =" + grade + " " + eligibilityMessage);
 
 	}
 	/*
@@ -776,7 +768,6 @@ public void TC_12(String final_grade) throws SQLException
 			boolean isEligible = (cibil_score.equals("-1") || cibil_score.equals("0") || cibil_score.equals("200") || cibil_score.equals("300")) && (BTO_Capping <= 500000.00);
 
 			if (isEligible) {
-				System.out.println("IF Risk_Garde IS '" + grade + "' And Cibil_Score IS '" + cibil_score + "' Experiment Is Both_Rented Then Final_BTO_Capping IS '" + BTO_Capping + "' ... Eligibility Capping is calculated Properly..!!!!");
 				ListnerClass.reportLog("IF Risk_Garde IS '" + grade + "' And Cibil_Score IS '" + cibil_score + "' Experiment Is Both_Rented Then Final_BTO_Capping IS '" + BTO_Capping + "' when fixed capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
 			} else {
 				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
