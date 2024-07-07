@@ -28,7 +28,8 @@ public class Eligibility_Direct_TopUp {
 	Doc doc = new Doc();
 	Create_New_Loancode lc = new Create_New_Loancode();
 	String loancode = lc.Fresh_Lead();
-
+	
+	//6688fde7yg5b3
 	public void Direct_TopUp_Policy(String loancode) 
 	{
 		String query="UPDATE loan_application_metadata AS lam\n"
@@ -46,17 +47,24 @@ public class Eligibility_Direct_TopUp {
 
 	}
 	
+	public void loan_application_status(String loancode) {
+		
+		String las="UPDATE flexiloans_staging_db.loan_application SET application_status = 'IP_FRESH_REGISTRATION' WHERE code = '"+loancode+"';";
+		DataBaseUtility.executeUpdateQuery(las);
+	}
 	
 	@BeforeClass
 	public void preCondition() throws Throwable 
 	{
 
 		DataBaseUtility.connectToDB();
-    	//loancode=lc.IP_Qalified();
-		Direct_TopUp_Policy(loancode);
-
+		loan_application_status(loancode);
 		doc.BS(loancode);
 		Thread.sleep(40000);
+		Direct_TopUp_Policy(loancode);
+
+
+
 
 
 }
@@ -78,24 +86,27 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_01(String final_grade)  throws SQLException {
 
-		ListnerClass.reportLog("TC_01 :"+" To verify the final capping if policy is Direct_TOPup , ALL risk grade , no experiment, ABB & BTO Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_01 :"+" To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is " +final_grade);
 		ListnerClass.reportLog(" Test Loancode ="+loancode);
 		
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
 		try{DataBaseUtility.executeUpdateQuery(query);}
 		catch(Exception e) {e.printStackTrace();}
-		
+
 
 		HashMap hash= new HashMap();
 		hash.put("loan_code", loancode);
 
 		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
-		String retur=repo.extract().body().asPrettyString();		
+		String retur=repo.extract().body().asPrettyString();
 		
-		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.EpiMoney.DIRECT_TOPUP[0].capped_banking_eligibility");
-		double BTO_capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
-		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.EpiMoney.DIRECT_TOPUP[0].capped_abb_eligibility");
+		
+		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.EpiMoney.DIRECT_TOPUP[0].capped_banking_eligibility");
+		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+		System.out.println(BTO_Capping);
+
+		String actual_capped_abb_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.EpiMoney.DIRECT_TOPUP[0].capped_abb_eligibility");
 		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
@@ -103,16 +114,20 @@ public class Eligibility_Direct_TopUp {
 		String FixedCapping = "1500000";
 		String FixedCapping1 = "1000000";
 
+
 		
 		if (abb_capping <= 1500000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") )) {
+			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade = " + grade + "  Eligibility is getting calculated properly..!!!");
 			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
-			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 		}else if (abb_capping <= 1000000.00 && (grade.equalsIgnoreCase("E")||grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") ||grade.equalsIgnoreCase("NA") )) {
-			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
 			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And " + "Grade = " + grade + " when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+
+
 		} else {
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 			System.out.println("Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+
 		}
 
 		// BTO Capping
@@ -126,18 +141,20 @@ public class Eligibility_Direct_TopUp {
 		
 
 
-
 		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B")  ||
 				grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && abb_capping <= gradeNACapping) {
-			
-			ListnerClass.reportLog("BTO Capping = " + BTO_capping + " And Grade = " + grade + " when fixed capping = "+ gradeACapping +"  Eligibility is getting calculated properly..!!!");
-			System.out.println("BTO Capping = " + BTO_capping + " And Grade = " + grade +   "  Eligibility is getting calculated properly..!!!");
-		} else {
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+			System.out.println("BTO Capping = " + BTO_Capping + " And Grade = " + grade +   "  Eligibility is getting calculated properly..!!!");
+			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And Grade = " + grade + " when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+        } 
+		else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+
 		}
 
 	}
+	
+	
 	/*
 	 * When experiment is Both Rented, Policy Direct_TOPup
 	 */
@@ -146,7 +163,7 @@ public class Eligibility_Direct_TopUp {
 	public void TC_02(String final_grade) throws SQLException 
 	{
 		
-		ListnerClass.reportLog("TC_02 :"+" To verify that When experiment is Both Rented, Policy Direct_TOPup Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_02 :"+" To verify that When experiment is Both Rented, Policy Direct_TOPup when Risk_Grade is " +final_grade);
 
 
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
@@ -229,7 +246,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_03(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_03 :"+" To verify that When experiment is Both Cautious Profile,ABB, Policy Direct_TOPup Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_03 :"+" To verify that When experiment is Both Cautious Profile,ABB, Policy Direct_TOPup when Risk_Grade is " +final_grade);
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 		DataBaseUtility.executeUpdateQuery(query);
 
@@ -296,7 +313,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_04(String final_grade) throws SQLException 
 	{
-	ListnerClass.reportLog("TC_04 :"+" To verify that When experiment is Both Cautious Profile,BTO, Policy Direct_TOPup Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_04 :"+" To verify that When experiment is Both Cautious Profile,BTO, Policy Direct_TOPup when Risk_Grade is " +final_grade);
 	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 	DataBaseUtility.executeUpdateQuery(query);
 
@@ -337,7 +354,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_05(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_05 :"+" When experiment is Both Toxic Profile, Policy Direct_TOPup Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_05 :"+" When experiment is Both Toxic Profile, Policy Direct_TOPup when Risk_Grade is " +final_grade);
 	
 	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 	DataBaseUtility.executeUpdateQuery(query);
@@ -377,7 +394,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_06(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_06 :"+" To verify that When experiment is  Cautious Location, ABB,Policy Direct_TOPup Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_06 :"+" To verify that When experiment is  Cautious Location, ABB,Policy Direct_TOPup when Risk_Grade is " +final_grade);
 
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 		DataBaseUtility.executeUpdateQuery(query);
@@ -440,7 +457,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_07(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_07 :"+" When experiment is  Cautious Location, BTO,Policy Direct_TOPup Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_07 :"+" When experiment is  Cautious Location, BTO,Policy Direct_TOPup when Risk_Grade is " +final_grade);
 
 	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 	DataBaseUtility.executeUpdateQuery(query);
@@ -486,7 +503,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_08(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_08 :"+" When experiment is Salaried, Policy Direct_TOPup Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_08 :"+" When experiment is Salaried, Policy Direct_TOPup when Risk_Grade is " +final_grade);
 
 
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
@@ -564,7 +581,7 @@ public class Eligibility_Direct_TopUp {
 
 	public void TC_09(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_09 :"+" When ODCC, Policy Direct_TOPup (only ABB) Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_09 :"+" When ODCC, Policy Direct_TOPup (only ABB) when Risk_Grade is " +final_grade);
 
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 		DataBaseUtility.executeUpdateQuery(query);
@@ -608,7 +625,7 @@ public class Eligibility_Direct_TopUp {
 
 	public void TC_10(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_10 :"+" To verify that When Experiment is Saving Account, Policy Direct_TOPup Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_10 :"+" To verify that When Experiment is Saving Account, Policy Direct_TOPup when Risk_Grade is " +final_grade);
 
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 		DataBaseUtility.executeUpdateQuery(query);
@@ -655,7 +672,7 @@ public class Eligibility_Direct_TopUp {
 
 	public void TC_11(String final_grade) throws SQLException 
 	{
-		ListnerClass.reportLog("TC_11 :"+" To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned Risk_Grade is "+final_grade);
+		ListnerClass.reportLog("TC_11 :"+" To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned when Risk_Grade is " +final_grade);
 
 		
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
@@ -722,7 +739,7 @@ public class Eligibility_Direct_TopUp {
 @Test(dataProvider = "final_grade")
 public void TC_12(String final_grade) throws SQLException 
 {
-	ListnerClass.reportLog("TC_12 :"+" To verify that When experiment is Both Rented, Policy Direct-Topup and account is NTC Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_12 :"+" To verify that When experiment is Both Rented, Policy Direct-Topup and account is NTC when Risk_Grade is " +final_grade);
 
 	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 	DataBaseUtility.executeUpdateQuery(query);
@@ -789,7 +806,7 @@ public void TC_12(String final_grade) throws SQLException
 public void TC_13(String final_grade) throws SQLException 
 
 {
-	ListnerClass.reportLog("TC_13 :"+" To verify that When experiment is Both Rented, Policy Direct-Topup and account is Thin cibil Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_13 :"+" To verify that When experiment is Both Rented, Policy Direct-Topup and account is Thin cibil when Risk_Grade is " +final_grade);
 
 	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 	DataBaseUtility.executeUpdateQuery(query);	
@@ -833,7 +850,7 @@ public void TC_13(String final_grade) throws SQLException
 @Test(dataProvider = "final_grade")
 public void TC_14(String final_grade) throws SQLException 
 {
-	ListnerClass.reportLog("TC_14 :"+" To verify that When experiment is Both Rented, Policy Direct-Topup and account is ODCC Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_14 :"+" To verify that When experiment is Both Rented, Policy Direct-Topup and account is ODCC when Risk_Grade is " +final_grade);
 
 	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 	DataBaseUtility.executeUpdateQuery(query);	
