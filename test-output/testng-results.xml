@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="1" failed="5" skipped="0">
+<testng-results ignored="0" total="84" passed="84" failed="0" skipped="0">
   <reporter-output>
     <line>
       <![CDATA[ DB Connection Successfull]]>
@@ -11,51 +11,621 @@
       <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is A]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =668b99fcexn47]]>
+      <![CDATA[ Test Loancode =668d133fdbmuq]]>
     </line>
     <line>
-      <![CDATA[ABB_Capping = 360903.28 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+      <![CDATA[ABB_Capping = 433083.9 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
     </line>
     <line>
-      <![CDATA[BTO Capping = 290560.03 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+      <![CDATA[BTO Capping = -131481.4 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
     </line>
     <line>
       <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is B]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =668b99fcexn47]]>
+      <![CDATA[ Test Loancode =668d133fdbmuq]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 331112.44 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -100523.54 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
     </line>
     <line>
       <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is C]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =668b99fcexn47]]>
+      <![CDATA[ Test Loancode =668d133fdbmuq]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -71503.18 And Grade = C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
     </line>
     <line>
       <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is D]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =668b99fcexn47]]>
+      <![CDATA[ Test Loancode =668d133fdbmuq]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -49763.49 And Grade = D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
     </line>
     <line>
       <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is E]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =668b99fcexn47]]>
+      <![CDATA[ Test Loancode =668d133fdbmuq]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -49763.49 And Grade = E when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
     </line>
     <line>
       <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is NA]]>
     </line>
     <line>
-      <![CDATA[ Test Loancode =668b99fcexn47]]>
+      <![CDATA[ Test Loancode =668d133fdbmuq]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -71503.18 And Grade = NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -100523.54 And Grade =B when fixed capping =800000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -100523.54 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -131481.4 And Grade =A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -100523.54 And Grade =B when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade =C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade =D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade =E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade =NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -131481.4 And Grade =A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -100523.54 And Grade =B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade =C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade =D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade =E when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade =NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -100523.54 And Grade = B when fixed capping =800000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 433083.9 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 331112.44 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -100523.54 And Grade = B when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 433083.9 And Grade =A when fixed capping =2000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -131481.4 And Grade = A when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 331112.44 And Grade =B when fixed capping =2000000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -100523.54 And Grade = B when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 235522.84 And Grade =C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -71503.18 And Grade = C when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[ABB_Capping = 163914.92 And Grade =D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[BTO Capping = -49763.49 And Grade = D when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'A Than Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'B Than Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'C Than Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'D Than Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'E Than Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[IF Risk_Garde IS 'NA Than Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+    </line>
+    <line>
+      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is A]]>
+    </line>
+    <line>
+      <![CDATA[ Risk Grade Is 'A'  And Experiment Is Both Rented Then ODCC Capping Is '-131481.4' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+    </line>
+    <line>
+      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is B]]>
+    </line>
+    <line>
+      <![CDATA[ Risk Grade Is 'B'  And Experiment Is Both Rented Then ODCC Capping Is '-100523.54' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+    </line>
+    <line>
+      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is C]]>
+    </line>
+    <line>
+      <![CDATA[ Risk Grade Is 'C'  And Experiment Is Both Rented Then ODCC Capping Is '-71503.18' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+    </line>
+    <line>
+      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is D]]>
+    </line>
+    <line>
+      <![CDATA[ Risk Grade Is 'D'  And Experiment Is Both Rented Then ODCC Capping Is '-49763.49' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+    </line>
+    <line>
+      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is E]]>
+    </line>
+    <line>
+      <![CDATA[ Risk Grade Is 'E'  And Experiment Is Both Rented Then ODCC Capping Is '-49763.49' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+    </line>
+    <line>
+      <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is NA]]>
+    </line>
+    <line>
+      <![CDATA[ Risk Grade Is 'NA'  And Experiment Is Both Rented Then ODCC Capping Is '-71503.18'  ... Eligibility is getting calculated Properly.!!! ]]>
     </line>
   </reporter-output>
-  <suite started-at="2024-07-08T13:19:19 IST" name="Default suite" finished-at="2024-07-08T13:20:14 IST" duration-ms="55164">
+  <suite started-at="2024-07-09T16:08:58 IST" name="Default suite" finished-at="2024-07-09T16:20:24 IST" duration-ms="685714">
     <groups>
     </groups>
-    <test started-at="2024-07-08T13:19:19 IST" name="Default test" finished-at="2024-07-08T13:20:14 IST" duration-ms="55164">
-      <class name="Eligibility_Automation.Eligibility_Direct_TopUp">
-        <test-method is-config="true" signature="preCondition()[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:19:19 IST" name="preCondition" finished-at="2024-07-08T13:20:03 IST" duration-ms="44018" status="PASS">
+    <test started-at="2024-07-09T16:08:58 IST" name="Default test" finished-at="2024-07-09T16:20:24 IST" duration-ms="685714">
+      <class name="Eligibility_Automation.Vivriti_Direct_Topup">
+        <test-method is-config="true" signature="preCondition()[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:08:59 IST" name="preCondition" finished-at="2024-07-09T16:10:12 IST" duration-ms="73290" status="PASS">
           <reporter-output>
             <line>
               <![CDATA[ DB Connection Successfull]]>
@@ -65,7 +635,7 @@
             </line>
           </reporter-output>
         </test-method> <!-- preCondition -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:20:03 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-08T13:20:09 IST" duration-ms="6003" status="PASS">
+        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:12 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-09T16:10:18 IST" duration-ms="6352" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -78,17 +648,17 @@
               <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is A]]>
             </line>
             <line>
-              <![CDATA[ Test Loancode =668b99fcexn47]]>
+              <![CDATA[ Test Loancode =668d133fdbmuq]]>
             </line>
             <line>
-              <![CDATA[ABB_Capping = 360903.28 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[ABB_Capping = 433083.9 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
             <line>
-              <![CDATA[BTO Capping = 290560.03 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+              <![CDATA[BTO Capping = -131481.4 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:20:10 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-08T13:20:13 IST" duration-ms="2781" status="FAIL">
+        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:19 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-09T16:10:26 IST" duration-ms="7180" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -96,57 +666,22 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "null"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "null"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
               <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is B]]>
             </line>
             <line>
-              <![CDATA[ Test Loancode =668b99fcexn47]]>
+              <![CDATA[ Test Loancode =668d133fdbmuq]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 331112.44 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -100523.54 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:20:13 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-08T13:20:13 IST" duration-ms="322" status="FAIL">
+        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:26 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-09T16:10:32 IST" duration-ms="6733" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -154,57 +689,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "null"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "null"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
               <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is C]]>
             </line>
             <line>
-              <![CDATA[ Test Loancode =668b99fcexn47]]>
+              <![CDATA[ Test Loancode =668d133fdbmuq]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -71503.18 And Grade = C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:20:13 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-08T13:20:13 IST" duration-ms="366" status="FAIL">
+        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:33 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-09T16:10:38 IST" duration-ms="5737" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -212,57 +712,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "null"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "null"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
               <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is D]]>
             </line>
             <line>
-              <![CDATA[ Test Loancode =668b99fcexn47]]>
+              <![CDATA[ Test Loancode =668d133fdbmuq]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -49763.49 And Grade = D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:20:13 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-08T13:20:14 IST" duration-ms="365" status="FAIL">
+        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:38 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-09T16:10:44 IST" duration-ms="5873" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -270,57 +735,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "null"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "null"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
               <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is E]]>
             </line>
             <line>
-              <![CDATA[ Test Loancode =668b99fcexn47]]>
+              <![CDATA[ Test Loancode =668d133fdbmuq]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -49763.49 And Grade = E when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Eligibility_Direct_TopUp@12417468]" started-at="2024-07-08T13:20:14 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-08T13:20:14 IST" duration-ms="276" status="FAIL">
+        <test-method signature="TC_01(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:44 IST" name="TC_01" data-provider="final_grade" finished-at="2024-07-09T16:10:50 IST" duration-ms="5749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -328,57 +758,1420 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
               </value>
             </param>
           </params>
-          <exception class="java.lang.NumberFormatException">
-            <message>
-              <![CDATA[For input string: "null"]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.NumberFormatException: For input string: "null"
-at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-at java.base/java.lang.Double.parseDouble(Double.java:651)
-at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-at org.testng.TestNG.runSuites(TestNG.java:1112)
-at org.testng.TestNG.run(TestNG.java:1079)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NumberFormatException -->
           <reporter-output>
             <line>
               <![CDATA[TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is NA]]>
             </line>
             <line>
-              <![CDATA[ Test Loancode =668b99fcexn47]]>
+              <![CDATA[ Test Loancode =668d133fdbmuq]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -71503.18 And Grade = NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
             </line>
           </reporter-output>
         </test-method> <!-- TC_01 -->
-      </class> <!-- Eligibility_Automation.Eligibility_Direct_TopUp -->
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:50 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-09T16:10:55 IST" duration-ms="5349" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:10:55 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-09T16:11:03 IST" duration-ms="7783" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -100523.54 And Grade =B when fixed capping =800000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:03 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-09T16:11:10 IST" duration-ms="7254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:10 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-09T16:11:16 IST" duration-ms="5852" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:16 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-09T16:11:22 IST" duration-ms="6107" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method signature="TC_02(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:22 IST" name="TC_02" data-provider="final_grade" finished-at="2024-07-09T16:11:28 IST" duration-ms="5387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_02 -->
+        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:28 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-09T16:11:33 IST" duration-ms="4858" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:33 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-09T16:11:38 IST" duration-ms="5433" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:38 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-09T16:11:43 IST" duration-ms="4947" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:43 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-09T16:11:48 IST" duration-ms="4864" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:48 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-09T16:11:53 IST" duration-ms="5486" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method signature="TC_03(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:53 IST" name="TC_03" data-provider="final_grade" finished-at="2024-07-09T16:11:59 IST" duration-ms="5073" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_03 -->
+        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:11:59 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-09T16:12:06 IST" duration-ms="7068" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:06 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-09T16:12:14 IST" duration-ms="8417" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -100523.54 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:14 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-09T16:12:20 IST" duration-ms="6044" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:20 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-09T16:12:26 IST" duration-ms="5380" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:26 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-09T16:12:31 IST" duration-ms="5316" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method signature="TC_04(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:31 IST" name="TC_04" data-provider="final_grade" finished-at="2024-07-09T16:12:36 IST" duration-ms="5017" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_04 -->
+        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:36 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-09T16:12:41 IST" duration-ms="5151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -131481.4 And Grade =A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:41 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-09T16:12:47 IST" duration-ms="5589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -100523.54 And Grade =B when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:47 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-09T16:12:52 IST" duration-ms="4966" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade =C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:52 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-09T16:12:57 IST" duration-ms="5070" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade =D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:12:57 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-09T16:13:02 IST" duration-ms="5074" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade =E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method signature="TC_05(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:02 IST" name="TC_05" data-provider="final_grade" finished-at="2024-07-09T16:13:09 IST" duration-ms="7294" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade =NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_05 -->
+        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:09 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-09T16:13:15 IST" duration-ms="6186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:15 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-09T16:13:21 IST" duration-ms="5798" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:21 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-09T16:13:26 IST" duration-ms="5231" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:26 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-09T16:13:32 IST" duration-ms="5153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:32 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-09T16:13:37 IST" duration-ms="5210" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method signature="TC_06(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:37 IST" name="TC_06" data-provider="final_grade" finished-at="2024-07-09T16:13:42 IST" duration-ms="5007" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_06 -->
+        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:42 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-09T16:13:47 IST" duration-ms="4823" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -131481.4 And Grade =A when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:47 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-09T16:13:52 IST" duration-ms="5184" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -100523.54 And Grade =B when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:52 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-09T16:13:57 IST" duration-ms="4924" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade =C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:13:57 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-09T16:14:02 IST" duration-ms="5185" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade =D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:02 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-09T16:14:09 IST" duration-ms="6581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade =E when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method signature="TC_07(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:09 IST" name="TC_07" data-provider="final_grade" finished-at="2024-07-09T16:14:14 IST" duration-ms="5605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade =NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_07 -->
+        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:14 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-09T16:14:19 IST" duration-ms="5327" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:20 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-09T16:14:26 IST" duration-ms="6222" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -100523.54 And Grade = B when fixed capping =800000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:26 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-09T16:14:33 IST" duration-ms="7248" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:33 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-09T16:14:40 IST" duration-ms="6933" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:40 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-09T16:14:47 IST" duration-ms="7012" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method signature="TC_08(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:47 IST" name="TC_08" data-provider="final_grade" finished-at="2024-07-09T16:14:53 IST" duration-ms="6134" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_08 -->
+        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:53 IST" name="TC_09" data-provider="final_grade" finished-at="2024-07-09T16:14:59 IST" duration-ms="6104" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 433083.9 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_09 -->
+        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:14:59 IST" name="TC_09" data-provider="final_grade" finished-at="2024-07-09T16:15:08 IST" duration-ms="8368" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 331112.44 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_09 -->
+        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:08 IST" name="TC_09" data-provider="final_grade" finished-at="2024-07-09T16:15:14 IST" duration-ms="5926" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_09 -->
+        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:14 IST" name="TC_09" data-provider="final_grade" finished-at="2024-07-09T16:15:21 IST" duration-ms="7436" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_09 -->
+        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:21 IST" name="TC_09" data-provider="final_grade" finished-at="2024-07-09T16:15:27 IST" duration-ms="6236" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_09 -->
+        <test-method signature="TC_09(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:27 IST" name="TC_09" data-provider="final_grade" finished-at="2024-07-09T16:15:34 IST" duration-ms="7030" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_09 -->
+        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:34 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-09T16:15:40 IST" duration-ms="5366" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -131481.4 And Grade = A when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_10 -->
+        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:40 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-09T16:15:46 IST" duration-ms="5857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -100523.54 And Grade = B when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_10 -->
+        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:46 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-09T16:15:51 IST" duration-ms="5138" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = C when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_10 -->
+        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:51 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-09T16:15:56 IST" duration-ms="5363" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = D when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_10 -->
+        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:15:56 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-09T16:16:01 IST" duration-ms="5006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -49763.49 And Grade = E when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_10 -->
+        <test-method signature="TC_10(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:01 IST" name="TC_10" data-provider="final_grade" finished-at="2024-07-09T16:16:08 IST" duration-ms="7180" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Capping = -71503.18 And Grade = NA when fixed capping =500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_10 -->
+        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:08 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-09T16:16:15 IST" duration-ms="6719" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 433083.9 And Grade =A when fixed capping =2000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -131481.4 And Grade = A when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:15 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-09T16:16:21 IST" duration-ms="6234" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 331112.44 And Grade =B when fixed capping =2000000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -100523.54 And Grade = B when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:21 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-09T16:16:26 IST" duration-ms="4857" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 235522.84 And Grade =C when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -71503.18 And Grade = C when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:26 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-09T16:16:31 IST" duration-ms="5217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[ABB_Capping = 163914.92 And Grade =D when fixed capping =1500000  Eligibility is getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[BTO Capping = -49763.49 And Grade = D when fixed capping =2000000Eligibility is getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:31 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-09T16:16:37 IST" duration-ms="5925" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+        <test-method signature="TC_11(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:37 IST" name="TC_11" data-provider="final_grade" finished-at="2024-07-09T16:16:43 IST" duration-ms="5889" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+            <line>
+              <![CDATA[Eligibility is not getting calculated properly..!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_11 -->
+        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:16:43 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-09T16:17:07 IST" duration-ms="23481" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'A' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_12 -->
+        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:17:07 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-09T16:17:35 IST" duration-ms="28499" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'B' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_12 -->
+        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:17:35 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-09T16:17:56 IST" duration-ms="20620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'C' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_12 -->
+        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:17:56 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-09T16:18:19 IST" duration-ms="23559" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'D' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_12 -->
+        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:18:19 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-09T16:18:41 IST" duration-ms="21405" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'E' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_12 -->
+        <test-method signature="TC_12(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:18:41 IST" name="TC_12" data-provider="final_grade" finished-at="2024-07-09T16:19:01 IST" duration-ms="20238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_12 -->
+        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:01 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-09T16:19:08 IST" duration-ms="6518" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'A Than Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_13 -->
+        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:08 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-09T16:19:13 IST" duration-ms="5266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'B Than Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_13 -->
+        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:13 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-09T16:19:22 IST" duration-ms="8645" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'C Than Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_13 -->
+        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:22 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-09T16:19:28 IST" duration-ms="6129" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'D Than Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_13 -->
+        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:28 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-09T16:19:34 IST" duration-ms="6290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'E Than Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_13 -->
+        <test-method signature="TC_13(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:34 IST" name="TC_13" data-provider="final_grade" finished-at="2024-07-09T16:19:40 IST" duration-ms="5735" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[IF Risk_Garde IS 'NA Than Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_13 -->
+        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:40 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-09T16:19:46 IST" duration-ms="6385" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[A]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is A]]>
+            </line>
+            <line>
+              <![CDATA[ Risk Grade Is 'A'  And Experiment Is Both Rented Then ODCC Capping Is '-131481.4' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_14 -->
+        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:46 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-09T16:19:52 IST" duration-ms="5763" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[B]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is B]]>
+            </line>
+            <line>
+              <![CDATA[ Risk Grade Is 'B'  And Experiment Is Both Rented Then ODCC Capping Is '-100523.54' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_14 -->
+        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:52 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-09T16:19:59 IST" duration-ms="6774" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[C]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is C]]>
+            </line>
+            <line>
+              <![CDATA[ Risk Grade Is 'C'  And Experiment Is Both Rented Then ODCC Capping Is '-71503.18' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_14 -->
+        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:19:59 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-09T16:20:09 IST" duration-ms="10131" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[D]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is D]]>
+            </line>
+            <line>
+              <![CDATA[ Risk Grade Is 'D'  And Experiment Is Both Rented Then ODCC Capping Is '-49763.49' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_14 -->
+        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:20:09 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-09T16:20:15 IST" duration-ms="6034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[E]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is E]]>
+            </line>
+            <line>
+              <![CDATA[ Risk Grade Is 'E'  And Experiment Is Both Rented Then ODCC Capping Is '-49763.49' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_14 -->
+        <test-method signature="TC_14(java.lang.String)[pri:0, instance:Eligibility_Automation.Vivriti_Direct_Topup@359066bc]" started-at="2024-07-09T16:20:15 IST" name="TC_14" data-provider="final_grade" finished-at="2024-07-09T16:20:24 IST" duration-ms="8597" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[NA]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is NA]]>
+            </line>
+            <line>
+              <![CDATA[ Risk Grade Is 'NA'  And Experiment Is Both Rented Then ODCC Capping Is '-71503.18'  ... Eligibility is getting calculated Properly.!!! ]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- TC_14 -->
+      </class> <!-- Eligibility_Automation.Vivriti_Direct_Topup -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

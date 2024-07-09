@@ -29,7 +29,6 @@ public class Eligibility_Direct_TopUp {
 	Create_New_Loancode lc = new Create_New_Loancode();
 	String loancode = lc.Fresh_Lead();
 	
-	//6688fde7yg5b3
 	public void Direct_TopUp_Policy(String loancode) 
 	{
 		String query="UPDATE loan_application_metadata AS lam\n"
@@ -86,7 +85,7 @@ public class Eligibility_Direct_TopUp {
 	@Test(dataProvider = "final_grade")
 	public void TC_01(String final_grade)  throws SQLException {
 
-		ListnerClass.reportLog("TC_01 :"+" To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is " +final_grade);
+		ListnerClass.reportLog("TC_01 :"+" To verify the final capping if policy is Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is " +final_grade);
 		ListnerClass.reportLog(" Test Loancode ="+loancode);
 		
 		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";

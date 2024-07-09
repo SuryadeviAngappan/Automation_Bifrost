@@ -35,7 +35,7 @@ public class Vivriti_Direct_Topup {
 				+ "JOIN loan_application AS la ON la.code = lam.loan_code\n"
 				+ "JOIN loan_applicant_detail AS lad ON lam.loan_code = lad.loan_code\n"
 				+ "SET lam.is_topup = '1',\n"
-				+ "    lam.reference_loan_code = '665068a039gr4',\n"
+				+ "    lam.reference_loan_code = '653b99018ab3j',\n"  
 				+ "    la.partner_code = '9c7bfcd45af46',\n"
 				+ "    la.application_status = 'IP_FRESH_REGISTRATION',\n"
 				+ "    lad.uid = '13e29405-30e9-4940-9810-c9b2b824aa07',\n"  
@@ -45,17 +45,24 @@ public class Vivriti_Direct_Topup {
 				+ "    AND lad.loan_code = '"+ loancode +"';";
 
 		DataBaseUtility.executeUpdateQuery(query);
-		
+		ValidatableResponse res = given().when().get(check_policy+loancode).then().log().all();
 		
 		String insertquery1 = "INSERT INTO flexiloans_staging_db.cre_rule_status ( loan_code, cre_reject_status, rule7_gold_loan_count, rule6_numRecentAccount, rule7_other_loan_count, rule1_cibil_score_v3, rule1_cibil_score_result, rule2_overdue_amount, rule2_overdue_result, rule2_business_overdue_amount, rule2_credit_card_overdue_amount, rule2_secured_overdue_amount, rule2_business_overdue_amount_v3, rule2_credit_card_overdue_amount_v3, rule2_overdue_amount_v3, rule2_secured_overdue_amount_v3, rule3_negative_trade_result, rule3_negative_trades, rule4_negative_dpd_count, rule4_negative_dpd_result, rule4_negative_tradeline_count, rule5_recent_dpd, rule5_recent_dpd_result, rule5_total_dpd, rule5_dpd_count, rule5_overall_overdue_amount, rule6_past_negative_dpd_count, rule6_past_negative_trade_count, rule6_past_recent_result, rule6_recent_negative_dpd_count, rule6_recent_positive_trade_count, rule7_Gold_loan_result, rule8_unsecBL_acc_6M_count, rule8_unsecBL_enq_6M_count, rule8_unsecBL_gt8Enq_noAcc_result, rule12_BL_PL_HL_Auto_loan_count, rule12_BL_PL_HL_Auto_loan_result, success, uid, created_at, updated_at) VALUES ( '"+ loancode +"', 0, 0, 7, 27, '733', 0, 0, 1, '0', '0', '0', '1448', '0', '1448', '0', '0', '0', '0', '0', '1', '0', '1', '0', '3', '14482', '5', '0', '0', '10', '7', '0', '0', '1', '0', '1', '0', '1', '13e29405-30e9-4940-9810-c9b2b824aa07', '2023-06-29 16:24:41', '2024-06-14 14:33:31');";
 		DataBaseUtility.executeUpdateQuery(insertquery1);
-		ValidatableResponse res = given().when().get(check_policy+loancode).then().log().all();
+		ValidatableResponse res1 = given().when().get(check_policy+loancode).then().log().all();
+
 		
 		String insertquery2 = " INSERT INTO flexiloans_staging_db.risk_grading_final (loan_code, final_grade, risk_type, is_thick_cibil) VALUES ('"+ loancode +"', 'A', 'C', '1');";
 		DataBaseUtility.executeUpdateQuery(insertquery2);
 		ValidatableResponse response = given().when().get(check_policy+loancode).then().log().all();
 
 
+	}
+	
+    public void loan_application_status(String loancode) {
+		
+		String las="UPDATE flexiloans_staging_db.loan_application SET application_status = 'IP_FRESH_REGISTRATION' WHERE code = '"+loancode+"';";
+		DataBaseUtility.executeUpdateQuery(las);
 	}
 
 
@@ -65,8 +72,7 @@ public class Vivriti_Direct_Topup {
 	{
 
 		DataBaseUtility.connectToDB();
-		//loancode=lc.IP_Qalified();
-
+		loan_application_status(loancode);
 		doc.BS(loancode);
 		Thread.sleep(40000);
 		Vivriti_Direct_Topup(loancode);

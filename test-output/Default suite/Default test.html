@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>84/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jul 08 13:19:19 IST 2024</td>
+<td>Started on:</td><td>Tue Jul 09 16:08:58 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>55 seconds (55164 ms)</td>
+<tr><td>Total time:</td><td>685 seconds (685714 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,415 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='Eligibility_Automation.Eligibility_Direct_TopUp.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Eligibility_Direct_TopUp<br>Parameters: B<br/>
-<a href="#Output-2029744843" onClick='toggleBox("Output-2029744843", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2029744843" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2029744843">
-TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is B<br/>
- Test Loancode =668b99fcexn47<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2029744843", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2029744843'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>2</td>
-<td>Eligibility_Automation.Eligibility_Direct_TopUp@12417468</td></tr>
-<tr>
-<td title='Eligibility_Automation.Eligibility_Direct_TopUp.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Eligibility_Direct_TopUp<br>Parameters: E<br/>
-<a href="#Output-220666452" onClick='toggleBox("Output-220666452", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-220666452" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-220666452">
-TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is E<br/>
- Test Loancode =668b99fcexn47<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace220666452", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace220666452'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Eligibility_Automation.Eligibility_Direct_TopUp@12417468</td></tr>
-<tr>
-<td title='Eligibility_Automation.Eligibility_Direct_TopUp.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Eligibility_Direct_TopUp<br>Parameters: C<br/>
-<a href="#Output-489508218" onClick='toggleBox("Output-489508218", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-489508218" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-489508218">
-TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is C<br/>
- Test Loancode =668b99fcexn47<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace489508218", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace489508218'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Eligibility_Automation.Eligibility_Direct_TopUp@12417468</td></tr>
-<tr>
-<td title='Eligibility_Automation.Eligibility_Direct_TopUp.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Eligibility_Direct_TopUp<br>Parameters: D<br/>
-<a href="#Output-2001194011" onClick='toggleBox("Output-2001194011", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-2001194011" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-2001194011">
-TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is D<br/>
- Test Loancode =668b99fcexn47<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2001194011", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2001194011'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Eligibility_Automation.Eligibility_Direct_TopUp@12417468</td></tr>
-<tr>
-<td title='Eligibility_Automation.Eligibility_Direct_TopUp.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Eligibility_Direct_TopUp<br>Parameters: NA<br/>
-<a href="#Output-1554303114" onClick='toggleBox("Output-1554303114", this, "Show output", "Hide output");'>Show output</a>
-
-<a href="#Output-1554303114" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1554303114">
-TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is NA<br/>
- Test Loancode =668b99fcexn47<br/>
-</div>
-</td>
-<td><div><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1554303114", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1554303114'><pre>java.lang.NumberFormatException: For input string: &quot;null&quot;
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:2054)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Eligibility_Direct_TopUp.TC_01(Eligibility_Direct_TopUp.java:106)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>0</td>
-<td>Eligibility_Automation.Eligibility_Direct_TopUp@12417468</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -485,20 +76,1133 @@ TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Eligibility_Automation.Eligibility_Direct_TopUp.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Eligibility_Direct_TopUp<br>Parameters: A<br/>
-<a href="#Output-1066437568" onClick='toggleBox("Output-1066437568", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-797620616" onClick='toggleBox("Output-797620616", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1066437568" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1066437568">
-TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is A<br/>
- Test Loancode =668b99fcexn47<br/>
-ABB_Capping = 360903.28 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
-BTO Capping = 290560.03 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+<a href="#Output-797620616" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-797620616">
+TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = -71503.18 And Grade = C when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
 </div>
 </td>
 <td></td>
 <td>6</td>
-<td>Eligibility_Automation.Eligibility_Direct_TopUp@12417468</td></tr>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-2100711349" onClick='toggleBox("Output-2100711349", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2100711349" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2100711349">
+TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is C<br/>
+ Risk Grade Is 'C'  And Experiment Is Both Rented Then ODCC Capping Is '-71503.18' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-870748514" onClick='toggleBox("Output-870748514", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-870748514" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-870748514">
+TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is A<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'A' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1844762865" onClick='toggleBox("Output-1844762865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1844762865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1844762865">
+TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-174195940" onClick='toggleBox("Output-174195940", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-174195940" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-174195940">
+TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-198210775" onClick='toggleBox("Output-198210775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-198210775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-198210775">
+TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is E<br/>
+ Risk Grade Is 'E'  And Experiment Is Both Rented Then ODCC Capping Is '-49763.49' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-816870841" onClick='toggleBox("Output-816870841", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-816870841" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-816870841">
+TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Capping = -100523.54 And Grade =B when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1833900612" onClick='toggleBox("Output-1833900612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1833900612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1833900612">
+TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is D<br/>
+Capping = -49763.49 And Grade = D when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1025206294" onClick='toggleBox("Output-1025206294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1025206294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1025206294">
+TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is E<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-2052572633" onClick='toggleBox("Output-2052572633", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2052572633" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2052572633">
+TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1504325562" onClick='toggleBox("Output-1504325562", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1504325562" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1504325562">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = -49763.49 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-843325140" onClick='toggleBox("Output-843325140", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-843325140" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-843325140">
+TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is D<br/>
+ABB_Capping = 163914.92 And Grade =D when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -49763.49 And Grade = D when fixed capping =2000000Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-495471129" onClick='toggleBox("Output-495471129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-495471129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-495471129">
+TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = -71503.18 And Grade =C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-125745007" onClick='toggleBox("Output-125745007", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-125745007" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-125745007">
+TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is A<br/>
+Capping = 433083.9 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1547596072" onClick='toggleBox("Output-1547596072", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1547596072" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1547596072">
+TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1582924879" onClick='toggleBox("Output-1582924879", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1582924879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1582924879">
+TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is C<br/>
+ABB_Capping = 235522.84 And Grade =C when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -71503.18 And Grade = C when fixed capping =2000000Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1882485538" onClick='toggleBox("Output-1882485538", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1882485538" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1882485538">
+TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is D<br/>
+IF Risk_Garde IS 'D Than Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1650943741" onClick='toggleBox("Output-1650943741", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1650943741" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1650943741">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = -49763.49 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-985496352" onClick='toggleBox("Output-985496352", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-985496352" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-985496352">
+TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = -71503.18 And Grade =C when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1969503994" onClick='toggleBox("Output-1969503994", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1969503994" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1969503994">
+TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is NA<br/>
+ Risk Grade Is 'NA'  And Experiment Is Both Rented Then ODCC Capping Is '-71503.18'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1522002327" onClick='toggleBox("Output-1522002327", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1522002327" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1522002327">
+TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = -71503.18 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-1347833719" onClick='toggleBox("Output-1347833719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1347833719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1347833719">
+TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is B<br/>
+ Risk Grade Is 'B'  And Experiment Is Both Rented Then ODCC Capping Is '-100523.54' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1246962289" onClick='toggleBox("Output-1246962289", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1246962289" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1246962289">
+TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-1962667609" onClick='toggleBox("Output-1962667609", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1962667609" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1962667609">
+TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is B<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'B' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>28</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-909684252" onClick='toggleBox("Output-909684252", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-909684252" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-909684252">
+TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is NA<br/>
+IF Risk_Garde IS 'NA Than Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1267504937" onClick='toggleBox("Output-1267504937", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1267504937" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1267504937">
+TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1689743775" onClick='toggleBox("Output-1689743775", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1689743775" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1689743775">
+TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is NA<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-733766806" onClick='toggleBox("Output-733766806", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-733766806" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-733766806">
+TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is NA<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'NA' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-1172105719" onClick='toggleBox("Output-1172105719", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1172105719" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1172105719">
+TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is A<br/>
+ABB_Capping = 433083.9 And Grade =A when fixed capping =2000000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -131481.4 And Grade = A when fixed capping =2000000Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-780709176" onClick='toggleBox("Output-780709176", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-780709176" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-780709176">
+TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = -49763.49 And Grade =E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-466094456" onClick='toggleBox("Output-466094456", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-466094456" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-466094456">
+TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is A<br/>
+Capping = -131481.4 And Grade = A when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1061901050" onClick='toggleBox("Output-1061901050", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1061901050" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1061901050">
+TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is E<br/>
+IF Risk_Garde IS 'E Than Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1569980193" onClick='toggleBox("Output-1569980193", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1569980193" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1569980193">
+TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is C<br/>
+ Test Loancode =668d133fdbmuq<br/>
+ABB_Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -71503.18 And Grade = C when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-2044557803" onClick='toggleBox("Output-2044557803", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2044557803" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2044557803">
+TC_11 : To verify that Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned  when Risk_Grade is B<br/>
+ABB_Capping = 331112.44 And Grade =B when fixed capping =2000000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -100523.54 And Grade = B when fixed capping =2000000Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-1173969600" onClick='toggleBox("Output-1173969600", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1173969600" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1173969600">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Capping = -131481.4 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1312451715" onClick='toggleBox("Output-1312451715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1312451715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1312451715">
+TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1591124842" onClick='toggleBox("Output-1591124842", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1591124842" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1591124842">
+TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is D<br/>
+Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-512428725" onClick='toggleBox("Output-512428725", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-512428725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-512428725">
+TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = -49763.49 And Grade =E when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-407582069" onClick='toggleBox("Output-407582069", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-407582069" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-407582069">
+TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is C<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'C' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>20</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1993384592" onClick='toggleBox("Output-1993384592", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1993384592" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1993384592">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is C<br/>
+Capping = -71503.18 And Grade = C when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1019595265" onClick='toggleBox("Output-1019595265", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1019595265" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1019595265">
+TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = -71503.18 And Grade =NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-885252871" onClick='toggleBox("Output-885252871", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-885252871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-885252871">
+TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is B<br/>
+Capping = -100523.54 And Grade = B when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-809819520" onClick='toggleBox("Output-809819520", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-809819520" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-809819520">
+TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is A<br/>
+ Risk Grade Is 'A'  And Experiment Is Both Rented Then ODCC Capping Is '-131481.4' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-1447992331" onClick='toggleBox("Output-1447992331", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1447992331" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1447992331">
+TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Capping = -131481.4 And Grade = A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-782559074" onClick='toggleBox("Output-782559074", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-782559074" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-782559074">
+TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-661320493" onClick='toggleBox("Output-661320493", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-661320493" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-661320493">
+TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is A<br/>
+IF Risk_Garde IS 'A Than Final_BTO_Capping IS '-131481.4' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1016989399" onClick='toggleBox("Output-1016989399", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1016989399" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1016989399">
+TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is D<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'D' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>23</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1416656186" onClick='toggleBox("Output-1416656186", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1416656186" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1416656186">
+TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-469459127" onClick='toggleBox("Output-469459127", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-469459127" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-469459127">
+TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = -71503.18 And Grade = NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-586681910" onClick='toggleBox("Output-586681910", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-586681910" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-586681910">
+TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is D<br/>
+ Test Loancode =668d133fdbmuq<br/>
+ABB_Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -49763.49 And Grade = D when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1224867665" onClick='toggleBox("Output-1224867665", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1224867665" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1224867665">
+TC_14 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is ODCC  when Risk_Grade is D<br/>
+ Risk Grade Is 'D'  And Experiment Is Both Rented Then ODCC Capping Is '-49763.49' when fixed capping = '1000000'  ... Eligibility is getting calculated Properly.!!! <br/>
+</div>
+</td>
+<td></td>
+<td>10</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-611438496" onClick='toggleBox("Output-611438496", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-611438496" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-611438496">
+TC_12 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is NTC  when Risk_Grade is E<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '-1' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '0' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '200' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+IF Risk_Garde IS 'E' And Cibil_Score IS '300' Experiment Is Both_Rented Then Final_BTO_Capping IS '-49763.49' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>21</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-1772579700" onClick='toggleBox("Output-1772579700", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1772579700" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1772579700">
+TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is A<br/>
+ Test Loancode =668d133fdbmuq<br/>
+ABB_Capping = 433083.9 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -131481.4 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1648285165" onClick='toggleBox("Output-1648285165", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1648285165" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1648285165">
+TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = -49763.49 And Grade =D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1210372215" onClick='toggleBox("Output-1210372215", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1210372215" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1210372215">
+TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is C<br/>
+Capping = 235522.84 And Grade = C when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1471092092" onClick='toggleBox("Output-1471092092", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1471092092" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1471092092">
+TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is E<br/>
+Capping = -49763.49 And Grade = E when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1166344401" onClick='toggleBox("Output-1166344401", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1166344401" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1166344401">
+TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = -49763.49 And Grade = E when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-132904383" onClick='toggleBox("Output-132904383", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-132904383" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-132904383">
+TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is NA<br/>
+Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-501618867" onClick='toggleBox("Output-501618867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-501618867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-501618867">
+TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is C<br/>
+IF Risk_Garde IS 'C Than Final_BTO_Capping IS '-71503.18' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-448955038" onClick='toggleBox("Output-448955038", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-448955038" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-448955038">
+TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Capping = -131481.4 And Grade = A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-229014598" onClick='toggleBox("Output-229014598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-229014598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-229014598">
+TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-237953864" onClick='toggleBox("Output-237953864", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-237953864" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-237953864">
+TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Capping = -100523.54 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-860326447" onClick='toggleBox("Output-860326447", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-860326447" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-860326447">
+TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Capping = -100523.54 And Grade =B when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-1857392605" onClick='toggleBox("Output-1857392605", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1857392605" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1857392605">
+TC_13 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup and account is Thin cibil  when Risk_Grade is B<br/>
+IF Risk_Garde IS 'B Than Final_BTO_Capping IS '-100523.54' when fixed capping = '500000' ... Eligibility Capping is calculated Properly..!!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-1106840336" onClick='toggleBox("Output-1106840336", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1106840336" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1106840336">
+TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is B<br/>
+ Test Loancode =668d133fdbmuq<br/>
+ABB_Capping = 331112.44 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -100523.54 And Grade = B when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1529536070" onClick='toggleBox("Output-1529536070", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1529536070" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1529536070">
+TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = -49763.49 And Grade = D when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-620462871" onClick='toggleBox("Output-620462871", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-620462871" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-620462871">
+TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = -71503.18 And Grade =NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-705708158" onClick='toggleBox("Output-705708158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-705708158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-705708158">
+TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Capping = -100523.54 And Grade = B when fixed capping =800000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-243130253" onClick='toggleBox("Output-243130253", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-243130253" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-243130253">
+TC_06 : To verify that When experiment is  Cautious Location, ABB,Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1670055419" onClick='toggleBox("Output-1670055419", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1670055419" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1670055419">
+TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = -71503.18 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: C<br/>
+<a href="#Output-1044070859" onClick='toggleBox("Output-1044070859", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1044070859" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1044070859">
+TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is C<br/>
+Capping = -71503.18 And Grade = C when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-2132710511" onClick='toggleBox("Output-2132710511", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2132710511" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2132710511">
+TC_10 : To verify that When Experiment is Saving Account, Policy Vivriti_Direct_TOPup  when Risk_Grade is NA<br/>
+Capping = -71503.18 And Grade = NA when fixed capping =500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-14027428" onClick='toggleBox("Output-14027428", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-14027428" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-14027428">
+TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = -49763.49 And Grade =D when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-435273220" onClick='toggleBox("Output-435273220", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-435273220" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-435273220">
+TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is E<br/>
+ Test Loancode =668d133fdbmuq<br/>
+ABB_Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -49763.49 And Grade = E when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-1779913058" onClick='toggleBox("Output-1779913058", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1779913058" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1779913058">
+TC_07 : When experiment is  Cautious Location, BTO,Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Capping = -131481.4 And Grade =A when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-747717476" onClick='toggleBox("Output-747717476", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-747717476" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-747717476">
+TC_08 : When experiment is Salaried, Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = -49763.49 And Grade = D when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-2082475607" onClick='toggleBox("Output-2082475607", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2082475607" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2082475607">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is NA<br/>
+Capping = -71503.18 And Grade = NA when fixed capping =600000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-1474234791" onClick='toggleBox("Output-1474234791", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1474234791" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1474234791">
+TC_02 : To verify that When experiment is Both Rented, Policy Vivriti_Direct_TOPup when Risk_Grade is B<br/>
+Capping = -100523.54 And Grade =B when fixed capping =800000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-570616184" onClick='toggleBox("Output-570616184", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-570616184" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-570616184">
+TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is E<br/>
+Capping = 163914.92 And Grade = E when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: NA<br/>
+<a href="#Output-1493625851" onClick='toggleBox("Output-1493625851", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1493625851" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1493625851">
+TC_01 : To verify the final capping if policy is Vivriti_Direct_TOPup , ALL risk grade , no experiment, ABB & BTO when Risk_Grade is NA<br/>
+ Test Loancode =668d133fdbmuq<br/>
+ABB_Capping = 235522.84 And Grade = NA when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+BTO Capping = -71503.18 And Grade = NA when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: A<br/>
+<a href="#Output-601728931" onClick='toggleBox("Output-601728931", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-601728931" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-601728931">
+TC_05 : When experiment is Both Toxic Profile, Policy Vivriti_Direct_TOPup when Risk_Grade is A<br/>
+Capping = -131481.4 And Grade =A when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: E<br/>
+<a href="#Output-1887868536" onClick='toggleBox("Output-1887868536", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1887868536" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1887868536">
+TC_04 : To verify that When experiment is Both Cautious Profile,BTO, Policy Vivriti_Direct_TOPup when Risk_Grade is E<br/>
+Capping = -49763.49 And Grade = E when fixed capping =1500000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: D<br/>
+<a href="#Output-1158747247" onClick='toggleBox("Output-1158747247", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1158747247" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1158747247">
+TC_03 : To verify that When experiment is Both Cautious Profile,ABB, Policy Vivriti_Direct_TOPup when Risk_Grade is D<br/>
+Capping = 163914.92 And Grade = D when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
+<tr>
+<td title='Eligibility_Automation.Vivriti_Direct_Topup.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Vivriti_Direct_Topup<br>Parameters: B<br/>
+<a href="#Output-1589251269" onClick='toggleBox("Output-1589251269", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1589251269" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1589251269">
+TC_09 : When ODCC, Policy Vivriti_Direct_TOPup (only ABB)  when Risk_Grade is B<br/>
+Capping = 331112.44 And Grade = B when fixed capping =1000000  Eligibility is getting calculated properly..!!!<br/>
+</div>
+</td>
+<td></td>
+<td>8</td>
+<td>Eligibility_Automation.Vivriti_Direct_Topup@359066bc</td></tr>
 </table><p>
 </body>
 </html>
