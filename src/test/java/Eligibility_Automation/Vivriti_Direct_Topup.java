@@ -35,10 +35,10 @@ public class Vivriti_Direct_Topup {
 				+ "JOIN loan_application AS la ON la.code = lam.loan_code\n"
 				+ "JOIN loan_applicant_detail AS lad ON lam.loan_code = lad.loan_code\n"
 				+ "SET lam.is_topup = '1',\n"
-				+ "    lam.reference_loan_code = '653b99018ab3j',\n"  
+				+ "    lam.reference_loan_code = '650eae61xg2ph',\n"  
 				+ "    la.partner_code = '9c7bfcd45af46',\n"
 				+ "    la.application_status = 'IP_FRESH_REGISTRATION',\n"
-				+ "    lad.uid = '13e29405-30e9-4940-9810-c9b2b824aa07',\n"  
+				+ "    lad.uid = '13e29405-30e9-4940-9810-c9b2b824aa07',\n" 
 				+ "    lad.cibil_score = '730'\n"
 				+ "WHERE lam.loan_code = '"+loancode+"'\n"
 				+ "    AND la.code = '"+ loancode +"'\n"
@@ -58,8 +58,7 @@ public class Vivriti_Direct_Topup {
 
 
 	}
-
-	public void loan_application_status(String loancode) {
+	public void las(String loancode) {
 
 		String las="UPDATE flexiloans_staging_db.loan_application SET application_status = 'IP_FRESH_REGISTRATION' WHERE code = '"+loancode+"';";
 		DataBaseUtility.executeUpdateQuery(las);
@@ -72,10 +71,13 @@ public class Vivriti_Direct_Topup {
 	{
 
 		DataBaseUtility.connectToDB();
-		loan_application_status(loancode);
+		las(loancode);
 		doc.BS(loancode);
 		Thread.sleep(40000);
 		Vivriti_Direct_Topup(loancode);
+
+
+
 
 	}
 
@@ -253,8 +255,6 @@ public class Vivriti_Direct_Topup {
 
 		//ABB
 
-
-		//ABB
 
 		switch (grade.toUpperCase()) {
 		case "A":

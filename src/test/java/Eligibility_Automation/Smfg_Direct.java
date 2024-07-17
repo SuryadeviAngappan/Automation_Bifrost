@@ -71,7 +71,7 @@ public class Smfg_Direct {
 
 	}
 
-	public void loan_application_status(String loancode) {
+	public void las(String loancode) {
 
 		String las="UPDATE flexiloans_staging_db.loan_application SET application_status = 'IP_FRESH_REGISTRATION' WHERE code = '"+loancode+"';";
 		DataBaseUtility.executeUpdateQuery(las);
@@ -82,7 +82,7 @@ public class Smfg_Direct {
 	{
 
 		DataBaseUtility.connectToDB();
-		loan_application_status(loancode);
+		las(loancode);
 		doc.BS(loancode);
 		Thread.sleep(40000);
 		Smfg_Directpolicy(loancode);
