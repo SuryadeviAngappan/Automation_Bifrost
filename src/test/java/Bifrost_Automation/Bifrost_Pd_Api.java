@@ -59,7 +59,7 @@ public class Bifrost_Pd_Api extends ListnerClass {
 
 		ListnerClass.reportLog("TC_01 : To verify the Bifrost and PD api key values, Getting the Response, validate the both response");
 		ListnerClass.reportLog(" Test Loancode =625ec62b43kb5");
-		ListnerClass.reportLog("<span style='color:green;'>  &#9632;  Identical  </span>   <span style='color:red;'>  &#9632;  Different  </span>  <span style='color:yellow;'>  &#9632;  Null  </span>");
+		ListnerClass.reportLog("<span style='color:green;'>  &#9632;  Identical  </span>   <span style='color:red;'>  &#9632;  Different  </span>  <span style='color:purple;'>  &#9632;  Null  </span>");
 
 
 
@@ -94,7 +94,7 @@ public class Bifrost_Pd_Api extends ListnerClass {
 				if (bifrost_value != null && pd_value != null) {
 					if (bifrost_value.toString().equalsIgnoreCase(pd_value.toString())) {
 
-						ListnerClass.reportLog("<x> BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
+						ListnerClass.reportLog("<span style='color:green;'> BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
 								+ " And Value = " + bifrost_value + " && PD Api Key = "
 								+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value+"</span>");
 					} else {
@@ -106,7 +106,7 @@ public class Bifrost_Pd_Api extends ListnerClass {
 						|| (bifrost_value != null && pd_value == null)
 						|| (bifrost_value == null && pd_value != null)) {
 
-					ListnerClass.reportLog("<span style='color:yellow;'>BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
+					ListnerClass.reportLog("<span style='color:purple;'>BF Api Key = " + excelFileUtility.getExcelData("API_keys_mapping", i, 2)
 							+ " And Value = " + bifrost_value + " && PD Api Key = "
 							+ excelFileUtility.getExcelData("API_keys_mapping", i, 3) + " and Value = " + pd_value +"</span>");
 				}

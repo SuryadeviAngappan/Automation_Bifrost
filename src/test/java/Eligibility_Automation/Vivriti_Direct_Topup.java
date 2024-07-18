@@ -117,25 +117,34 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
-		System.out.println(BTO_Capping);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
-		String FixedCapping = "1500000";
-		String FixedCapping1 = "1000000";
-
+		
+		// ABB Capping
 
 
 		if (abb_capping <= 1500000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") )) {
 			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade = " + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
-		}else if (abb_capping <= 1000000.00 && (grade.equalsIgnoreCase("E")||grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") ||grade.equalsIgnoreCase("NA") )) {
-			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
+		}
+		else if (abb_capping <= 1000000.00 && (grade.equalsIgnoreCase("E")||grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") ||grade.equalsIgnoreCase("NA") )) {
+			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
+
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
 		} else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
@@ -155,9 +164,11 @@ public class Vivriti_Direct_Topup {
 
 
 		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B")  ||
-				grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && abb_capping <= gradeNACapping) {
+				grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && BTO_Capping <= gradeNACapping) {
 			System.out.println("BTO Capping = " + BTO_Capping + " And Grade = " + grade +   "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
+			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 		} 
 		else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
@@ -195,24 +206,31 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		double capping_BTO=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "1000000";
-		String FixedCapping1 = "800000";
-		String FixedCapping2 = "600000";
+		
 
 		//BTO
 		switch (grade.toUpperCase()) {
 		case "A":
 			if (capping_BTO <= 1000000.00) {
 				System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade = " + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");	
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -224,7 +242,10 @@ public class Vivriti_Direct_Topup {
 		case "B":
 			if (capping_BTO <= 800000.00) {
 				System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 800000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -238,7 +259,10 @@ public class Vivriti_Direct_Topup {
 		case "NA":
 			if (capping_BTO <= 600000.00) {
 				System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
+
+				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 600000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -259,7 +283,10 @@ public class Vivriti_Direct_Topup {
 		switch (grade.toUpperCase()) {
 		case "A":
 			if (capping_ABB <= 1000000.00) {
-				ListnerClass.reportLog("Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping+ "Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -270,7 +297,9 @@ public class Vivriti_Direct_Topup {
 			break;
 		case "B":
 			if (capping_ABB <= 800000.00) {
-				ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 800000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -284,7 +313,9 @@ public class Vivriti_Direct_Topup {
 		case "E":
 		case "NA":
 			if (capping_ABB <= 600000.00) {
-				ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 600000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -324,23 +355,28 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "1500000";
-		String FixedCapping1 = "1000000";
+		
 
 
 		switch (grade.toUpperCase()) {
 		case "A":
 		case "B":
-			if (capping <= 150000.00) {
-				ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
-				String select_query = "sxelect experiment_name,experiment_name from loan_application where code='" + loancode + "'";
-				String exp = DataBaseUtility.ExecuteQuery(select_query);
+			if (capping <= 1500000.00) {
+				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
 
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+
+				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
+				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
 				eligibilityMessage = "Eligibility is not getting calculated properly..!!!";
 				ListnerClass.reportLog(eligibilityMessage);
@@ -353,7 +389,10 @@ public class Vivriti_Direct_Topup {
 		case "NA":
 			if (capping <= 1000000.00) {
 				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -393,8 +432,9 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
-
-
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
@@ -402,12 +442,14 @@ public class Vivriti_Direct_Topup {
 
 		String eligibilityMessage = "";
 
-		String FixedCapping = "1500000";
 
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping <=1500000.00 ) {
 			System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
@@ -438,29 +480,37 @@ public class Vivriti_Direct_Topup {
 		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 		String retur=repo.extract().body().asPrettyString();
 
-		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
+		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		Double capping_BTO=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "1000000";
 
 		//BTO
 
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping_BTO <=1000000.00 ) {
 			System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
-			ListnerClass.reportLog("Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping+ " Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog(" Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -469,7 +519,10 @@ public class Vivriti_Direct_Topup {
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping_ABB <=1000000.00 ) {
 			System.out.println("ABB_Capping = " + capping_ABB + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
@@ -502,20 +555,24 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "1500000";
-		String FixedCapping1 = "1000000";
+		
 
 
 		switch (grade.toUpperCase()) {
 		case "A":
 		case "B":
-			if (capping <= 150000.00) {
-				ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			if (capping <= 1500000.00) {
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -530,7 +587,9 @@ public class Vivriti_Direct_Topup {
 		case "NA":
 			if (capping <= 1000000.00) {
 				System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -570,6 +629,9 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);		
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);	
@@ -580,7 +642,10 @@ public class Vivriti_Direct_Topup {
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping <=1500000.00 ) {
 			System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
@@ -617,18 +682,22 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		double capping_BTO=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "1000000";
-		String FixedCapping1 = "800000";
-		String FixedCapping2 = "600000";
+		
 
 		//BTO
 
@@ -636,7 +705,10 @@ public class Vivriti_Direct_Topup {
 		case "A":
 			if (capping_BTO <= 1000000.00) {
 				System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -648,7 +720,10 @@ public class Vivriti_Direct_Topup {
 		case "B":
 			if (capping_BTO <= 800000.00) {
 				System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 800000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -663,7 +738,10 @@ public class Vivriti_Direct_Topup {
 		case "NA":
 			if (capping_BTO <= 600000.00) {
 				System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-				ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
+				
+				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 600000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -684,7 +762,9 @@ public class Vivriti_Direct_Topup {
 		switch (grade.toUpperCase()) {
 		case "A":
 			if (capping_ABB <= 1000000.00) {
-				ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -693,7 +773,9 @@ public class Vivriti_Direct_Topup {
 			break;
 		case "B":
 			if (capping_ABB <= 800000.00) {
-				ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping1+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 800000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -705,7 +787,9 @@ public class Vivriti_Direct_Topup {
 		case "E":
 		case "NA":
 			if (capping_ABB <= 600000.00) {
-				ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping2+ "  Eligibility is getting calculated properly..!!!");
+				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 600000");
+				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+				
 				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 				String exp = DataBaseUtility.ExecuteQuery(select_query);
 			} else {
@@ -746,22 +830,27 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "1000000";
 
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping <=1000000.00 ) {
 			System.out.println("Capping = " + capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
-			ListnerClass.reportLog("Capping = " + capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -792,26 +881,34 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		Double capping_BTO=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "500000";
 
 		//BTO
 
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping_BTO <=500000.00 ) {
 			System.out.println("BTO_Capping = " + capping_BTO + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("BTO_Capping = " + capping_BTO + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , Max Capping is 500000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
-			ListnerClass.reportLog("Capping = " + capping_BTO + " And  when fixed capping =" +FixedCapping+ "  Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -823,11 +920,14 @@ public class Vivriti_Direct_Topup {
 		if ((final_grade.equalsIgnoreCase("A") || final_grade.equalsIgnoreCase("B")  ||
 				final_grade.equalsIgnoreCase("C") || final_grade.equalsIgnoreCase("D") || final_grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && capping_ABB <=500000.00 ) {
 			System.out.println("ABB_Capping = " + capping_ABB + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("ABB_Capping = " + capping_ABB + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
+			
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+
 			String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 			String exp = DataBaseUtility.ExecuteQuery(select_query);
 		} else {
-			ListnerClass.reportLog("Capping = " + capping_ABB + " And " + "Grade =" + grade + "  Eligibility is not getting calculated properly..!!!");
+			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 		}	
 
@@ -873,28 +973,34 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 		String eligibilityMessage = "";
-		String FixedCapping = "2000000";
-		String FixedCapping1 = "1500000";
-
-
+		
 		//ABB Capping
 
 		if (abb_capping <= 2000000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") )) {
 			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And when fixed capping =" +FixedCapping+ "  Eligibility is getting calculated properly..!!!");
 
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 2000000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of derived amount.");
+			
 		}else if (abb_capping <= 1500000.00 && (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D"))) {
 			System.out.println("ABB_Capping = " + abb_capping + " And " + "Grade =" + grade + "  Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("ABB_Capping = " + abb_capping + " And when fixed capping =" +FixedCapping1+"  Eligibility is getting calculated properly..!!!");
 
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
@@ -905,8 +1011,9 @@ public class Vivriti_Direct_Topup {
 		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B")  ||
 				grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D")) && BTO_Capping <= 2000000.00) {
 			System.out.println("BTO Capping = " + BTO_Capping + " And Grade = " + grade + "Eligibility is getting calculated properly..!!!");
-			ListnerClass.reportLog("BTO Capping = " + BTO_Capping + " And when fixed capping =" +FixedCapping+ "Eligibility is getting calculated properly..!!!");
 
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 2000000");
+			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 		} else {
 			System.out.println("Eligibility is not getting calculated properly..!!!");
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -944,9 +1051,15 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
@@ -957,7 +1070,6 @@ public class Vivriti_Direct_Topup {
 		String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
 		DataBaseUtility.executeUpdateQuery(query_2);
 
-		String FixedCapping = "500000";
 
 
 
@@ -967,8 +1079,8 @@ public class Vivriti_Direct_Topup {
 
 		{
 
-			ListnerClass.reportLog("BTO_Capping IS '" + BTO_Capping + "' when Max capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
-
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
+			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
 		} else {
@@ -983,7 +1095,8 @@ public class Vivriti_Direct_Topup {
 
 		{
 
-			ListnerClass.reportLog("BTO_Capping IS '" + BTO_Capping + "' when Max capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
 		} else {
 
@@ -1028,21 +1141,28 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = " "+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 		double capping_BTO= Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 		String actual_capped_abb_eligibility_Value = ""+repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double capping_ABB= Double.parseDouble(actual_capped_abb_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
-		String FixedCapping = "500000";
 
 		//BTO
 
 
 		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (capping_BTO<=500000.00)) 
 		{
-			ListnerClass.reportLog("BTO_Capping IS '" + capping_BTO + "' when fixed capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
+			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping_BTO +" since max cap is min of haircut and derived amount.");
+			
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
@@ -1052,7 +1172,11 @@ public class Vivriti_Direct_Topup {
 
 		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (capping_ABB<=500000.00)) 
 		{
-			ListnerClass.reportLog("ABB_Capping IS '" + capping_ABB + "' when fixed capping = '"+FixedCapping+"' ... Eligibility Capping is calculated Properly..!!!!");
+			
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
+			ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+
+			
 		} else {
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
@@ -1089,22 +1213,26 @@ public class Vivriti_Direct_Topup {
 
 		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 		double abb_capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+		
+		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
-		String FixedCapping = "1000000";
 
 
 
 		if(grade.equalsIgnoreCase("A") ||grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") && (abb_capping <=1000000.00)) 
 		{
-			ListnerClass.reportLog("Capping Is '"+abb_capping+"' when fixed capping = '"+FixedCapping+"' ... Eligibility is getting calculated Properly.!!! ");
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 		}
 		else if(grade.equalsIgnoreCase("NA") && (abb_capping<=00.00)) 
 		{
-			ListnerClass.reportLog("Capping Is '"+abb_capping+"'  ... Eligibility is getting calculated Properly.!!! ");
-		}
+			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");		
+			}
 		else 
 		{
 			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
@@ -1159,9 +1287,15 @@ public class Vivriti_Direct_Topup {
 
 			String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_banking_eligibility");
 			double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+			
+			String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].banking_eligibility");
+			double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 			String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].capped_abb_eligibility");
 			double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+			
+			String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'Vivriti Capital'.VIVRITI_DIRECT_TOPUP[0].abb_eligibility");
+			double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 			String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
@@ -1186,8 +1320,10 @@ public class Vivriti_Direct_Topup {
 
 				if (isEligible) {
 
+					ListnerClass.reportLog("Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Then Final Capping IS " + BTO_Capping );
 
-					ListnerClass.reportLog("BTO_Capping =" + BTO_Capping + "Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Eligibility Capping is getting calculated properly..!!!" );
+					ListnerClass.reportLog("Derived_capping_BTO = " + Derived_capping_BTO); 
+
 
 
 				} else {
@@ -1214,8 +1350,9 @@ public class Vivriti_Direct_Topup {
 
 				if (isEligible) {
 
-					ListnerClass.reportLog("ABB_Capping =" + abb_capping + "Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Eligibility Capping is getting calculated properly..!!!" );
+					ListnerClass.reportLog("Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Then Final Capping IS " + abb_capping );
 
+					ListnerClass.reportLog("Derived_capping_ABB = " + Derived_capping_ABB); 
 
 				} else {
 

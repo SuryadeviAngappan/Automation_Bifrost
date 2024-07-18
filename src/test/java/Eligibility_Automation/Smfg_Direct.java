@@ -97,10 +97,15 @@ public class Smfg_Direct {
 
 		return new String[] {"A","B","C","D","E","NA"};
 	}
+	
 
 	/*
-	 * To verify the final capping if policy is SMFG_Direct , ALL risk grade , no experiment, ABB & BTO
-	 */
+
+	* To verify the final capping if policy is Smfg_DIRECT , ALL risk grade , no experiment, ABB & BTO
+
+	*/
+
+
 
 	@Test(dataProvider = "final_grade")
 
@@ -110,143 +115,117 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_01 :"+" To verify the final capping if policy is SMFG_Direct , no experiment, ABB & BTO When Risk_Grade is ="+final_grade);
+	ListnerClass.reportLog("TC_01 :"+" To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is ="+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
 
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
 
-		try{DataBaseUtility.executeUpdateQuery(query);}
+	try{DataBaseUtility.executeUpdateQuery(query);}
 
-		catch(Exception e) {e.printStackTrace();}
+	catch(Exception e) {e.printStackTrace();}
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
 
 
-		// BTO Capping
+	// BTO Capping
 
 
 
-		if (BTO_Capping <= 1500000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("NA"))) {
+	if (BTO_Capping <= 1500000.00 && (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("NA"))) {
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
 
-		} else if (BTO_Capping <= 1000000.00 && grade.equalsIgnoreCase("E")) {
+	} else if (BTO_Capping <= 1000000.00 && grade.equalsIgnoreCase("E")) {
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
-		} else {
+	} else {
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-		}
+	}
 
 
 
 
 
-		// ABB Capping
+	// ABB Capping
 
 
 
-		double gradeACapping = 1500000.00;
+	double gradeACapping = 1500000.00;
 
-		double gradeBCapping = 1500000.00;
+	double gradeBCapping = 1500000.00;
 
-		double gradeCCapping = 1000000.00;
+	double gradeCCapping = 1000000.00;
 
-		double gradeDCapping = 1000000.00;
+	double gradeDCapping = 1000000.00;
 
-		double gradeECapping = 1000000.00;
+	double gradeECapping = 1000000.00;
 
-		double gradeNACapping = 1000000.00;
+	double gradeNACapping = 1000000.00;
 
 
 
-		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B")) && abb_capping <= gradeACapping ) 
+	if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B")) && abb_capping <= gradeACapping ) 
 
-		{
+	{
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
-
-
-
-
-
-
-
-		}
-
-		else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && abb_capping <= gradeNACapping) {
-
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
-
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
-
-
-
-
-
-		} else {
-
-
-
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-		}
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
 
 
@@ -256,11 +235,41 @@ public class Smfg_Direct {
 
 	}
 
+	else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && abb_capping <= gradeNACapping) {
+
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
+
+
+
+
+
+	} else {
+
+
+
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+
+	}
+
+
+
+
+
+
+
+	}
+
+
+
+
+
 	/*
 
-	 * When experiment is Both Rented, Policy SMFG_Direct
+	* When experiment is Both Rented, Policy Smfg_Direct
 
-	 */
+	*/
 
 
 
@@ -272,287 +281,287 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_02 :"+" When experiment is Both Rented, Policy SMFG_Direct When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_02 :"+" When experiment is Both Rented, Policy Direct When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);	
+	DataBaseUtility.executeUpdateQuery(query);	
 
 
 
-		String profile="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='52' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='52' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		String thick_cibi="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
+	String thick_cibi="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(thick_cibi);
+	DataBaseUtility.executeUpdateQuery(thick_cibi);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
-		Thread.sleep(3000);
+	Thread.sleep(3000);
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
 
 
-		double newCapping;
+	double newCapping;
 
-		double reducedCapping = 0;
+	double reducedCapping = 0;
 
-		String eligibilityMessage = "";
+	String eligibilityMessage = "";
 
 
 
-		// BTO
+	// BTO
 
 
 
-		switch (grade.toUpperCase()) {
+	switch (grade.toUpperCase()) {
 
-		case "A":
+	case "A":
 
-			if (capping <= 1000000.00) {
+	if (capping <= 1000000.00) {
 
 
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
 
-				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
+	String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 
-				String exp = DataBaseUtility.ExecuteQuery(select_query);
+	String exp = DataBaseUtility.ExecuteQuery(select_query);
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		case "B":
+	case "B":
 
-			newCapping = Derived_capping_BTO * (15.0 / 100);
+	newCapping = Derived_capping_BTO * (15.0 / 100);
 
-			reducedCapping = Derived_capping_BTO - newCapping;
+	reducedCapping = Derived_capping_BTO - newCapping;
 
-			if(reducedCapping<=800000) {
+	if(reducedCapping<=800000) {
 
 
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 800000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 800000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		case "C":
+	case "C":
 
-		case "D":
+	case "D":
 
-		case "E":
+	case "E":
 
-		case "NA":
+	case "NA":
 
-			//newCapping = 
+	//newCapping = 
 
-			reducedCapping = Derived_capping_BTO - (Derived_capping_BTO * (0.25));
+	reducedCapping = Derived_capping_BTO - (Derived_capping_BTO * (0.25));
 
-			if (reducedCapping <= 600000) {
+	if (reducedCapping <= 600000) {
 
 
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 600000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 600000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog(" Eligibility is not getting calculated properly..!!" );
+	ListnerClass.reportLog(" Eligibility is not getting calculated properly..!!" );
 
 
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		default:
+	default:
 
-			ListnerClass.reportLog(" Grade is Invalid");
+	ListnerClass.reportLog(" Grade is Invalid");
 
 
 
-		}
+	}
 
 
 
 
 
-		// ABB
+	// ABB
 
 
 
-		switch (grade.toUpperCase()) {
+	switch (grade.toUpperCase()) {
 
-		case "A":
+	case "A":
 
-			if (capping_ABB <= 1000000.00) {
+	if (capping_ABB <= 1000000.00) {
 
 
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
 
 
-				String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
+	String select_query = "select experiment_name,experiment_name from loan_application where code='" + loancode + "'";
 
-				String exp = DataBaseUtility.ExecuteQuery(select_query);
+	String exp = DataBaseUtility.ExecuteQuery(select_query);
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		case "B":
+	case "B":
 
-			newCapping = Derived_capping_ABB * (15.0 / 100);
+	newCapping = Derived_capping_ABB * (15.0 / 100);
 
-			reducedCapping = Derived_capping_ABB - newCapping;
+	reducedCapping = Derived_capping_ABB - newCapping;
 
-			if (reducedCapping <= 800000) {
+	if (reducedCapping <= 800000) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" ,15% haircut and Max Capping is 800000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" ,15% haircut and Max Capping is 800000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		case "C":
+	case "C":
 
-		case "D":
+	case "D":
 
-		case "E":
+	case "E":
 
-		case "NA":
+	case "NA":
 
 
 
-			reducedCapping = Derived_capping_ABB - Derived_capping_ABB * (0.25);
+	reducedCapping = Derived_capping_ABB - Derived_capping_ABB * (0.25);
 
-			if (reducedCapping <= 600000) {
+	if (reducedCapping <= 600000) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 600000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 600000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			}
+	}
 
-			break;
+	break;
 
-		default:
+	default:
 
-			ListnerClass.reportLog(" Grade is Invalid");
+	ListnerClass.reportLog(" Grade is Invalid");
 
 
 
-		}
+	}
 
 	}
 
@@ -560,219 +569,216 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Cautious Profile, Policy SMFG_Direct
+	* When experiment is Cautious Profile, Policy Smfg_Direct
 
-	 */
+	*/
 
 
 
 	@Test(dataProvider = "final_grade")
 
-	public void TC_03(String final_grade) throws SQLException 
+	public void TC_03(String final_grade) throws SQLException, InterruptedException 
 
 	{
 
 
 
-		ListnerClass.reportLog("TC_03 :"+"When experiment is Cautious Profile, Policy SMFG_Direct When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_03 :"+"When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
+	String profile="update loan_application set experiment_name='CAUTIOUS_PROFILE_V2.0' , experiment_id='50' where code='"+loancode+"'";
 
-		String profile="update loan_application set experiment_name='CAUTIOUS_PROFILE_V2.0' , experiment_id='50' where code='"+loancode+"'";
+	DataBaseUtility.executeUpdateQuery(profile);
 
-		DataBaseUtility.executeUpdateQuery(profile);
 
 
+	HashMap hash= new HashMap();
 
-		HashMap hash= new HashMap();
+	hash.put("loan_code", loancode);
 
-		hash.put("loan_code", loancode);
 
 
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	String retur=repo.extract().body().asPrettyString();
+	
+	Thread.sleep(3000);
 
-		String retur=repo.extract().body().asPrettyString();
 
-		int status_code=repo.extract().statusCode();
 
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
+	Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("ggrouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
+	// BTO
 
 
 
+	if (grade.equalsIgnoreCase("A") && capping<=1500000) 
 
-		// BTO
+	{
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-		if (grade.equalsIgnoreCase("A") && capping<=1500000) 
+	}
 
-		{
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	else if (grade.equalsIgnoreCase("B") ) 
 
-		}
+	{
 
+	double new_capping = Derived_capping_BTO * (0.15);
 
+	double reducedCapping = Derived_capping_BTO-new_capping;
 
-		else if (grade.equalsIgnoreCase("B") ) 
+	if(reducedCapping<=1500000) {
 
-		{
 
-			double new_capping = Derived_capping_BTO * (0.15);
 
-			double reducedCapping = Derived_capping_BTO-new_capping;
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 1500000");
 
-			if(reducedCapping<=1500000) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
+	}}
 
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 1500000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") ) 
 
-			}}
+	{
 
+	double new_capping = Derived_capping_BTO * (0.25);
 
+	double reducedCapping = Derived_capping_BTO-new_capping;
 
-		else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") ) 
+	if(reducedCapping<=1000000) {
 
-		{
 
-			double new_capping = Derived_capping_BTO * (0.25);
 
-			double reducedCapping = Derived_capping_BTO-new_capping;
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 1500000");
 
-			if(reducedCapping<=1000000) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
+	}}
 
+	else 
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 1500000");
+	{
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			}}
 
-		else 
 
-		{
+	}
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-		}
 
+	// ABB
 
 
 
 
-		// ABB
 
+	if (grade.equalsIgnoreCase("A") && capping_ABB<=1500000) 
 
+	{
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-		if (grade.equalsIgnoreCase("A") && capping_ABB<=1500000) 
+	}
 
-		{
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	else if (grade.equalsIgnoreCase("B") ) 
 
-		}
+	{
 
+	double new_capping = Derived_capping_ABB * (0.15);
 
+	double reducedCapping = Derived_capping_ABB-new_capping;
 
-		else if (grade.equalsIgnoreCase("B") ) 
+	if( reducedCapping<=1500000) {
 
-		{
 
-			double new_capping = Derived_capping_ABB * (0.15);
 
-			double reducedCapping = Derived_capping_ABB-new_capping;
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1500000");
 
-			if( reducedCapping<=1500000) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
+	}}
 
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1500000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") ) 
 
-			}}
+	{
 
+	double new_capping = Derived_capping_ABB * (0.25);
 
+	double reducedCapping = Derived_capping_ABB-new_capping;
 
-		else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") ) 
+	if( reducedCapping<=1000000) {
 
-		{
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1500000");
 
-			double new_capping = Derived_capping_ABB * (0.25);
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-			double reducedCapping = Derived_capping_ABB-new_capping;
+	}}
 
-			if( reducedCapping<=1000000) {
+	else 
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1500000");
+	{
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			}}
 
-		else 
 
-		{
-
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-
-
-		}
+	}
 
 
 
@@ -786,9 +792,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Toxic Profile, Policy SMFG_Direct
+	* When experiment is Toxic Profile, Policy Smfg_Direct
 
-	 */
+	*/
 
 
 
@@ -802,227 +808,227 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_04 :"+"When experiment is Toxic Profile, Policy SMFG_Direct When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_04 :"+"When experiment is Toxic Profile, Policy Smfg_Direct When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String profile="update loan_application set experiment_name='Toxic credit_experiment-v1', experiment_id='107' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='Toxic credit_experiment-v1', experiment_id='107' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
-		Thread.sleep(3000);
+	Thread.sleep(3000);
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
 
 
-		//BTO
+	//BTO
 
 
 
-		double cappingPercentage = 0;
+	double cappingPercentage = 0;
 
-		switch (grade.toUpperCase()) {
+	switch (grade.toUpperCase()) {
 
-		case "A":
+	case "A":
 
-			if (capping <= 1000000.00) {
+	if (capping <= 1000000.00) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		case "B":
+	case "B":
 
-			cappingPercentage = 15;
+	cappingPercentage = 15;
 
-		case "C":
+	case "C":
 
-		case "D":
+	case "D":
 
-		case "E":
+	case "E":
 
-		case "NA":
+	case "NA":
 
-			if (cappingPercentage == 0) {
+	if (cappingPercentage == 0) {
 
-				cappingPercentage = 25;
+	cappingPercentage = 25;
 
-			}
+	}
 
-			double newCapping = Derived_capping_BTO * (cappingPercentage / 100);
+	double newCapping = Derived_capping_BTO * (cappingPercentage / 100);
 
-			double reducedCapping = Derived_capping_BTO - newCapping;
+	double reducedCapping = Derived_capping_BTO - newCapping;
 
-			if (reducedCapping <= 1000000) {
+	if (reducedCapping <= 1000000) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" ," +cappingPercentage+"%"+" haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" ," +cappingPercentage+"%"+" haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		default:
+	default:
 
-			ListnerClass.reportLog("Invalid grade entered!");
+	ListnerClass.reportLog("Invalid grade entered!");
 
 
 
-		}
+	}
 
 
 
 
 
-		// ABB
+	// ABB
 
 
 
-		switch (grade.toUpperCase()) {
+	switch (grade.toUpperCase()) {
 
-		case "A":
+	case "A":
 
-			if (capping_ABB <= 1000000.00) {
+	if (capping_ABB <= 1000000.00) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		case "B":
+	case "B":
 
-			cappingPercentage = 15;
+	cappingPercentage = 15;
 
-		case "C":
+	case "C":
 
-		case "D":
+	case "D":
 
-		case "E":
+	case "E":
 
-		case "NA":
+	case "NA":
 
-			if (cappingPercentage == 0) {
+	if (cappingPercentage == 0) {
 
-				cappingPercentage = 25;
+	cappingPercentage = 25;
 
-			}
+	}
 
-			double newCapping = Derived_capping_ABB * (cappingPercentage / 100);
+	double newCapping = Derived_capping_ABB * (cappingPercentage / 100);
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			if (reducedCapping <= 1000000) {
+	if (reducedCapping <= 1000000) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" ," +cappingPercentage+"%"+" haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" ," +cappingPercentage+"%"+" haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
-			break;
+	break;
 
-		default:
+	default:
 
-			ListnerClass.reportLog("Invalid grade entered!");
+	ListnerClass.reportLog("Invalid grade entered!");
 
 
 
-		}
+	}
 
 
 
@@ -1036,9 +1042,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Cautious Location, Policy SMFG_Direct
+	* When experiment is Cautious Location, Policy Smfg_Direct
 
-	 */
+	*/
 
 
 
@@ -1050,245 +1056,245 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_05 :"+" When experiment is Cautious Location, Policy SMFG_Direct when Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_05 :"+" When experiment is Cautious Location, Policy Smfg_Direct when Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String profile="update loan_application set experiment_name='Cautious Location', experiment_id='74' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='Cautious Location', experiment_id='74' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
-		int status_code=repo.extract().statusCode();
+	int status_code=repo.extract().statusCode();
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
+	
 
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
 
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
 
 
 
+	// BTO 
 
-		// BTO 
 
 
+	if(grade.equalsIgnoreCase("A") && capping <=1500000) 
 
-		if(grade.equalsIgnoreCase("A") && capping <=1500000) 
+	{
 
-		{
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
+	}
 
-		}
+	else if(grade.equalsIgnoreCase("B")) {
 
-		else if(grade.equalsIgnoreCase("B")) {
+	double reduced_capping= Derived_capping_BTO - Derived_capping_BTO*(0.15);
 
-			double reduced_capping= Derived_capping_BTO - Derived_capping_BTO*(0.15);
+	if( reduced_capping <=1500000) 
 
-			if( reduced_capping <=1500000) 
+	{
 
-			{
 
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 1500000");
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 1500000");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	}
 
-			}
+	else 
 
-			else 
+	{
 
-			{
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
+	}
 
-			}
+	}
 
-		}
+	else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") ||grade.equalsIgnoreCase("NA") ) 
 
-		else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") ||grade.equalsIgnoreCase("NA") ) 
+	{
 
-		{
+	double reduced_capping= Derived_capping_BTO - Derived_capping_BTO*(0.25);
 
-			double reduced_capping= Derived_capping_BTO - Derived_capping_BTO*(0.25);
 
 
+	if( reduced_capping<=1000000){
 
-			if( reduced_capping<=1000000){
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 1000000");
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	}
 
-			}
+	else 
 
-			else 
+	{
 
-			{
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
+	}
 
-			}
+	}
 
-		}
+	else 
 
-		else 
+	{
 
-		{
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
+	}
 
-		}
 
 
+	
 
+	
 
+	// ABB
 
+	
 
+	
 
-		// ABB
+	if(grade.equalsIgnoreCase("A") && capping_ABB <=1500000) 
 
+	{
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
-		if(grade.equalsIgnoreCase("A") && capping_ABB <=1500000) 
 
-		{
+	}
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1500000");
+	
 
-			ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	else if(grade.equalsIgnoreCase("B")) {
 
+	double reduced_capping= Derived_capping_ABB - Derived_capping_ABB*(0.15);
 
+	if( reduced_capping <=1500000) 
 
-		}
+	{
 
 
 
-		else if(grade.equalsIgnoreCase("B")) {
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1500000");
 
-			double reduced_capping= Derived_capping_ABB - Derived_capping_ABB*(0.15);
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-			if( reduced_capping <=1500000) 
+	}
 
-			{
+	else 
 
+	{
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1500000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-			}
+	}
 
-			else 
+	
 
-			{
+	}
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") ||grade.equalsIgnoreCase("NA") ) 
 
+	{
 
+	double reduced_capping= Derived_capping_ABB - Derived_capping_ABB*(0.25);
 
-			}
 
 
+	if( reduced_capping<=1000000){
 
-		}
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1000000");
 
-		else if(grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") ||grade.equalsIgnoreCase("NA") ) 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-		{
+	}
 
-			double reduced_capping= Derived_capping_ABB - Derived_capping_ABB*(0.25);
+	else 
 
+	{
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			if( reduced_capping<=1000000){
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	}
 
-			}
+	}
 
-			else 
+	else 
 
-			{
+	{
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
-
-		}
-
-		else 
-
-		{
-
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-
-
-		}
+	}
 
 
 
@@ -1300,9 +1306,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Salaried, Policy SMFG_Direct
+	* When experiment is Salaried, Policy Smfg_Direct
 
-	 */
+	*/
 
 
 
@@ -1314,279 +1320,279 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_06 :"+" When experiment is Salaried, Policy SMFG_Direct When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_06 :"+" When experiment is Salaried, Policy Smfg_Direct When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String profile="update loan_application set experiment_name='Salaried applicant', experiment_id='84' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='Salaried applicant', experiment_id='84' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
+	
 
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
 
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
+	double newCapping = 0.0;
 
-		double newCapping = 0.0;
+	double reducedCapping = 0.0;
 
-		double reducedCapping = 0.0;
+	String message = "";
 
-		String message = "";
+	
 
+	
 
+	// BTO
 
 
 
-		// BTO
+	if (grade.equalsIgnoreCase("A")) {
 
+	if (capping <= 1000000.00) {
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
 
-		if (grade.equalsIgnoreCase("A")) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (capping <= 1000000.00) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
+	}
 
+	} else if (grade.equalsIgnoreCase("B")) {
 
+	newCapping = Derived_capping_BTO * 0.15;
 
-			}
+	reducedCapping = Derived_capping_BTO - newCapping;
 
-		} else if (grade.equalsIgnoreCase("B")) {
+	if (reducedCapping <= 800000) {
 
-			newCapping = Derived_capping_BTO * 0.15;
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 800000");
 
-			reducedCapping = Derived_capping_BTO - newCapping;
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (reducedCapping <= 800000) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 15% haircut and Max Capping is 800000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	}
 
+	} else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
+	newCapping = Derived_capping_BTO * 0.25;
 
-			}
+	reducedCapping = Derived_capping_BTO - newCapping;
 
-		} else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
+	if (reducedCapping <= 600000) {
 
-			newCapping = Derived_capping_BTO * 0.25;
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 600000");
 
-			reducedCapping = Derived_capping_BTO - newCapping;
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount."); 
 
-			if (reducedCapping <= 600000) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 600000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount."); 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
+	}
 
+	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
+	newCapping = Derived_capping_BTO * 0.25;
 
-			}
+	reducedCapping = Derived_capping_BTO - newCapping;
 
-		} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
+	if (reducedCapping >= 0.0) {
 
-			newCapping = Derived_capping_BTO * 0.25;
+	message = "Eligibility is getting calculated properly..!!!";
 
-			reducedCapping = Derived_capping_BTO - newCapping;
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 00.00 ");
 
-			if (reducedCapping >= 0.0) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount."); 
 
-				message = "Eligibility is getting calculated properly..!!!";
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 25% haircut and Max Capping is 00.00 ");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount."); 
 
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	}
 
+	} else {
 
+	message = "Invalid grade!";
 
-			}
+	}
 
-		} else {
 
-			message = "Invalid grade!";
 
-		}
+	
 
+	// ABB 
 
+	
 
+	
 
+	if (grade.equalsIgnoreCase("A")) {
 
-		// ABB 
+	if (capping_ABB <= 1000000.00) {
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
-		if (grade.equalsIgnoreCase("A")) {
+	} else {
 
-			if (capping_ABB <= 1000000.00) {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
+	}
 
+	} else if (grade.equalsIgnoreCase("B")) {
 
-			} else {
+	newCapping = Derived_capping_ABB * 0.15;
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
+	reducedCapping = Derived_capping_ABB - newCapping;
 
+	if (reducedCapping <= 800000) {
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 800000");
 
-			}
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-		} else if (grade.equalsIgnoreCase("B")) {
 
-			newCapping = Derived_capping_ABB * 0.15;
 
-			reducedCapping = Derived_capping_ABB - newCapping;
 
-			if (reducedCapping <= 800000) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 800000");
+	} else {
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
+	}
 
+	} else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
-			} else {
+	newCapping = Derived_capping_ABB * 0.25;
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	reducedCapping = Derived_capping_ABB - newCapping;
 
+	if (reducedCapping <= 600000) {
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 600000");
 
-			}
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount."); 
 
-		} else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
-			newCapping = Derived_capping_ABB * 0.25;
 
-			reducedCapping = Derived_capping_ABB - newCapping;
+	} else {
 
-			if (reducedCapping <= 600000) {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 600000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount."); 
 
+	}
 
+	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
-			} else {
+	newCapping = Derived_capping_ABB * 0.25;
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!" );
+	reducedCapping = Derived_capping_ABB - newCapping;
 
+	if (reducedCapping >= 0.0) {
 
+	message = "Eligibility is getting calculated properly..!!!";
 
-			}
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 00.00 ");
 
-		} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount."); 
 
-			newCapping = Derived_capping_ABB * 0.25;
 
-			reducedCapping = Derived_capping_ABB - newCapping;
 
-			if (reducedCapping >= 0.0) {
 
-				message = "Eligibility is getting calculated properly..!!!";
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 00.00 ");
+	} else {
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount."); 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
+	}
 
+	} else {
 
-			} else {
+	message = "Invalid grade!";
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-
-
-			}
-
-		} else {
-
-			message = "Invalid grade!";
-
-		}
+	}
 
 
 
@@ -1598,9 +1604,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When Experiment is Personal Loan, Policy SMFG_Direct 
+	* When Experiment is Personal Loan, Policy Smfg_Direct 
 
-	 */
+	*/
 
 
 
@@ -1612,271 +1618,271 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_07 :"+"When Experiment is Personal Loan, Policy SMFG_Direct When Risk_Grade is"+final_grade);
+	ListnerClass.reportLog("TC_07 :"+"When Experiment is Personal Loan, Policy Smfg_Direct When Risk_Grade is"+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String profile="update loan_application set experiment_name='Personal Loans', experiment_id='46' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='Personal Loans', experiment_id='46' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
+	
 
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
+	
 
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
+	double cappingThreshold = 500000.00;
 
+	double reductionPercentage = 0.0;
 
-		double cappingThreshold = 500000.00;
 
-		double reductionPercentage = 0.0;
 
+	//BTO
 
+	
 
-		//BTO
+	if (grade.equalsIgnoreCase("A")) {
 
+	if (capping <= cappingThreshold) {
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
 
-		if (grade.equalsIgnoreCase("A")) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (capping <= cappingThreshold) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	}
 
+	} else if (grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
+	if (grade.equalsIgnoreCase("B")) {
 
-			}
+	reductionPercentage = 0.15;
 
-		} else if (grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
+	} else {
 
-			if (grade.equalsIgnoreCase("B")) {
+	reductionPercentage = 0.25;
 
-				reductionPercentage = 0.15;
+	}
 
-			} else {
 
-				reductionPercentage = 0.25;
 
-			}
+	double newCapping = Derived_capping_BTO * reductionPercentage;
 
+	double reducedCapping = Derived_capping_BTO - newCapping;
 
 
-			double newCapping = Derived_capping_BTO * reductionPercentage;
 
-			double reducedCapping = Derived_capping_BTO - newCapping;
+	if (reducedCapping <= cappingThreshold) {
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (reducedCapping <= cappingThreshold) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 500000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	}
 
+	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
+	reductionPercentage = 0.25;
 
-			}
 
-		} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
-			reductionPercentage = 0.25;
+	double newCapping = Derived_capping_BTO * reductionPercentage;
 
+	double reducedCapping = Derived_capping_BTO - newCapping;
 
 
-			double newCapping = Derived_capping_BTO * reductionPercentage;
 
-			double reducedCapping = Derived_capping_BTO - newCapping;
+	if (reducedCapping <= 0.0) {
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 00.00");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (reducedCapping <= 0.0) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 00.00");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	}
 
+	}
 
+	
 
-			}
+	
 
-		}
+ // ABB
 
+	
 
+	
 
+	if (grade.equalsIgnoreCase("A")) {
 
+	if (capping_ABB <= cappingThreshold) {
 
-		// ABB
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
 
 
-		if (grade.equalsIgnoreCase("A")) {
 
-			if (capping_ABB <= cappingThreshold) {
+	} else {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
+	}
 
+	} else if (grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
+	if (grade.equalsIgnoreCase("B")) {
 
-			} else {
+	reductionPercentage = 0.15;
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	} else {
 
+	reductionPercentage = 0.25;
 
+	}
 
-			}
 
-		} else if (grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
-			if (grade.equalsIgnoreCase("B")) {
+	double newCapping = Derived_capping_ABB * reductionPercentage;
 
-				reductionPercentage = 0.15;
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			} else {
 
-				reductionPercentage = 0.25;
 
-			}
+	if (reducedCapping <= cappingThreshold) {
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-			double newCapping = Derived_capping_ABB * reductionPercentage;
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
 
 
 
-			if (reducedCapping <= cappingThreshold) {
+	} else {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 500000");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
+	}
 
+	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
+	reductionPercentage = 0.25;
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
+	double newCapping = Derived_capping_ABB * reductionPercentage;
 
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			}
 
-		} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
-			reductionPercentage = 0.25;
+	if (reducedCapping >= 0.0) {
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 00.00");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-			double newCapping = Derived_capping_ABB * reductionPercentage;
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
 
 
 
-			if (reducedCapping >= 0.0) {
+	} else {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , "+(reductionPercentage*100)+"%"+" haircut and Max Capping is 00.00");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
 
+	}
 
+	}
 
-
-			} else {
-
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-
-
-			}
-
-		}
-
-
+	
 
 
 
@@ -1886,9 +1892,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When Experiment is Saving Account, Policy SMFG_Direct 
+	* When Experiment is Saving Account, Policy Smfg_Direct 
 
-	 */
+	*/
 
 
 
@@ -1900,155 +1906,155 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_08 :"+" When Experiment is Saving Account, Policy SMFG_Direct When Risk_Grade is"+final_grade );
+	ListnerClass.reportLog("TC_08 :"+" When Experiment is Saving Account, Policy Smfg_Direct When Risk_Grade is"+final_grade );
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String profile="update loan_application set experiment_name='Saving account', experiment_id='85' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='Saving account', experiment_id='85' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	Double capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double capping_ABB=Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
+	
 
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
+	double New_capping = Derived_capping_BTO * (30.0 / 100.0); 
 
-		double New_capping = Derived_capping_BTO * (30.0 / 100.0); 
+	double Reduced_Capping = Derived_capping_BTO - New_capping;
 
-		double Reduced_Capping = Derived_capping_BTO - New_capping;
 
 
+	
 
+	// BTO
 
+	
 
-		// BTO
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
+	if (Reduced_Capping <= 500000) {
 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 30% haircut and Max Capping is 500000");
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (Reduced_Capping <= 500000) {
+	} else {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 30% haircut and Max Capping is 500000");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	}
 
-			} else {
+	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	if (Reduced_Capping >= 0.0) {
 
-			}
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 30% haircut and Max Capping is 00.00");
 
-		} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
+	ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
 
-			if (Reduced_Capping >= 0.0) {
 
-				ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , 30% haircut and Max Capping is 00.00");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping +" since max cap is min of haircut and derived amount.");
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	}
 
+	}
 
+	
 
-			}
+	
 
-		}
+	// ABB
 
+	
 
+	
 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
 
+	if (Reduced_Capping <= 500000) {
 
-		// ABB
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 30% haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
+	}
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("NA")) {
+	} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
 
-			if (Reduced_Capping <= 500000) {
+	if (Reduced_Capping <= 0.0) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 30% haircut and Max Capping is 500000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 30% haircut and Max Capping is 00.00");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
 
-			} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			}
+	} else {
 
-		} else if (grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E")) {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			if (Reduced_Capping <= 0.0) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 30% haircut and Max Capping is 00.00");
 
-				ListnerClass.reportLog(" Final Eligibility = "+capping_ABB +" since max cap is min of haircut and derived amount.");
+	}
 
-
-
-			} else {
-
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-
-
-			}
-
-		}
+	}
 
 	}
 
@@ -2066,18 +2072,19 @@ public class Smfg_Direct {
 
 
 
-		return new String[] {"A","B","C","D"};
+	return new String[] {"A","B","C","D"};
 
 	}
 
 
 
 
+
 	/*
 
-	 * Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned
+	* Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned
 
-	 */
+	*/
 
 
 
@@ -2091,115 +2098,115 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_09 :"+" Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade is"+Final_grade);
+	ListnerClass.reportLog("TC_09 :"+" Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade is"+Final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+Final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+Final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String address_ownership_status_1=" UPDATE `loan_applicant_detail` SET `address_ownership_status` = 'Owned' WHERE `loan_code` = '"+loancode+"' ";
+	String address_ownership_status_1=" UPDATE `loan_applicant_detail` SET `address_ownership_status` = 'Owned' WHERE `loan_code` = '"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(address_ownership_status_1);
+	DataBaseUtility.executeUpdateQuery(address_ownership_status_1);
 
 
 
-		String Business_vintage=" UPDATE `loan_business_detail` SET `date_of_incorporation` = '2018-01-01' WHERE `loan_code` = '"+loancode+"' ";
+	String Business_vintage=" UPDATE `loan_business_detail` SET `date_of_incorporation` = '2018-01-01' WHERE `loan_code` = '"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(Business_vintage);
+	DataBaseUtility.executeUpdateQuery(Business_vintage);
 
 
 
-		String partner="UPDATE loan_application SET partner_code = '1c41176794537' WHERE ( code = '"+loancode+"')";
+	String partner="UPDATE loan_application SET partner_code = '1c41176794537' WHERE ( code = '"+loancode+"')";
 
-		DataBaseUtility.executeUpdateQuery(partner);
+	DataBaseUtility.executeUpdateQuery(partner);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
-		// BTO Capping
+	// BTO Capping
 
 
 
-		double gradeLimitA = 2000000.00;
+	double gradeLimitA = 2000000.00;
 
-		double gradeLimitB = 1500000.00;
+	double gradeLimitB = 1500000.00;
 
 
 
 
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") && abb_capping<=gradeLimitA) {
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") && abb_capping<=gradeLimitA) {
 
 
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 2000000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 2000000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
 
-		}
+	}
 
-		else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") && BTO_Capping <= gradeLimitB)
+	else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") && BTO_Capping <= gradeLimitB)
 
-		{ 
+	{ 
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 1500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
 
-		}
+	}
 
-		else {
+	else {
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!"); }
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!"); }
 
 
 
@@ -2207,31 +2214,31 @@ public class Smfg_Direct {
 
 
 
-		// ABB Capping
+	// ABB Capping
 
 
 
-		if (abb_capping <= 2000000.00) {
+	if (abb_capping <= 2000000.00) {
 
-			if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D")) {
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D")) {
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 2000000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 2000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
 
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
+	
 
-
-		}
+	}
 
 	}
 
@@ -2241,9 +2248,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * Max Capping of NTC and Thin Cibil
+	* Max Capping of NTC and Thin Cibil
 
-	 */
+	*/
 
 
 
@@ -2255,121 +2262,121 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_10 :"+" Max Capping of NTC and Thin Cibil When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_10 :"+" Max Capping of NTC and Thin Cibil When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String query_1="update flexiloans_staging_db.loan_applicant_detail set cibil_score='000-1' where loan_code='"+loancode+"'"; // -1,0,200,300 boundry
+	String query_1="update flexiloans_staging_db.loan_applicant_detail set cibil_score='000-1' where loan_code='"+loancode+"'"; // -1,0,200,300 boundry
 
-		DataBaseUtility.executeUpdateQuery(query_1);
+	DataBaseUtility.executeUpdateQuery(query_1);
 
 
 
-		String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='0' where loan_code='"+loancode+"'";
+	String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='0' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query_2);
+	DataBaseUtility.executeUpdateQuery(query_2);
 
 
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
-		// BTO
+	// BTO
 
+	
 
+	if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && BTO_Capping <= 500000.00) {
 
-		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && BTO_Capping <= 500000.00) {
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
 
 
+	} else {
 
-		} else {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
+	}
 
-		}
 
 
+	
 
+	// ABB
 
+	
 
-		// ABB
+	if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && abb_capping <= 500000.00) {
 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
-		if ((grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) && abb_capping <= 500000.00) {
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-		} else {
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
-
-
-
-		}
+	}
 
 
 
@@ -2379,9 +2386,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * NTC with limit (all)
+	* NTC with limit (all)
 
-	 */
+	*/
 
 
 
@@ -2395,125 +2402,125 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_11 :"+" NTC with limit When Risk_Grade is"+final_grade);
+	ListnerClass.reportLog("TC_11 :"+" NTC with limit When Risk_Grade is"+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String cibil[]={"-1","0","200","300"};
+	String cibil[]={"-1","0","200","300"};
 
 
 
-		for (String value:cibil) 
+	for (String value:cibil) 
 
-		{
+	{
 
-			String query_1="update flexiloans_staging_db.loan_applicant_detail set cibil_score='"+value+"' where loan_code='"+loancode+"'"; 
+	String query_1="update flexiloans_staging_db.loan_applicant_detail set cibil_score='"+value+"' where loan_code='"+loancode+"'"; 
 
-			DataBaseUtility.executeUpdateQuery(query_1);
+	DataBaseUtility.executeUpdateQuery(query_1);
 
 
 
-			HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-			hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-			ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-			String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-			String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-			double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-			String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-			Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
 
 
-			String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-			double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-			String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-			Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
-			String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-			String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
-			String cibi="select cibil_score from flexiloans_staging_db.loan_applicant_detail where loan_code='"+loancode+"'";
+	String cibi="select cibil_score from flexiloans_staging_db.loan_applicant_detail where loan_code='"+loancode+"'";
 
-			String cibil_score=DataBaseUtility.ExecuteQuery(cibi);
+	String cibil_score=DataBaseUtility.ExecuteQuery(cibi);
 
 
 
-			String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
+	String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
 
-			DataBaseUtility.executeUpdateQuery(query_2);
+	DataBaseUtility.executeUpdateQuery(query_2);
 
 
 
 
 
-			//BTO
+	//BTO
 
 
 
-			if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
 
-			{
+	{
 
-				boolean isEligible = (cibil_score.equals("-1") || cibil_score.equals("0") || cibil_score.equals("200") || cibil_score.equals("300")) && (BTO_Capping <= 500000.00);
+	boolean isEligible = (cibil_score.equals("-1") || cibil_score.equals("0") || cibil_score.equals("200") || cibil_score.equals("300")) && (BTO_Capping <= 500000.00);
 
 
 
-				if (isEligible) {
+	if (isEligible) {
 
 
 
-					ListnerClass.reportLog("BTO_Capping =" + BTO_Capping + "Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Eligibility Capping is getting calculated properly..!!!" );
+	ListnerClass.reportLog("IF Risk_Garde IS '" + grade + " And Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Then Final Capping IS " + BTO_Capping );
 
-					ListnerClass.reportLog("Derived_capping_BTO = " + Derived_capping_BTO); 
+	ListnerClass.reportLog("Derived_capping_BTO = " + Derived_capping_BTO); 
 
 
 
 
 
-				} else {
+	} else {
 
-					ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
 
 
 
-				}
+	}
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Invalid grade specified!");
+	ListnerClass.reportLog("Invalid grade specified!");
 
 
 
-			}
+	}
 
 
 
@@ -2521,47 +2528,47 @@ public class Smfg_Direct {
 
 
 
-			// ABB
+	// ABB
 
 
 
 
 
-			if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
 
-			{
+	{
 
-				boolean isEligible = (cibil_score.equals("-1") || cibil_score.equals("0") || cibil_score.equals("200") || cibil_score.equals("300")) && (abb_capping <= 500000.00);
+	boolean isEligible = (cibil_score.equals("-1") || cibil_score.equals("0") || cibil_score.equals("200") || cibil_score.equals("300")) && (abb_capping <= 500000.00);
 
 
 
-				if (isEligible) {
+	if (isEligible) {
 
 
 
-					ListnerClass.reportLog("ABB_Capping =" + abb_capping + "Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Eligibility Capping is getting calculated properly..!!!" );
+	ListnerClass.reportLog("IF Risk_Garde IS '" + grade + " And Fixed capping is 500000 Lakh, Cibil_Score IS " + cibil_score + " Then Final Capping IS = " + abb_capping );
 
-					ListnerClass.reportLog("Derived_capping_ABB = " + Derived_capping_ABB); 
+	ListnerClass.reportLog("Derived_capping_ABB = " + Derived_capping_ABB); 
 
 
 
 
 
-				} else {
+	} else {
 
-					ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
 
 
 
-				}
+	}
 
-			} else {
+	} else {
 
-				ListnerClass.reportLog("Invalid grade specified!");
+	ListnerClass.reportLog("Invalid grade specified!");
 
 
 
-			}
+	}
 
 
 
@@ -2569,7 +2576,7 @@ public class Smfg_Direct {
 
 
 
-		}	
+	}	
 
 	}
 
@@ -2579,9 +2586,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When ODCC, Policy SMFG_Direct (only ABB)
+	* When ODCC, Policy Smfg_Direct (only ABB)
 
-	 */
+	*/
 
 
 
@@ -2595,135 +2602,135 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_12 :"+" When ODCC, Policy SMFG_Direct (only ABB) When Risk_Grade is"+final_grade);
+	ListnerClass.reportLog("TC_12 :"+" When ODCC, Policy Smfg_Direct (only ABB) When Risk_Grade is"+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode);
+	ListnerClass.reportLog(" Test Loancode ="+loancode);
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
-		String query_1="update bank_db_staging.bank_auto_reject_summary_level set od_cc_flag='1' where loan_code='"+loancode+"'";
+	String query_1="update bank_db_staging.bank_auto_reject_summary_level set od_cc_flag='1' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query_1);
+	DataBaseUtility.executeUpdateQuery(query_1);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
-		double reductionFactor = 0; 
+	double reductionFactor = 0; 
 
+	
 
+	if(grade.equalsIgnoreCase("A") && abb_capping<=1000000) {
 
-		if(grade.equalsIgnoreCase("A") && abb_capping<=1000000) {
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
 
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
+	}
 
-		}
+	else if(grade.equalsIgnoreCase("B")) 
 
-		else if(grade.equalsIgnoreCase("B")) 
+	{
 
-		{
+	reductionFactor = 0.15;
 
-			reductionFactor = 0.15;
+	double newCapping = Derived_capping_ABB * reductionFactor;
 
-			double newCapping = Derived_capping_ABB * reductionFactor;
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
+	if(reducedCapping<=1000000) 
 
-			if(reducedCapping<=1000000) 
+	{
 
-			{
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1000000");
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
 
-				ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
+	}
 
-			}
+	else {
 
-			else {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
+	}
 
-			}
+	
 
+	}
 
+	else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
 
-		}
+	{
 
-		else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
+	reductionFactor = 0.55;
 
-		{
+	double newCapping = Derived_capping_ABB * reductionFactor;
 
-			reductionFactor = 0.55;
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			double newCapping = Derived_capping_ABB * reductionFactor;
+	if(reducedCapping<=1000000) 
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
+	{
 
-			if(reducedCapping<=1000000) 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1000000");
 
-			{
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1000000");
+	}
 
-				ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
+	else {
 
-			}
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
+	}
 
+	}
 
-			}
+	else {
 
-		}
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-		else {
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-
-
-		}
+	}
 
 
 
@@ -2735,9 +2742,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Both Rented, Policy SMFG_Direct and account is NTC
+	* When experiment is Both Rented, Policy Smfg_Direct and account is NTC
 
-	 */
+	*/
 
 
 
@@ -2747,127 +2754,127 @@ public class Smfg_Direct {
 
 	{
 
-		ListnerClass.reportLog("TC_13 :"+" When experiment is Both Rented, Policy SMFG_Direct and account is NTC When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_13 :"+" When experiment is Both Rented, Policy Smfg_Direct and account is NTC When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode); 
+	ListnerClass.reportLog(" Test Loancode ="+loancode); 
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);
+	DataBaseUtility.executeUpdateQuery(query);
 
 
 
+	
 
+	String Both_rented="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='51' where code='"+loancode+"'";
 
-		String Both_rented="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='51' where code='"+loancode+"'";
+	DataBaseUtility.executeUpdateQuery(Both_rented);
 
-		DataBaseUtility.executeUpdateQuery(Both_rented);
+	
 
+	String query_1="update flexiloans_staging_db.loan_applicant_detail set cibil_score='000-1' where loan_code='"+loancode+"'"; // -1,0,200,300 boundry
 
+	DataBaseUtility.executeUpdateQuery(query_1);
 
-		String query_1="update flexiloans_staging_db.loan_applicant_detail set cibil_score='000-1' where loan_code='"+loancode+"'"; // -1,0,200,300 boundry
 
-		DataBaseUtility.executeUpdateQuery(query_1);
 
+	HashMap hash= new HashMap();
 
+	hash.put("loan_code", loancode);
 
-		HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
 
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
+	String retur=repo.extract().body().asPrettyString();
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
 
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
+	double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		double BTO_Capping= Double.parseDouble(actual_capped_banking_eligibility_Value);
 
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String cibi="select cibil_score from flexiloans_staging_db.loan_applicant_detail where loan_code='"+loancode+"'";
 
+	String cibil_score=DataBaseUtility.ExecuteQuery(cibi);
 
 
-		String cibi="select cibil_score from flexiloans_staging_db.loan_applicant_detail where loan_code='"+loancode+"'";
 
-		String cibil_score=DataBaseUtility.ExecuteQuery(cibi);
+	String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
 
+	DataBaseUtility.executeUpdateQuery(query_2);
 
 
-		String query_2="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='1' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query_2);
+	
 
+ //BTO
 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (BTO_Capping<=500000.00)) 
 
+	{
 
 
-		//BTO
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (BTO_Capping<=500000.00)) 
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
 
-		{
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
+	} else {
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
+	ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
 
 
 
-		} else {
+	}
 
-			ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
+	//ABB
 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (abb_capping<=500000.00)) 
 
+	{
 
-		}
 
-		//ABB
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (abb_capping<=500000.00)) 
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
 
-		{
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
+	} else {
 
+	ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
-		} else {
-
-			ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
-
-
-
-		}
+	}
 
 	}
 
@@ -2877,9 +2884,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil
+	* When experiment is Both Rented, Policy Smfg_Direct and account is Thin cibil
 
-	 */
+	*/
 
 
 
@@ -2891,117 +2898,117 @@ public class Smfg_Direct {
 
 	{
 
-		ListnerClass.reportLog("TC_14 :"+" When experiment is Both Rented, Policy SMFG_Direct and account is Thin cibil When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_14 :"+" When experiment is Both Rented, Policy Smfg_Direct and account is Thin cibil When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode); 
+	ListnerClass.reportLog(" Test Loancode ="+loancode); 
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);	
+	DataBaseUtility.executeUpdateQuery(query);	
 
 
 
-		String profile="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='52' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='52' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
-		String thick_cibi="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='0' where loan_code='"+loancode+"'";
+	String thick_cibi="update flexiloans_staging_db.risk_grading_final set is_thick_cibil='0' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(thick_cibi);
+	DataBaseUtility.executeUpdateQuery(thick_cibi);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_banking_eligibility");
 
-		double BTO_Capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double BTO_Capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
+	String Derived_BTO = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].banking_eligibility");
 
-		Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
+	Double Derived_capping_BTO=Double.parseDouble(Derived_BTO);
 
+	
 
+	String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		String actual_capped_abb_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
-		double abb_capping= Double.parseDouble(actual_capped_abb_eligibility_Value);
 
 
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
-		Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
 
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	
 
+	
 
 
 
+	//BTO
 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (BTO_Capping<=500000.00)) 
 
+	{
 
-		//BTO
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (BTO_Capping<=500000.00)) 
 
-		{
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
 
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_BTO+" , No haircut and Max Capping is 500000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+BTO_Capping +" since max cap is min of haircut and derived amount.");
+	} else {
 
+	ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
 
 
-		} else {
 
-			ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
+	}
 
+	//ABB
 
+	if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (abb_capping<=500000.00)) 
 
-		}
+	{
 
-		//ABB
 
-		if (grade.equalsIgnoreCase("A") || grade.equalsIgnoreCase("B") || grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA") && (abb_capping<=500000.00)) 
 
-		{
+	ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
 
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
+	} else {
 
-			ListnerClass.reportLog("Derived_BTO is ="+Derived_capping_ABB+" , No haircut and Max Capping is 500000");
+	ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
 
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount.");
 
-		} else {
 
-			ListnerClass.reportLog("Eligibility Capping is not getting calculated properly..!!!");
-
-
-
-		}
+	}
 
 	} 
 
@@ -3011,9 +3018,9 @@ public class Smfg_Direct {
 
 	/*
 
-	 * When experiment is Both Rented, Policy SMFG_Direct and account is ODCC
+	* When experiment is Both Rented, Policy Smfg_Direct and account is ODCC
 
-	 */
+	*/
 
 
 
@@ -3025,143 +3032,143 @@ public class Smfg_Direct {
 
 
 
-		ListnerClass.reportLog("TC_15 :"+" When experiment is Both Rented, Policy SMFG_Direct and account is ODCC When Risk_Grade is "+final_grade);
+	ListnerClass.reportLog("TC_15 :"+" When experiment is Both Rented, Policy Direct and account is ODCC When Risk_Grade is "+final_grade);
 
-		ListnerClass.reportLog(" Test Loancode ="+loancode); 
+	ListnerClass.reportLog(" Test Loancode ="+loancode); 
 
-		String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
+	String query="update risk_grading_final set final_grade='"+final_grade+"' where loan_code='"+loancode+"' ";
 
-		DataBaseUtility.executeUpdateQuery(query);	
+	DataBaseUtility.executeUpdateQuery(query);	
 
 
 
-		String profile="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='52' where code='"+loancode+"'";
+	String profile="update loan_application set experiment_name='RENTED_DIRECT_V2.0' , experiment_id='52' where code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(profile);
+	DataBaseUtility.executeUpdateQuery(profile);
 
 
 
 
 
-		String query_1="update bank_db_staging.bank_auto_reject_summary_level set od_cc_flag='1' where loan_code='"+loancode+"'";
+	String query_1="update bank_db_staging.bank_auto_reject_summary_level set od_cc_flag='1' where loan_code='"+loancode+"'";
 
-		DataBaseUtility.executeUpdateQuery(query_1);
+	DataBaseUtility.executeUpdateQuery(query_1);
 
 
 
-		HashMap hash= new HashMap();
+	HashMap hash= new HashMap();
 
-		hash.put("loan_code", loancode);
+	hash.put("loan_code", loancode);
 
 
 
-		ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
+	ValidatableResponse repo = given().contentType("application/json").body(hash).when().post(eligibility).then().log().all();
 
-		String retur=repo.extract().body().asPrettyString();
+	String retur=repo.extract().body().asPrettyString();
 
 
 
-		String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
+	String actual_capped_banking_eligibility_Value = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].capped_abb_eligibility");
 
-		double abb_capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
+	double abb_capping=Double.parseDouble(actual_capped_banking_eligibility_Value);
 
 
 
-		String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.EpiMoney.DIRECT[0].abb_eligibility");
+	String Derived_ABB = repo.extract().body().jsonPath().getString("grouped.'SMFG India Credit'.SMFG_DIRECT[0].abb_eligibility");
 
-		Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
+	Double Derived_capping_ABB=Double.parseDouble(Derived_ABB);
 
 
 
 
 
-		String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
+	String final_g="select final_grade from flexiloans_staging_db.risk_grading_final where loan_code='"+loancode+"'";
 
-		String grade=DataBaseUtility.ExecuteQuery(final_g);
+	String grade=DataBaseUtility.ExecuteQuery(final_g);
 
 
 
-		double reductionFactor = 0;
+	double reductionFactor = 0;
 
 
 
-		if(grade.equalsIgnoreCase("A") && abb_capping<=1000000) {
+	if(grade.equalsIgnoreCase("A") && abb_capping<=1000000) {
 
-			ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , No haircut and Max Capping is 1000000");
 
-			ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
 
-		}
+	}
 
-		else if(grade.equalsIgnoreCase("B")) 
+	else if(grade.equalsIgnoreCase("B")) 
 
-		{
+	{
 
-			reductionFactor = 0.15;
+	reductionFactor = 0.15;
 
-			double newCapping = Derived_capping_ABB * reductionFactor;
+	double newCapping = Derived_capping_ABB * reductionFactor;
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			if(reducedCapping<=1000000) 
+	if(reducedCapping<=1000000) 
 
-			{
+	{
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1000000");
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 15% haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
 
-			}
+	}
 
-			else {
+	else {
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
 
-			}
+	}
 
+	
 
+	}
 
-		}
+	else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
 
-		else if (grade.equalsIgnoreCase("C") || grade.equalsIgnoreCase("D") || grade.equalsIgnoreCase("E") || grade.equalsIgnoreCase("NA")) 
+	{
 
-		{
+	reductionFactor = 0.25;
 
-			reductionFactor = 0.25;
+	double newCapping = Derived_capping_ABB * reductionFactor;
 
-			double newCapping = Derived_capping_ABB * reductionFactor;
+	double reducedCapping = Derived_capping_ABB - newCapping;
 
-			double reducedCapping = Derived_capping_ABB - newCapping;
+	if(reducedCapping<=1000000) 
 
-			if(reducedCapping<=1000000) 
+	{
 
-			{
+	ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1000000");
 
-				ListnerClass.reportLog("Derived_ABB is ="+Derived_capping_ABB+" , 25% haircut and Max Capping is 1000000");
+	ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
 
-				ListnerClass.reportLog(" Final Eligibility = "+abb_capping +" since max cap is min of haircut and derived amount."); 
+	}
 
-			}
+	else {
 
-			else {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-				ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
+	}
 
-			}
+	}
 
-		}
+	else {
 
-		else {
+	ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
-			ListnerClass.reportLog("Eligibility is not getting calculated properly..!!!");
 
 
-
-		}
+	}
 
 
 
