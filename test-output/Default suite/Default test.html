@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/6/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>88/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Jul 18 09:20:30 IST 2024</td>
+<td>Started on:</td><td>Thu Jul 18 09:41:30 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>67 seconds (67770 ms)</td>
+<tr><td>Total time:</td><td>496 seconds (496261 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,8 +67,8 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,485 +76,1553 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
-<a href="#Output-408544604" onClick='toggleBox("Output-408544604", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1135849904" onClick='toggleBox("Output-1135849904", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-408544604" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-408544604">
-TC_03 :When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is NA<br/>
- Test Loancode =66989103gv966<br/>
+<a href="#Output-1135849904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1135849904">
+TC_04 :When experiment is Toxic Profile, Policy Smfg_DIRECT When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 176642.12 since max cap is min of haircut and derived amount.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace408544604", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace408544604'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@3fcbc766</td></tr>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
-<a href="#Output-1619759213" onClick='toggleBox("Output-1619759213", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1399391725" onClick='toggleBox("Output-1399391725", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1619759213" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1619759213">
-TC_03 :When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is D<br/>
- Test Loancode =66989103gv966<br/>
+<a href="#Output-1399391725" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1399391725">
+TC_14 : When experiment is Both Rented, Policy Smfg_DIRECT and account is Thin cibil When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_BTO is =215008.06 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 182756.86 since max cap is min of haircut and derived amount.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1619759213", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1619759213'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@3fcbc766</td></tr>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
-<a href="#Output-731827461" onClick='toggleBox("Output-731827461", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1853939333" onClick='toggleBox("Output-1853939333", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-731827461" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-731827461">
-TC_03 :When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is A<br/>
- Test Loancode =66989103gv966<br/>
+<a href="#Output-1853939333" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1853939333">
+TC_04 :When experiment is Toxic Profile, Policy Smfg_DIRECT When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace731827461", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace731827461'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>5</td>
-<td>Eligibility_Automation.Smfg_Direct@3fcbc766</td></tr>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
-<a href="#Output-60924092" onClick='toggleBox("Output-60924092", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-2117885371" onClick='toggleBox("Output-2117885371", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-60924092" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-60924092">
-TC_03 :When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is C<br/>
- Test Loancode =66989103gv966<br/>
+<a href="#Output-2117885371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2117885371">
+TC_13 : When experiment is Both Rented, Policy Smfg_DIRECT and account is NTC When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =168230.6 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace60924092", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace60924092'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
-<td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@3fcbc766</td></tr>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
 <tr>
-<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
-<a href="#Output-1016591849" onClick='toggleBox("Output-1016591849", this, "Show output", "Hide output");'>Show output</a>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1436390679" onClick='toggleBox("Output-1436390679", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-1016591849" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-1016591849">
-TC_03 :When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is B<br/>
- Test Loancode =66989103gv966<br/>
+<a href="#Output-1436390679" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1436390679">
+TC_11 : NTC with limit When Policy Direct Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_capping_BTO = -91385.04<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = -91385.04<br/>
+Derived_capping_ABB = 301011.3<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = 210707.9<br/>
+Derived_capping_BTO = -91385.04<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = -91385.04<br/>
+Derived_capping_ABB = 301011.3<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = 210707.9<br/>
+Derived_capping_BTO = -91385.04<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = -91385.04<br/>
+Derived_capping_ABB = 301011.3<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = 210707.9<br/>
+Derived_capping_BTO = -91385.04<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = -91385.04<br/>
+Derived_capping_ABB = 301011.3<br/>
+IF Risk_Garde IS 'B And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = 210707.9<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1016591849", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1016591849'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
+<td></td>
+<td>15</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1341273081" onClick='toggleBox("Output-1341273081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1341273081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1341273081">
+TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isD<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , No haircut and Max Capping is 2000000<br/>
+ Final Eligibility = 114740.44 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-834212917" onClick='toggleBox("Output-834212917", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-834212917" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-834212917">
+TC_02 : When experiment is Both Rented, Policy Smfg_DIRECT When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-463985450" onClick='toggleBox("Output-463985450", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-463985450" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-463985450">
+TC_01 : To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is =D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 163914.92 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1049401729" onClick='toggleBox("Output-1049401729", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1049401729" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1049401729">
+TC_08 : When Experiment is Saving Account, Policy Smfg_DIRECT When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 210707.9 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1144052158" onClick='toggleBox("Output-1144052158", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1144052158" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1144052158">
+TC_12 : When ODCC, Policy Smfg_DIRECT (only ABB) When Risk_Grade isE<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =117082.09 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@3fcbc766</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-679651341" onClick='toggleBox("Output-679651341", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-679651341" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-679651341">
+TC_15 : When experiment is Both Rented, Policy Smfg_DIRECT and account is ODCC When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =168230.6 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-905985680" onClick='toggleBox("Output-905985680", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-905985680" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-905985680">
+TC_08 : When Experiment is Saving Account, Policy Smfg_DIRECT When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+Capping Amount After Haircut = 0<br/>
+Final Eligibility = 0<br/>
+Derived_ABB is =163914.92 , 30% haircut and Max Capping is 00.00<br/>
+ Final Eligibility = 114740.44 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1899176867" onClick='toggleBox("Output-1899176867", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1899176867" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1899176867">
+TC_10 : Max Capping of NTC and Thin Cibil When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 164865.98 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-177104030" onClick='toggleBox("Output-177104030", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-177104030" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-177104030">
+TC_11 : NTC with limit When Policy Direct Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = 114740.44<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = 114740.44<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = 114740.44<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'E And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = 114740.44<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-826733527" onClick='toggleBox("Output-826733527", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-826733527" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-826733527">
+TC_05 : When experiment is Cautious Location, Policy Smfg_DIRECT when Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-345250566" onClick='toggleBox("Output-345250566", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-345250566" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-345250566">
+TC_08 : When Experiment is Saving Account, Policy Smfg_DIRECT When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1287780563" onClick='toggleBox("Output-1287780563", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1287780563" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1287780563">
+TC_11 : NTC with limit When Policy Direct Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = 0.0<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = 0.0<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = 0.0<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'NA And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = 0.0<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-218022380" onClick='toggleBox("Output-218022380", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-218022380" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-218022380">
+TC_15 : When experiment is Both Rented, Policy Smfg_DIRECT and account is ODCC When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =215008.06 , 15% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1700067393" onClick='toggleBox("Output-1700067393", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1700067393" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1700067393">
+TC_11 : NTC with limit When Policy Direct Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_capping_BTO = -109567.84<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = -109567.84<br/>
+Derived_capping_ABB = 360903.28<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = 252632.3<br/>
+Derived_capping_BTO = -109567.84<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = -109567.84<br/>
+Derived_capping_ABB = 360903.28<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = 252632.3<br/>
+Derived_capping_BTO = -109567.84<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = -109567.84<br/>
+Derived_capping_ABB = 360903.28<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = 252632.3<br/>
+Derived_capping_BTO = -109567.84<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = -109567.84<br/>
+Derived_capping_ABB = 360903.28<br/>
+IF Risk_Garde IS 'A And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = 252632.3<br/>
+</div>
+</td>
+<td></td>
+<td>16</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1864412598" onClick='toggleBox("Output-1864412598", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1864412598" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1864412598">
+TC_14 : When experiment is Both Rented, Policy Smfg_DIRECT and account is Thin cibil When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_BTO is =168230.6 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-801963227" onClick='toggleBox("Output-801963227", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-801963227" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-801963227">
+TC_07 :When Experiment is Personal Loan, Policy Smfg_DIRECT When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25.0% haircut and Max Capping is 00.00<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25.0% haircut and Max Capping is 00.00<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-252093342" onClick='toggleBox("Output-252093342", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-252093342" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-252093342">
+TC_12 : When ODCC, Policy Smfg_DIRECT (only ABB) When Risk_Grade isD<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =117082.09 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 81957.46 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1365704314" onClick='toggleBox("Output-1365704314", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1365704314" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1365704314">
+TC_08 : When Experiment is Saving Account, Policy Smfg_DIRECT When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+Capping Amount After Haircut = 0<br/>
+Final Eligibility = 0<br/>
+Derived_ABB is =163914.92 , 30% haircut and Max Capping is 00.00<br/>
+ Final Eligibility = 114740.44 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1354033192" onClick='toggleBox("Output-1354033192", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1354033192" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1354033192">
+TC_13 : When experiment is Both Rented, Policy Smfg_DIRECT and account is NTC When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =257788.05 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1847776959" onClick='toggleBox("Output-1847776959", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1847776959" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1847776959">
+TC_04 :When experiment is Toxic Profile, Policy Smfg_DIRECT When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-985496352" onClick='toggleBox("Output-985496352", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-985496352" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-985496352">
+TC_07 :When Experiment is Personal Loan, Policy Smfg_DIRECT When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-2024498101" onClick='toggleBox("Output-2024498101", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2024498101" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2024498101">
+TC_04 :When experiment is Toxic Profile, Policy Smfg_DIRECT When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1774995948" onClick='toggleBox("Output-1774995948", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1774995948" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1774995948">
+TC_02 : When experiment is Both Rented, Policy Smfg_DIRECT When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1695834039" onClick='toggleBox("Output-1695834039", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1695834039" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1695834039">
+TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 2000000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 2000000<br/>
+ Final Eligibility = 252632.3 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
 <tr>
 <td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
-<a href="#Output-54520865" onClick='toggleBox("Output-54520865", this, "Show output", "Hide output");'>Show output</a>
+<a href="#Output-2116946826" onClick='toggleBox("Output-2116946826", this, "Show output", "Hide output");'>Show output</a>
 
-<a href="#Output-54520865" onClick="toggleAllBoxes();">Show all outputs</a>
-<div class='log' id="Output-54520865">
-TC_03 :When experiment is Cautious Profile, Policy Smfg_Direct When Risk_Grade is E<br/>
- Test Loancode =66989103gv966<br/>
+<a href="#Output-2116946826" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2116946826">
+TC_03 :When experiment is Cautious Profile, Policy Smfg_DIRECT When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
 </div>
 </td>
-<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace54520865", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace54520865'><pre>java.lang.NullPointerException: Cannot invoke &quot;String.trim()&quot; because &quot;in&quot; is null
-	at java.base/jdk.internal.math.FloatingDecimal.readJavaFormatString(FloatingDecimal.java:1838)
-	at java.base/jdk.internal.math.FloatingDecimal.parseDouble(FloatingDecimal.java:110)
-	at java.base/java.lang.Double.parseDouble(Double.java:651)
-	at Eligibility_Automation.Smfg_Direct.TC_03(Smfg_Direct.java:624)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
-	at org.testng.TestNG.runSuites(TestNG.java:1112)
-	at org.testng.TestNG.run(TestNG.java:1079)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div></td>
+<td></td>
 <td>3</td>
-<td>Eligibility_Automation.Smfg_Direct@3fcbc766</td></tr>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1969632323" onClick='toggleBox("Output-1969632323", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1969632323" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1969632323">
+TC_01 : To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is =NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 235522.84 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1975247773" onClick='toggleBox("Output-1975247773", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1975247773" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1975247773">
+TC_06 : When experiment is Salaried, Policy Smfg_DIRECT When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+Capping Amount After Haircut = 0<br/>
+Final Eligibility = 0<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 00.00 <br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1908502375" onClick='toggleBox("Output-1908502375", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1908502375" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1908502375">
+TC_12 : When ODCC, Policy Smfg_DIRECT (only ABB) When Risk_Grade isA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =257788.05 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 180451.62 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-26626623" onClick='toggleBox("Output-26626623", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-26626623" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-26626623">
+TC_10 : Max Capping of NTC and Thin Cibil When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1277477898" onClick='toggleBox("Output-1277477898", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1277477898" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1277477898">
+TC_03 :When experiment is Cautious Profile, Policy Smfg_DIRECT When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 176642.12 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1956763150" onClick='toggleBox("Output-1956763150", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1956763150" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1956763150">
+TC_02 : When experiment is Both Rented, Policy Smfg_DIRECT When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-78510879" onClick='toggleBox("Output-78510879", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-78510879" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-78510879">
+TC_13 : When experiment is Both Rented, Policy Smfg_DIRECT and account is NTC When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =117082.09 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1243911696" onClick='toggleBox("Output-1243911696", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1243911696" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1243911696">
+TC_05 : When experiment is Cautious Location, Policy Smfg_DIRECT when Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 122936.19 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-906065973" onClick='toggleBox("Output-906065973", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-906065973" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-906065973">
+TC_05 : When experiment is Cautious Location, Policy Smfg_DIRECT when Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1406293991" onClick='toggleBox("Output-1406293991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1406293991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1406293991">
+TC_12 : When ODCC, Policy Smfg_DIRECT (only ABB) When Risk_Grade isNA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =168230.6 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-410065222" onClick='toggleBox("Output-410065222", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-410065222" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-410065222">
+TC_06 : When experiment is Salaried, Policy Smfg_DIRECT When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = 176642.12 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-859897724" onClick='toggleBox("Output-859897724", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-859897724" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-859897724">
+TC_03 :When experiment is Cautious Profile, Policy Smfg_DIRECT When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , 15% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , 15% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 255859.6 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-629050435" onClick='toggleBox("Output-629050435", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-629050435" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-629050435">
+TC_07 :When Experiment is Personal Loan, Policy Smfg_DIRECT When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25.0% haircut and Max Capping is 00.00<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25.0% haircut and Max Capping is 00.00<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1380832115" onClick='toggleBox("Output-1380832115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1380832115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1380832115">
+TC_04 :When experiment is Toxic Profile, Policy Smfg_DIRECT When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 ,15.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 ,15.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 255859.6 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-2006552231" onClick='toggleBox("Output-2006552231", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2006552231" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2006552231">
+TC_01 : To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is =B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 301011.3 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_04()'><b>TC_04</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-576066578" onClick='toggleBox("Output-576066578", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-576066578" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-576066578">
+TC_04 :When experiment is Toxic Profile, Policy Smfg_DIRECT When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 ,25.0% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1744871240" onClick='toggleBox("Output-1744871240", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1744871240" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1744871240">
+TC_14 : When experiment is Both Rented, Policy Smfg_DIRECT and account is Thin cibil When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_BTO is =117082.09 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-112524669" onClick='toggleBox("Output-112524669", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-112524669" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-112524669">
+TC_01 : To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is =C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 235522.84 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-771002814" onClick='toggleBox("Output-771002814", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-771002814" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-771002814">
+TC_12 : When ODCC, Policy Smfg_DIRECT (only ABB) When Risk_Grade isB<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =215008.06 , 15% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 150505.66 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-206921246" onClick='toggleBox("Output-206921246", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-206921246" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-206921246">
+TC_05 : When experiment is Cautious Location, Policy Smfg_DIRECT when Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 176642.12 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-429860948" onClick='toggleBox("Output-429860948", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-429860948" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-429860948">
+TC_14 : When experiment is Both Rented, Policy Smfg_DIRECT and account is Thin cibil When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_BTO is =168230.6 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 126172.95 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1244601059" onClick='toggleBox("Output-1244601059", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1244601059" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1244601059">
+TC_06 : When experiment is Salaried, Policy Smfg_DIRECT When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-313124964" onClick='toggleBox("Output-313124964", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-313124964" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-313124964">
+TC_03 :When experiment is Cautious Profile, Policy Smfg_DIRECT When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1260651126" onClick='toggleBox("Output-1260651126", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1260651126" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1260651126">
+TC_02 : When experiment is Both Rented, Policy Smfg_DIRECT When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = 176642.12 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1826842039" onClick='toggleBox("Output-1826842039", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1826842039" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1826842039">
+TC_10 : Max Capping of NTC and Thin Cibil When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 114740.44 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1815621869" onClick='toggleBox("Output-1815621869", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1815621869" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1815621869">
+TC_08 : When Experiment is Saving Account, Policy Smfg_DIRECT When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 164865.98 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-676396677" onClick='toggleBox("Output-676396677", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-676396677" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-676396677">
+TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isC<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , No haircut and Max Capping is 2000000<br/>
+ Final Eligibility = 164865.98 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1877978810" onClick='toggleBox("Output-1877978810", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1877978810" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1877978810">
+TC_13 : When experiment is Both Rented, Policy Smfg_DIRECT and account is NTC When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =215008.06 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-130574494" onClick='toggleBox("Output-130574494", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-130574494" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-130574494">
+TC_02 : When experiment is Both Rented, Policy Smfg_DIRECT When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 600000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1661987799" onClick='toggleBox("Output-1661987799", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1661987799" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1661987799">
+TC_03 :When experiment is Cautious Profile, Policy Smfg_DIRECT When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-632476266" onClick='toggleBox("Output-632476266", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-632476266" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-632476266">
+TC_14 : When experiment is Both Rented, Policy Smfg_DIRECT and account is Thin cibil When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_BTO is =257788.05 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 257788.05 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_02()'><b>TC_02</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-2106619466" onClick='toggleBox("Output-2106619466", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2106619466" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2106619466">
+TC_02 : When experiment is Both Rented, Policy Smfg_DIRECT When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , 15% haircut and Max Capping is 800000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 ,15% haircut and Max Capping is 800000<br/>
+ Final Eligibility = 255859.6 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1109622904" onClick='toggleBox("Output-1109622904", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1109622904" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1109622904">
+TC_01 : To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is =A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-516952715" onClick='toggleBox("Output-516952715", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-516952715" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-516952715">
+TC_06 : When experiment is Salaried, Policy Smfg_DIRECT When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Eligibility is not getting calculated properly..!!!<br/>
+Capping Amount After Haircut = 0<br/>
+Final Eligibility = 0<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 00.00 <br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-629314014" onClick='toggleBox("Output-629314014", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-629314014" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-629314014">
+TC_06 : When experiment is Salaried, Policy Smfg_DIRECT When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , 15% haircut and Max Capping is 800000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , 15% haircut and Max Capping is 800000<br/>
+ Final Eligibility = 255859.6 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_03()'><b>TC_03</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1725359371" onClick='toggleBox("Output-1725359371", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1725359371" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1725359371">
+TC_03 :When experiment is Cautious Profile, Policy Smfg_DIRECT When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , 25% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 122936.19 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_01()'><b>TC_01</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-141293835" onClick='toggleBox("Output-141293835", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-141293835" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-141293835">
+TC_01 : To verify the final capping if policy is Smfg_DIRECT , no experiment, ABB & BTO When Risk_Grade is =E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , No haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 163914.92 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_06()'><b>TC_06</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1423553082" onClick='toggleBox("Output-1423553082", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1423553082" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1423553082">
+TC_06 : When experiment is Salaried, Policy Smfg_DIRECT When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 360903.28 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1047878294" onClick='toggleBox("Output-1047878294", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1047878294" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1047878294">
+TC_15 : When experiment is Both Rented, Policy Smfg_DIRECT and account is ODCC When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =257788.05 , No haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 257788.05 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1462144963" onClick='toggleBox("Output-1462144963", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1462144963" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1462144963">
+TC_15 : When experiment is Both Rented, Policy Smfg_DIRECT and account is ODCC When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =117082.09 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-413354443" onClick='toggleBox("Output-413354443", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-413354443" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-413354443">
+TC_07 :When Experiment is Personal Loan, Policy Smfg_DIRECT When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25.0% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25.0% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1457189809" onClick='toggleBox("Output-1457189809", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1457189809" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1457189809">
+TC_11 : NTC with limit When Policy Direct Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = 114740.44<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = 114740.44<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = 114740.44<br/>
+Derived_capping_BTO = -49763.49<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = -49763.49<br/>
+Derived_capping_ABB = 163914.92<br/>
+IF Risk_Garde IS 'D And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = 114740.44<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1523346593" onClick='toggleBox("Output-1523346593", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1523346593" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1523346593">
+TC_10 : Max Capping of NTC and Thin Cibil When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 252632.3 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>5</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1591713457" onClick='toggleBox("Output-1591713457", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1591713457" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1591713457">
+TC_15 : When experiment is Both Rented, Policy Smfg_DIRECT and account is ODCC When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =168230.6 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-1694580081" onClick='toggleBox("Output-1694580081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1694580081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1694580081">
+TC_07 :When Experiment is Personal Loan, Policy Smfg_DIRECT When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , 15.0% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , 15.0% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 255859.6 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-626754729" onClick='toggleBox("Output-626754729", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-626754729" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-626754729">
+TC_05 : When experiment is Cautious Location, Policy Smfg_DIRECT when Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_09()'><b>TC_09</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-413788379" onClick='toggleBox("Output-413788379", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-413788379" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-413788379">
+TC_09 : Max capping where “no experiment” is applied (excl DSA,) where Business vintage is > 3 years & one property is owned When Risk_Grade isB<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , No haircut and Max Capping is 2000000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , No haircut and Max Capping is 2000000<br/>
+ Final Eligibility = 210707.9 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: NA<br/>
+<a href="#Output-1661592827" onClick='toggleBox("Output-1661592827", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1661592827" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1661592827">
+TC_13 : When experiment is Both Rented, Policy Smfg_DIRECT and account is NTC When Risk_Grade is NA<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =168230.6 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_15()'><b>TC_15</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-1139496989" onClick='toggleBox("Output-1139496989", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1139496989" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1139496989">
+TC_15 : When experiment is Both Rented, Policy Smfg_DIRECT and account is ODCC When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =117082.09 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_07()'><b>TC_07</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-680533991" onClick='toggleBox("Output-680533991", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-680533991" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-680533991">
+TC_07 :When Experiment is Personal Loan, Policy Smfg_DIRECT When Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-71503.18 , 25.0% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -71503.18 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =235522.84 , 25.0% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 176642.12 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-1089409432" onClick='toggleBox("Output-1089409432", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1089409432" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1089409432">
+TC_10 : Max Capping of NTC and Thin Cibil When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =163914.92 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 114740.44 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_12()'><b>TC_12</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-689543022" onClick='toggleBox("Output-689543022", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-689543022" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-689543022">
+TC_12 : When ODCC, Policy Smfg_DIRECT (only ABB) When Risk_Grade isC<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_ABB is =168230.6 , 25% haircut and Max Capping is 1000000<br/>
+ Final Eligibility = 117761.42 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_11()'><b>TC_11</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: C<br/>
+<a href="#Output-1101271902" onClick='toggleBox("Output-1101271902", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1101271902" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1101271902">
+TC_11 : NTC with limit When Policy Direct Risk_Grade is C<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS -1 Then Final Capping IS = 164865.98<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 0 Then Final Capping IS = 164865.98<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 200 Then Final Capping IS = 164865.98<br/>
+Derived_capping_BTO = -71503.18<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = -71503.18<br/>
+Derived_capping_ABB = 235522.84<br/>
+IF Risk_Garde IS 'C And Fixed capping is 500000 Lakh, Cibil_Score IS 300 Then Final Capping IS = 164865.98<br/>
+</div>
+</td>
+<td></td>
+<td>15</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_13()'><b>TC_13</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: E<br/>
+<a href="#Output-594462612" onClick='toggleBox("Output-594462612", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-594462612" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-594462612">
+TC_13 : When experiment is Both Rented, Policy Smfg_DIRECT and account is NTC When Risk_Grade is E<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =117082.09 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_10()'><b>TC_10</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-921155868" onClick='toggleBox("Output-921155868", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-921155868" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-921155868">
+TC_10 : Max Capping of NTC and Thin Cibil When Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 210707.9 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_08()'><b>TC_08</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: A<br/>
+<a href="#Output-1383478026" onClick='toggleBox("Output-1383478026", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1383478026" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1383478026">
+TC_08 : When Experiment is Saving Account, Policy Smfg_DIRECT When Risk_Grade is A<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-109567.84 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = -109567.84 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =360903.28 , 30% haircut and Max Capping is 500000<br/>
+ Final Eligibility = 252632.3 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>4</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_05()'><b>TC_05</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: B<br/>
+<a href="#Output-961615276" onClick='toggleBox("Output-961615276", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-961615276" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-961615276">
+TC_05 : When experiment is Cautious Location, Policy Smfg_DIRECT when Risk_Grade is B<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-91385.04 , 15% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = -91385.04 since max cap is min of haircut and derived amount.<br/>
+Derived_ABB is =301011.3 , 15% haircut and Max Capping is 1500000<br/>
+ Final Eligibility = 255859.6 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
+<tr>
+<td title='Eligibility_Automation.Smfg_Direct.TC_14()'><b>TC_14</b><br>Test class: Eligibility_Automation.Smfg_Direct<br>Parameters: D<br/>
+<a href="#Output-188747966" onClick='toggleBox("Output-188747966", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-188747966" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-188747966">
+TC_14 : When experiment is Both Rented, Policy Smfg_DIRECT and account is Thin cibil When Risk_Grade is D<br/>
+ Test Loancode =669895efvnf3h<br/>
+Derived_BTO is =-49763.49 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = -49763.49 since max cap is min of haircut and derived amount.<br/>
+Derived_BTO is =117082.09 , No haircut and Max Capping is 500000<br/>
+ Final Eligibility = 0.0 since max cap is min of haircut and derived amount.<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>Eligibility_Automation.Smfg_Direct@2233cac0</td></tr>
 </table><p>
 </body>
 </html>
